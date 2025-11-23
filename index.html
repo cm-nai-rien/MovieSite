@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chaos Movie List</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
         :root {
             /* --- 1. PRIMITIVES --- */
@@ -25,23 +26,24 @@
 
             /* --- 2. TOKENS --- */
             --bg-page:        var(--color-olive-light);
-            --bg-card:        var(--color-gray-medium);
+            --bg-card:        transparent; 
             --bg-featured:    var(--color-pink);
             --bg-ui:          var(--color-gray-dark);
-            --bg-panel:       #fcfcfc; /* Light panel like screenshot */
-            --bg-overlay:     rgba(0, 0, 0, 0.75);
+            --bg-panel:       #fcfcfc; 
+            --bg-overlay:     rgba(53, 51, 8, 0.85);
             
             --text-primary:   var(--color-olive-dark);
             --text-inverted:  var(--color-white);
-            --text-dim:       var(--color-white-dim);
+            --text-dim:       rgba(53, 51, 8, 0.6);
             --text-accent:    var(--color-pink);
-            --text-panel:     #222; /* Dark text for light panel */
+            --text-panel:     #222; 
             
             --border-ui:      var(--color-olive-dark);
             --border-light:   #e0e0e0;
             
             --shadow-retro:   10px 10px 0px rgba(53, 51, 8, 0.2);
             --shadow-panel:   -5px 0 30px rgba(0,0,0,0.2);
+            --shadow-card:    0 10px 20px rgba(0,0,0,0.1);
         }
         
         * { box-sizing: border-box; }
@@ -49,42 +51,39 @@
         body {
             background-color: var(--bg-page);
             color: var(--text-primary);
-            font-family: 'Helvetica Neue', sans-serif;
+            font-family: "Outfit", sans-serif;
             margin: 0;
             padding: 0;
-            overflow-x: hidden; /* Prevent horizontal scroll when panel opens */
+            overflow-x: hidden;
+            width: 100%;
         }
 
-        body.panel-open {
-            overflow: hidden; /* Lock scroll when panel is open */
+        /* Prevent scroll when panel is open */
+        body.panel-open { 
+            overflow: hidden; 
         }
 
         /* --- HEADER --- */
         header {
             text-align: center;
-            padding: 60px 20px 40px;
+            padding: 7rem 1.5rem 4rem; 
         }
 
         h1 {
             font-family: 'Playfair Display', serif; 
             font-weight: 500;
-            font-size: 8rem;
             font-style: italic;
             letter-spacing: -3px;
             margin: 0 0 10px 0;
-            background: linear-gradient(45deg, var(--color-olive-dark), var(--color-olive-medium));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: transparent;
-        }
+            font-size: clamp(2.5rem, 8vw, 5rem);
+        }   
         
         p.subtitle {
-            font-family: 'Playfair Display', serif; 
-            color: var(--text-primary);
-            margin-top: 0;
-            font-size: 1rem;
-            margin-bottom: 30px;
+             font-family: "Outfit", sans-serif;
+             color: var(--text-primary);
+             margin: 0;
+             opacity: 0.85;
+             font-size: clamp(0.9rem, 1.5vw, 1.1rem);
         }
 
         /* --- FEATURED SECTION --- */
@@ -92,7 +91,6 @@
             max-width: 90%;
             margin: 0 auto 50px auto;
             background-color: var(--bg-featured);
-            border-radius: 20px;
             padding: 50px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             color: var(--text-primary);
@@ -116,8 +114,7 @@
 
         .featured-poster {
             flex-shrink: 0;
-            width: 16rem;
-            border-radius: 8px;
+            width: 12rem;
             overflow: hidden;
             box-shadow: var(--shadow-retro);
             transform: rotate(-2deg);
@@ -125,16 +122,19 @@
 
         .featured-poster img { width: 100%; height: auto; display: block; }
         .featured-info { flex-grow: 1; padding-top: 10px; }
-        
-        .f-date { font-family: 'Helvetica Neue', sans-serif; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; font-weight: bold; margin-bottom: 15px; opacity: 0.8; }
-        .f-title { font-family: 'Playfair Display', serif; font-size: 3rem; line-height: 1; margin: 0 0 10px 0; font-style: italic; }
-        .f-year { font-size: 1.5rem; font-style: italic; font-weight: bold; margin-bottom: 30px; display: inline-block; padding: 2px 10px; }
-        .f-notes { font-family: 'Playfair Display', serif; font-size: 1.1rem; line-height: 1.6; position: relative; padding-left: 20px; border-left: 2px solid var(--color-olive-dark); }
+        .f-date { font-family: 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; font-weight: bold; margin-bottom: 15px; opacity: 0.8; }
+        .f-title { font-family: 'Playfair Display', serif; font-size: 2.2rem; line-height: 1; margin: 0 0 10px 0; font-style: italic; }
+        .f-year { font-family: 'Outfit', sans-serif; font-size: 1rem; margin-bottom: 30px; display: inline-block; padding: 2px 10px; }
+        .f-notes { font-family: 'Playfair Display', serif; font-size: 0.9rem; line-height: 1.6; position: relative; padding-left: 20px; border-left: 2px solid var(--color-olive-dark); }
 
-        /* --- MAIN WRAPPER (Bar + Grid) --- */
+        /* --- MAIN WRAPPER --- */
         .main-content-wrapper {
-            max-width: 90%;
             margin: 0 auto 50px auto;
+        }
+
+        #tab-grid.tab-content  {
+            background-color: var(--bg-featured);
+            padding: 4rem;
         }
 
         /* --- CONTROL BAR --- */
@@ -143,8 +143,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
-            padding: 0 10px;
-            border-bottom: 1px solid rgba(0,0,0,0.1);
+            padding: 10px 0px;
             padding-bottom: 20px;
             flex-wrap: wrap;
             gap: 15px;
@@ -161,21 +160,15 @@
             border: 1px solid var(--border-ui);
             color: var(--text-primary);
             padding: 8px 20px;
-            border-radius: 50px;
-            font-family: 'Helvetica Neue', sans-serif;
-            font-size: 0.85rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.6rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             cursor: pointer;
             transition: all 0.2s;
         }
 
-        .btn-filter:hover {
-            background: var(--color-olive-dark);
-            color: var(--color-white);
-        }
-
-        .btn-filter.active {
+        .btn-filter:hover, .btn-filter.active {
             background: var(--color-olive-dark);
             color: var(--color-white);
         }
@@ -187,35 +180,121 @@
             font-size: 1.2rem;
         }
 
-        /* --- GRID --- */
+        /* --- GRID & CARDS --- */
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+            gap: 3rem 1rem;
             padding-bottom: 100px;
         }
 
         .card {
-            position: relative;
-            border-radius: 12px;
-            overflow: hidden;
-            background: var(--bg-card);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            aspect-ratio: 2/3;
+            display: flex;
+            flex-direction: column;
+            background: transparent;
         }
-        .card:hover { transform: scale(1.03) translateY(-5px); z-index: 10; }
-        .card img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .info { position: absolute; inset: 0; background: var(--bg-overlay); padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(5px); color: var(--text-inverted); }
-        .card:hover .info { opacity: 1; }
-        
-        .meta-date { font-size: 0.75rem; color: var(--text-accent); text-transform: uppercase; margin-bottom: 5px; }
-        .meta-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; color: var(--text-accent); font-family: 'Playfair Display', serif; font-style: italic; }
-        .meta-review { font-size: 0.85rem; color: var(--text-dim); max-height: 50%; overflow-y: auto; font-style: italic; }
-        .meta-tags-row { margin-top: auto; display: flex; gap: 5px; }
-        .meta-tag { border: 1px solid var(--color-gray-lighter); padding: 3px 8px; border-radius: 10px; font-size: 0.7rem; background: rgba(0,0,0,0.5); }
 
-        /* --- SIDE FILTER PANEL --- */
+        .card-image-wrapper {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 2/3;
+            overflow: hidden;
+            background: var(--color-gray-medium);
+            box-shadow: var(--shadow-card);
+            transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            cursor: pointer;
+        }
+
+        .card:hover .card-image-wrapper {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Info Overlay */
+        .info {
+            position: absolute;
+            inset: 0;
+            background: var(--bg-overlay);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            backdrop-filter: blur(3px);
+            color: var(--text-inverted);
+        }
+
+        .card:hover .info { opacity: 1; }
+
+        .info-date {
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            color: var(--color-pink);
+            font-weight: bold;
+        }
+
+        .info-notes {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            max-height: 80%;
+            overflow-y: auto;
+        }
+
+        /* Details Below Card */
+        .card-details {
+            margin-top: 12px;
+        }
+
+        .card-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.8rem;
+            line-height: 1.2;
+            font-weight: 400;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .card-meta-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            font-family: 'Outfit', sans-serif;
+            margin-bottom: 4px;
+        }
+
+        .card-rating {
+            font-weight: 400;
+            color: var(--color-olive-medium);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.8rem;
+        }
+
+        .card-director {
+            font-size: 0.8rem;
+            color: var(--color-gray-lighter);
+            font-style: italic;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* --- SIDE PANEL COMPONENT --- */
         .panel-backdrop {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -226,10 +305,7 @@
             transition: opacity 0.3s;
         }
         
-        .panel-backdrop.open {
-            opacity: 1;
-            pointer-events: all;
-        }
+        .panel-backdrop.open { opacity: 1; pointer-events: all; }
 
         .side-panel {
             position: fixed;
@@ -247,9 +323,7 @@
             flex-direction: column;
         }
 
-        .side-panel.open {
-            transform: translateX(0);
-        }
+        .side-panel.open { transform: translateX(0); }
 
         .panel-header {
             padding: 20px 30px;
@@ -259,101 +333,63 @@
             align-items: center;
         }
 
-        .panel-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            font-style: italic;
-        }
-
-        .btn-close {
-            background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-panel);
-        }
-
-        .panel-content {
-            flex-grow: 1;
-            overflow-y: auto;
-            padding: 0;
-        }
-
-        .panel-footer {
-            padding: 20px 30px;
-            border-top: 1px solid var(--border-light);
-            display: flex;
-            gap: 10px;
-        }
-
+        .panel-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-style: italic; }
+        .btn-close { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-panel); }
+        .panel-content { flex-grow: 1; overflow-y: auto; padding: 0; }
+        .panel-footer { padding: 20px 30px; border-top: 1px solid var(--border-light); display: flex; gap: 10px; }
+        
         .btn-action {
-            flex: 1;
-            padding: 12px;
-            border: 1px solid #222;
-            background: transparent;
-            text-transform: uppercase;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.2s;
+            flex: 1; padding: 12px; border: 1px solid #222; background: transparent;
+            text-transform: uppercase; font-weight: bold; cursor: pointer; transition: 0.2s;
         }
-
         .btn-action.primary { background: #222; color: #fff; }
         .btn-action:hover { opacity: 0.8; }
 
         /* ACCORDIONS */
-        .accordion-item {
-            border-bottom: 1px solid var(--border-light);
-        }
-
+        .accordion-item { border-bottom: 1px solid var(--border-light); }
         .accordion-header {
-            padding: 20px 30px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-family: 'Helvetica Neue', sans-serif;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
+            padding: 20px 30px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+            font-family: 'Helvetica Neue', sans-serif; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;
         }
-
         .accordion-header:hover { background: #f5f5f5; }
-
-        .accordion-content {
-            display: none;
-            padding: 0 30px 20px 30px;
-            max-height: 300px;
-            overflow-y: auto;
-        }
-
+        .accordion-content { display: none; padding: 0 30px 20px 30px; max-height: 300px; overflow-y: auto; }
+        
+        /* Updated: Accordion Independent Toggle */
         .accordion-item.active .accordion-content { display: block; }
         .accordion-item.active .icon-plus { transform: rotate(45deg); }
-
         .icon-plus { transition: transform 0.3s; font-size: 1.2rem; }
 
         /* CHECKBOX STYLES */
-        .checkbox-group {
+        .checkbox-group { display: flex; flex-direction: column; gap: 12px; }
+        .checkbox-label { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 0.95rem; color: #444; }
+        .checkbox-label input { width: 18px; height: 18px; accent-color: var(--color-olive-dark); cursor: pointer; }
+
+        /* --- DASHBOARD --- */
+        .dashboard {
+            max-width: 90%;
+            margin: 0 auto 50px auto;
             display: flex;
-            flex-direction: column;
-            gap: 12px;
+            gap: 30px;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
         }
-
-        .checkbox-label {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
-            font-size: 0.95rem;
-            color: #444;
+        .dash-widget {
+            background: #fdfdfd; padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); flex: 1; min-width: 300px;
         }
+        .dash-title { margin: 0 0 20px 0; font-family: 'Playfair Display', serif; font-style: italic; }
+        .top-list { padding-left: 20px; }
+        .top-list li { padding: 2px 0; font-size: 0.8rem; }
+        .top-list .rating { float: right; font-size: 0.7rem; font-weight: bold; color: var(--color-olive-medium); }
 
-        .checkbox-label input {
-            width: 18px; height: 18px;
-            accent-color: var(--color-olive-dark);
-            cursor: pointer;
-        }
+        /* ---Footer --- */
+        .footer { background-color: var(--bg-page); padding: 3rem 2rem; color: var(--text-dim); font-size: 0.8rem; text-align: center;}
 
+        /* --- RESPONSIVE --- */
         @media (max-width: 800px) {
-            h1 { font-size: 4rem; }
+            h1 {font-size: clamp(2rem, 10vw, 3rem);}
             .featured-content { flex-direction: column; align-items: center; text-align: center; gap: 20px; }
-            .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+            .grid { grid-template-columns: repeat(2, 1fr); gap: 20px 10px; }
         }
     </style>
 </head>
@@ -366,13 +402,12 @@
 
     <!-- NEW SECTION: MOST RECENT WATCH -->
     <div class="featured-wrapper" id="featured-section" style="display: none;">
-        <div class="label-recent">Most Recently Watch</div>
+        <div class="label-recent" id="f-date">Most Recently Watch</div>
         <div class="featured-content">
             <div class="featured-poster">
                 <img id="f-img" src="" alt="Latest Movie">
             </div>
             <div class="featured-info">
-                <div class="f-date" id="f-date"></div>
                 <div class="f-title" id="f-title"></div>
                 <div class="f-year" id="f-year"></div>
                 <div class="f-notes" id="f-notes"></div>
@@ -380,25 +415,42 @@
         </div>
     </div>
 
+
+    <!-- TAB: DASHBOARD -->
+    <div id="tab-dashboard" class="tab-content active">
+        <div class="dashboard">
+            <div class="dash-widget"><h3 class="dash-title">Top 10 Rated</h3><ol id="top-ten-list" class="top-list"></ol></div>
+            <div class="dash-widget"><h3 class="dash-title">Movies Watched Per Year</h3><canvas id="watchedByYearChart"></canvas></div>
+            <div class="dash-widget"><h3 class="dash-title">Movies by Released Decade</h3><canvas id="decadePieChart" style="max-height: 300px;"></canvas></div>
+        </div>
+    </div>
+    
+    <!-- TAB: GRID VIEW -->
+    <div id="tab-grid" class="tab-content">
     <!-- MAIN SECTION WRAPPER -->
-    <div class="main-content-wrapper">
+        <div class="main-content-wrapper">
         
         <!-- CONTROL BAR (Triggers) -->
         <div class="control-bar">
             <!-- Counter -->
-            <div class="counter" id="count-display">0 Items</div>
+            <div class="counter" id="count-display">0 Movies Watched</div>
 
             <!-- Filter Buttons -->
             <div class="filter-buttons">
-                <button class="btn-filter" onclick="openPanel('all')">All Filters</button>
+                <button class="btn-filter" onclick="openPanel('notes')">Notes</button>
                 <button class="btn-filter" onclick="openPanel('type')">Type</button>
                 <button class="btn-filter" onclick="openPanel('decade')">Decade</button>
                 <button class="btn-filter" onclick="openPanel('country')">Country</button>
+                <button class="btn-filter" onclick="openPanel('all')">All Filters</button>
             </div>
         </div>
 
         <!-- GRID -->
         <div class="grid" id="movie-grid"></div>
+
+        <!-- LOAD MORE BUTTON -->
+        <div id="load-more-container" style="text-align: center; padding: 40px 0;"></div>
+        </div>
     </div>
 
     <!-- SIDE PANEL COMPONENT -->
@@ -422,6 +474,21 @@
                         <label class="checkbox-label"><input type="radio" name="sort" value="date-old" onchange="applyFilters()"> Oldest First</label>
                         <label class="checkbox-label"><input type="radio" name="sort" value="rate-high" onchange="applyFilters()"> Rating High → Low</label>
                         <label class="checkbox-label"><input type="radio" name="sort" value="rate-low" onchange="applyFilters()"> Rating Low → High</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notes Section (Single Checkbox) -->
+            <div class="accordion-item" id="acc-notes">
+                <div class="accordion-header" onclick="toggleAccordion('acc-notes')">
+                    Notes <span class="icon-plus">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="filter-notes" onchange="applyFilters()"> 
+                            With Notes Only
+                        </label>
                     </div>
                 </div>
             </div>
@@ -470,9 +537,16 @@
             <button class="btn-action primary" onclick="closePanel()">Done</button>
         </div>
     </div>
+    <div class="footer">
+        <div>© 2025 Chao Wu</div>
+    </div>
 
     <script>
         let allMovies = [];
+        let filteredMovies = [];
+        let currentlyDisplayed = 0;
+        const moviesPerPage = 30;
+
         const countryNames = new Intl.DisplayNames(['en'], { type: 'region' });
 
         // --- LOAD DATA ---
@@ -480,9 +554,11 @@
             .then(r => r.json())
             .then(movies => {
                 allMovies = movies.filter(m => m.poster);
+                filteredMovies = [...allMovies]; 
                 renderFeatured(allMovies);
-                populateDynamicFilters(); // Build the checkboxes
-                applyFilters(); // Initial render
+                populateDynamicFilters(); 
+                setupDashboard(allMovies); 
+                applyFilters(); 
             })
             .catch(err => console.error(err));
 
@@ -494,7 +570,7 @@
                 document.getElementById('featured-section').style.display = 'block';
                 document.getElementById('f-img').src = latestMovie.poster;
                 document.getElementById('f-title').innerText = latestMovie.title;
-                document.getElementById('f-date').innerText = "WATCHED " + latestMovie.date_display;
+                document.getElementById('f-date').innerText = "Watched on " + latestMovie.date_display;
                 document.getElementById('f-year').innerText = latestMovie.year || "";
                 let notes = latestMovie.review;
                 if (!notes || notes === "nan") notes = "No notes added.";
@@ -502,21 +578,28 @@
             }
         }
 
+
         // --- PANEL LOGIC ---
         const backdrop = document.getElementById('backdrop');
         const sidePanel = document.getElementById('side-panel');
 
+        // Helper to calculate scrollbar width
+        function getScrollbarWidth() {
+            return window.innerWidth - document.documentElement.clientWidth;
+        }
+
         function openPanel(targetSection) {
+            // Prevent layout shift by adding padding
+            const scrollbarWidth = getScrollbarWidth();
+            document.body.style.paddingRight = `${scrollbarWidth}px`;
+            
             document.body.classList.add('panel-open');
             backdrop.classList.add('open');
             sidePanel.classList.add('open');
 
-            // Close all first
-            document.querySelectorAll('.accordion-item').forEach(el => el.classList.remove('active'));
-
-            // Open specific if requested
+            // Open specific if requested (Do not close others automatically anymore)
             if (targetSection === 'all') {
-                // Keep all closed or maybe open the first one? Let's keep closed for cleanness
+                // Keep current state
             } else if (targetSection) {
                 const targetEl = document.getElementById(`acc-${targetSection}`);
                 if (targetEl) targetEl.classList.add('active');
@@ -524,6 +607,9 @@
         }
 
         function closePanel() {
+            // Remove padding after transition starts/ends
+            document.body.style.paddingRight = '';
+            
             document.body.classList.remove('panel-open');
             backdrop.classList.remove('open');
             sidePanel.classList.remove('open');
@@ -531,15 +617,8 @@
 
         function toggleAccordion(id) {
             const item = document.getElementById(id);
-            // Toggle active state
-            if(item.classList.contains('active')) {
-                item.classList.remove('active');
-            } else {
-                // Optional: Close others? For multiselect UI, usually we allow multiple open
-                // But to save space, let's close others
-                document.querySelectorAll('.accordion-item').forEach(el => el.classList.remove('active'));
-                item.classList.add('active');
-            }
+            // Toggle active state independent of others
+            item.classList.toggle('active');
         }
 
         // --- POPULATE FILTERS ---
@@ -561,7 +640,7 @@
                 decContainer.innerHTML += `
                     <label class="checkbox-label">
                         <input type="checkbox" class="filter-cb" data-category="decade" value="${d}" onchange="applyFilters()">
-                        ${d}s
+                        ${d} - ${d+9}s
                     </label>`;
             });
 
@@ -584,6 +663,8 @@
         function clearAllFilters() {
             // Uncheck all checkboxes
             document.querySelectorAll('.filter-cb').forEach(cb => cb.checked = false);
+            // Reset Notes checkbox
+            document.getElementById('filter-notes').checked = false;
             // Reset Sort to default
             document.querySelector('input[name="sort"][value="date-new"]').checked = true;
             applyFilters();
@@ -591,21 +672,20 @@
 
         // --- FILTER ENGINE ---
         function applyFilters() {
-            // 1. Get Selected Values
             const checkedTypes = Array.from(document.querySelectorAll('input[data-category="type"]:checked')).map(cb => cb.value);
             const checkedDecades = Array.from(document.querySelectorAll('input[data-category="decade"]:checked')).map(cb => cb.value);
             const checkedCountries = Array.from(document.querySelectorAll('input[data-category="country"]:checked')).map(cb => cb.value);
             const sortVal = document.querySelector('input[name="sort"]:checked').value;
+            const notesChecked = document.getElementById('filter-notes').checked;
 
-            // 2. Filter Array
-            let filtered = allMovies.filter(m => {
-                // Type Logic (OR)
+            filteredMovies = allMovies.filter(m => {
+                // Notes Logic (Checkbox)
+                if (notesChecked) {
+                    if (!m.review || m.review === "nan" || m.review.trim() === "") return false;
+                }
+
                 if (checkedTypes.length > 0 && !checkedTypes.includes(m.type)) return false;
-                
-                // Country Logic (OR)
                 if (checkedCountries.length > 0 && !checkedCountries.includes(m.country)) return false;
-
-                // Decade Logic (OR)
                 if (checkedDecades.length > 0) {
                     if (!m.year || m.year === "Unknown") return false;
                     const d = Math.floor(parseInt(m.year) / 10) * 10;
@@ -614,8 +694,7 @@
                 return true;
             });
 
-            // 3. Sort
-            filtered.sort((a, b) => {
+            filteredMovies.sort((a, b) => {
                 if (sortVal === 'date-new') return b.date_sort.localeCompare(a.date_sort);
                 if (sortVal === 'date-old') return a.date_sort.localeCompare(b.date_sort);
                 if (sortVal === 'rate-high') return getRating(b) - getRating(a);
@@ -626,18 +705,23 @@
                 }
             });
 
-            // 4. Render
-            document.getElementById('count-display').innerText = `${filtered.length} Items`;
-            renderGrid(filtered);
+            // Remove recent from grid
+            if (filteredMovies.length > 0) {
+                filteredMovies = filteredMovies.slice(1);
+            }
+
+            document.getElementById('count-display').innerText = `${filteredMovies.length} Movies Watched`;
+            document.getElementById('movie-grid').innerHTML = ''; 
+            currentlyDisplayed = 0; 
+            renderMoreMovies(); 
             
-            // 5. Update Active States on Buttons
+            updateButtonState('notes', notesChecked);
             updateButtonState('type', checkedTypes.length > 0);
             updateButtonState('decade', checkedDecades.length > 0);
             updateButtonState('country', checkedCountries.length > 0);
         }
 
         function updateButtonState(type, isActive) {
-            // Helper to make buttons look "filled" when filters are active
             const btn = document.querySelector(`button[onclick="openPanel('${type}')"]`);
             if(btn) {
                 if(isActive) btn.classList.add('active');
@@ -652,28 +736,132 @@
             return isNaN(num) ? 0 : num;
         }
 
-        function renderGrid(movies) {
+        function renderMoreMovies() {
             const grid = document.getElementById('movie-grid');
-            grid.innerHTML = ''; 
+            const loadMoreContainer = document.getElementById('load-more-container');
+            const moviesToRender = filteredMovies.slice(currentlyDisplayed, currentlyDisplayed + moviesPerPage);
+            
+            renderGrid(moviesToRender, grid);
+            currentlyDisplayed += moviesToRender.length;
+
+            loadMoreContainer.innerHTML = '';
+            if (currentlyDisplayed < filteredMovies.length) {
+                const loadMoreBtn = document.createElement('button');
+                loadMoreBtn.innerText = 'Load More';
+                loadMoreBtn.className = 'btn-filter'; 
+                loadMoreBtn.onclick = renderMoreMovies;
+                loadMoreContainer.appendChild(loadMoreBtn);
+            }
+        }
+
+
+        function renderGrid(movies, grid) {
             movies.forEach(movie => {
                 const el = document.createElement('div');
                 el.className = 'card';
                 let reviewText = (!movie.review || movie.review === "nan") ? "" : movie.review;
+                
                 const ratingNum = getRating(movie);
-                const ratingHtml = ratingNum > 0 ? `<span class="meta-tag">★ ${movie.rating}</span>` : '';
-                const yearHtml = (movie.year && movie.year !== "Unknown") ? `<span class="meta-tag">${movie.year}</span>` : '';
+                const ratingDisplay = ratingNum > 0 ? `★ ${movie.rating}/10` : 'Unrated';
+                const yearDisplay = (movie.year && movie.year !== "Unknown") ? movie.year : '';
+                const directorDisplay = movie.director ? movie.director : ''; // Fallback if no director data
 
                 el.innerHTML = `
-                    <img src="${movie.poster}" alt="${movie.title}" loading="lazy">
-                    <div class="info">
-                        <div class="meta-date">${movie.date_display}</div>
-                        <div class="meta-title">${movie.title}</div>
-                        <div class="meta-review">"${reviewText}"</div>
-                        <div class="meta-tags-row">${ratingHtml} ${yearHtml}</div>
+                    <div class="card-image-wrapper">
+                        <img src="${movie.poster}" alt="${movie.title}" loading="lazy">
+                        <div class="info">
+                            <div class="info-date">${movie.date_display}</div>
+                            <div class="info-notes">${reviewText}</div>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <div class="card-title">${movie.title}</div>
+                        <div class="card-meta-row">
+                            <span>${yearDisplay}</span>
+                            <span class="card-rating">${ratingDisplay}</span>
+                        </div>
+                        <div class="card-director">${directorDisplay}</div>
                     </div>
                 `;
                 grid.appendChild(el);
             });
+        }
+
+        // --- DASHBOARD & CHARTS ---
+        function setupDashboard(movies) {
+            createWatchedByYearChart(movies);
+            createDecadePieChart(movies);
+            renderTopTenList(movies);
+        }
+
+        function createWatchedByYearChart(movies) {
+            const watchedByYear = movies.reduce((acc, movie) => {
+                const year = movie.date_sort.substring(0, 4);
+                if (year) { acc[year] = (acc[year] || 0) + 1; }
+                return acc;
+            }, {});
+
+            const sortedYears = Object.keys(watchedByYear).sort();
+            const chartData = sortedYears.map(year => watchedByYear[year]);
+
+            new Chart(document.getElementById('watchedByYearChart'), {
+                type: 'line',
+                data: {
+                    labels: sortedYears,
+                    datasets: [{
+                        label: 'Movies Watched',
+                        data: chartData,
+                        borderColor: 'rgba(53, 51, 8, 0.8)',
+                        backgroundColor: 'rgba(198, 191, 101, 0.2)',
+                        fill: true,
+                        tension: 0.1
+                    }]
+                }
+            });
+        }
+
+        function createDecadePieChart(movies) {
+            const moviesByDecade = movies.reduce((acc, movie) => {
+                if (movie.year && !isNaN(movie.year)) {
+                    const decade = Math.floor(parseInt(movie.year) / 10) * 10;
+                    const decadeLabel = `${decade}s`;
+                    acc[decadeLabel] = (acc[decadeLabel] || 0) + 1;
+                }
+                return acc;
+            }, {});
+
+            const sortedDecades = Object.keys(moviesByDecade).sort();
+            const chartData = sortedDecades.map(decade => moviesByDecade[decade]);
+
+            new Chart(document.getElementById('decadePieChart'), {
+                type: 'pie',
+                data: {
+                    labels: sortedDecades,
+                    datasets: [{
+                        label: 'Movies by Decade',
+                        data: chartData,
+                        backgroundColor: [
+                            '#353308', '#5c5815', '#C6BF65', '#EECED3', '#888888',
+                            '#ff4757', '#1a1a1a', '#b1a74c', '#d4b8be', '#5a5a5a'
+                        ],
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+        }
+
+        function renderTopTenList(movies) {
+            const topTen = movies
+                .filter(m => getRating(m) > 0)
+                .sort((a, b) => getRating(b) - getRating(a))
+                .slice(0, 10);
+
+            const listEl = document.getElementById('top-ten-list');
+            listEl.innerHTML = topTen.map(movie => `
+                <li>
+                    ${movie.title} <span class="rating">★${getRating(movie)}/10</span>
+                </li>
+            `).join('');
         }
     </script>
 </body>
