@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos Analytics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        :root {
+            --color-olive-dark: #353308;
+            --color-olive-light: #C6BF65;
+            --text-primary: #353308;
+            --bg-page: #C6BF65;
+        }
+
+        body {
+            background-color: var(--bg-page);
+            color: var(--text-primary);
+            font-family: "Outfit", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: left;
+            padding: 2rem 5% 3rem; 
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif; 
+            font-weight: 300;
+            letter-spacing: -2px;
+            margin: 0 0 10px 0;
+            font-size: clamp(2rem, 6vw, 2.2rem);
+        }   
+
+        .back-link {
+            color: var(--text-primary);
+            text-transform: uppercase;
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            font-style: italic;
+            letter-spacing: 1px;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+
+        .dashboard {
+            max-width: 1400px;
+            margin: 0 auto 50px auto;
+            padding: 0 5%;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .dash-widget {
+            background: #fdfdfd;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 350px;
+        }
+
+        .dash-title {
+            margin: 0 0 20px 0;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.5rem;
+            color: var(--color-olive-dark);
+        }
+
+        .top-list { padding-left: 20px; }
+        .top-list li { padding: 8px 0; font-size: 1rem; border-bottom: 1px dashed #eee; }
+        .top-list .rating { float: right; font-weight: bold; color: #5c5815; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Movie Analytics</h1>
+        <a href="index.html" class="back-link">← Back to Movies</a>
+    </header>
+
+    <div class="dashboard">
+        <!-- Widget 1: Top 10 -->
+        <div class="dash-widget">
+            <h3 class="dash-title">Top 10 Highest Rated</h3>
+            <ol id="top-ten-list" class="top-list"></ol>
+        </div>
+
+        <!-- Widget 2: Charts Column -->
+        <div style="flex: 2; display: flex; flex-direction: column; gap: 30px; min-width: 350px;">
+            <div class="dash-widget">
+                <h3 class="dash-title">Movies Watched Per Year</h3>
+                <canvas id="watchedByYearChart"></canvas>
+            </div>
+            <div class="dash-widget">
+                <h3 class="dash-title">Movies by Released Decade</h3>
+                <div style="height: 300px;">
+                    <canvas id="decadePieChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch('movies.json')
+            .then(r => r.json())
+            .then(movies => {
+                setupDashboard(movies.filter(m => m.poster));
+            });
+
+        function setupDashboard(movies) {
+            createWatchedByYearChart(movies);
+            createDecadePieChart(movies);
+            renderTopTenList(movies);
+        }
+
+        function getRating(movie) {
+            if (!movie.rating) return 0;
+            return parseFloat(movie.rating.toString().replace('/5', '')) || 0;
+        }
+
+        function createWatchedByYearChart(movies) {
+            const watchedByYear = movies.reduce((acc, movie) => {
+                const year = movie.date_sort.substring(0, 4);
+                if (year && year !== "0000") { acc[year] = (acc[year] || 0) + 1; }
+                return acc;
+            }, {});
+
+            const sortedYears = Object.keys(watchedByYear).sort();
+            const chartData = sortedYears.map(year => watchedByYear[year]);
+
+            new Chart(document.getElementById('watchedByYearChart'), {
+                type: 'line',
+                data: {
+                    labels: sortedYears,
+                    datasets: [{
+                        label: 'Movies Watched',
+                        data: chartData,
+                        borderColor: '#353308',
+                        backgroundColor: 'rgba(53, 51, 8, 0.1)',
+                        fill: true,
+                        tension: 0.3
+                    }]
+                }
+            });
+        }
+
+        function createDecadePieChart(movies) {
+            const moviesByDecade = movies.reduce((acc, movie) => {
+                if (movie.year && !isNaN(movie.year)) {
+                    const decade = Math.floor(parseInt(movie.year) / 10) * 10;
+                    const decadeLabel = `${decade}s`;
+                    acc[decadeLabel] = (acc[decadeLabel] || 0) + 1;
+                }
+                return acc;
+            }, {});
+
+            const sortedDecades = Object.keys(moviesByDecade).sort();
+            const chartData = sortedDecades.map(decade => moviesByDecade[decade]);
+
+            new Chart(document.getElementById('decadePieChart'), {
+                type: 'pie',
+                data: {
+                    labels: sortedDecades,
+                    datasets: [{
+                        data: chartData,
+                        backgroundColor: [
+                            '#353308', '#5c5815', '#7a7520', '#C6BF65', '#e3dd86',
+                            '#EECED3', '#d4b8be', '#888888', '#333333', '#111111'
+                        ],
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+        }
+
+        function renderTopTenList(movies) {
+            const topTen = movies
+                .filter(m => getRating(m) > 0)
+                .sort((a, b) => getRating(b) - getRating(a))
+                .slice(0, 10);
+
+            const listEl = document.getElementById('top-ten-list');
+            listEl.innerHTML = topTen.map(movie => `
+                <li>
+                    ${movie.title} <span class="rating">★${movie.rating}</span>
+                </li>
+            `).join('');
+        }
+    </script>
+</body>
+</html>
