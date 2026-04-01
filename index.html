@@ -24,18 +24,19 @@
             --color-white-dim:    #dddddd;
 
             /* TOKENS */
-            --bg-page:        var(--color-olive-light);
+            --bg-page:        var(--color-gray-medium);
             --bg-card:        transparent; 
             --bg-featured:    var(--color-pink);
             --bg-ui:          var(--color-gray-dark);
             --bg-panel:       #fcfcfc; 
             --bg-overlay:     rgba(53, 51, 8, 0.85);
             
-            --text-primary:   var(--color-olive-dark);
-            --text-inverted:  var(--color-white);
-            --text-dim:       rgba(53, 51, 8, 0.6);
+            --text-primary:   var(--color-pink);
+            --text-inverted:  var(--color-gray-medium);
+            --text-dim:       var--(color-pink);
             --text-accent:    var(--color-pink);
-            
+            --text-panel:     var(--color-gray-dark);
+
             --border-ui:      var(--color-olive-dark);
             --border-light:   #e0e0e0;
             
@@ -76,6 +77,7 @@
             letter-spacing: 1px;
             border-bottom: 2px solid transparent;
             transition: 0.2s;
+            text-decoration: none;
         }
 
         .nav-link:hover { border-bottom-color: var(--text-primary); }
@@ -95,16 +97,15 @@
             font-size: clamp(2rem, 6vw, 2.2rem);
         }   
         
-        /* --- FEATURED SECTION (Restored) --- */
+        /* --- FEATURED SECTION --- */
         .featured-wrapper {
             max-width: 1600px;
-            margin: 0 auto 60px auto;
-            /* We use margin on sides to match the padding of header/grid */
+            margin: 40px auto 100px auto;
             width: 90%; 
             background-color: var(--bg-featured);
             padding: 50px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            color: var(--text-primary);
+            color: var(--text-inverted);
         }
 
         .label-recent {
@@ -117,19 +118,21 @@
             padding-bottom: 5px;
         }
 
-        .featured-content { display: flex; gap: 50px; align-items: flex-start; }
-        
+        .featured-content { display: flex; gap: 50px; align-items: center; }
         .featured-poster {
             flex-shrink: 0; width: 12rem; overflow: hidden;
             box-shadow: var(--shadow-retro); transform: rotate(-2deg);
         }
         .featured-poster img { width: 100%; height: auto; display: block; }
-        
-        .featured-info { flex-grow: 1; padding-top: 10px; }
-        .f-date { font-family: 'Outfit', sans-serif; font-size: 1rem; margin-bottom: 30px; display: inline-block; padding: 2px 10px;  }
+        .featured-info { 
+            visibility: visible;
+        }
+        .f-date { font-family: 'Outfit', sans-serif; font-size: 1rem; margin-bottom: 20px; display: inline-block; padding: 2px 10px;  }
         .f-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; line-height: 1.1; margin: 0 0 10px 0; font-style: italic; }
-        .f-year { font-family: 'Outfit', sans-serif; font-size: 1rem; margin-bottom: 30px; display: inline-block; padding: 2px 10px; }
-        .f-notes { font-family: 'Playfair Display', serif; font-size: 1.1rem; line-height: 1.6; position: relative; padding-left: 20px; border-left: 2px solid var(--color-olive-dark); }
+        .f-year { font-family: 'Outfit', sans-serif; font-size: 1rem; margin-bottom: 10px; display: inline-block; padding: 2px 10px; }
+        .f-notes { 
+            max-width: 720px;
+            font-family: 'Playfair Display', serif; font-size: 1.1rem; line-height: 1.6; position: relative; padding-left: 20px; border-left: 2px solid var(--color-olive-dark); }
 
         /* --- YEAR TABS --- */
         .tabs-container {
@@ -138,36 +141,47 @@
             padding: 0;
             margin-bottom: 0;
             max-width: 90%;
-            margin: 0 auto;
             align-items: flex-end;
         }
         .tabs-container::-webkit-scrollbar { display: none; }
 
         .tab-btn {
             background: transparent;
+            border: 1px solid var(--border-ui);
             color: var(--text-primary);
-            padding: 10px 25px;
+            padding: 6px 15px;
             font-family: 'Outfit', sans-serif;
-            font-size: 1rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px; 
             font-weight: 300;
             cursor: pointer;
             opacity: 0.6;
             transition: all 0.2s;
-            white-space: nowrap;
             border-color: transparent;
         }
 
-        .tab-btn:hover { 
-            opacity: 1; 
-        }
+        .tab-btn:hover { opacity: 1; }
         .tab-btn.active {
             opacity: 1;
-            background: var(--bg-page);
-            font-weight: 600;
+            background: var(--bg-featured);
+            color: var(--text-inverted);
+            font-weight: 400;
         }
 
         /* --- MAIN WRAPPER --- */
         .main-content-wrapper { margin: 0 auto 50px auto; max-width: 1600px; padding: 0 5%; }
+
+        /* --- CONTROL WRAPPER --- */
+        .control-wrapper {
+            margin: 0 auto 60px auto;
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
 
         /* --- CONTROL BAR --- */
         .control-bar {
@@ -194,7 +208,9 @@
             cursor: pointer;
             transition: all 0.2s;
         }
-        .btn-filter:hover, .btn-filter.active { background: var(--color-olive-dark); color: var(--color-white); }
+        .btn-filter:hover, .btn-filter.active { 
+            background: var(--color-olive-dark); 
+            color: var(--color-white); }
 
         .counter { font-family: 'Outfit', sans-serif; font-weight: 400; font-size: 1rem; }
 
@@ -202,11 +218,11 @@
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
-            gap: 3rem 1.5rem;
+            gap: 2rem 1.5rem;
             padding-bottom: 100px;
         }
 
-        .card { display: flex; flex-direction: column; background: transparent; }
+        .card { display: flex; flex-direction: column; background: transparent; gap: 12px;}
 
         .card-image-wrapper {
             position: relative; width: 100%; aspect-ratio: 2/3; overflow: hidden;
@@ -214,24 +230,24 @@
             transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             cursor: pointer; 
         }
-        .card:hover .card-image-wrapper { transform: translateY(-5px); box-shadow: 0 20px 30px rgba(0,0,0,0.15); }
+        .card:hover .card-image-wrapper { transform: translateY(-5px); box-shadow: 0 20px 30px rgba(176, 176, 176, 0.15); }
         .card img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
         .info {
-            position: absolute; inset: 0; background: var(--bg-overlay); padding: 1.5rem;
+            position: absolute; inset: 0; background: var(--bg-overlay); padding: 0.3rem;
             display: flex; flex-direction: column; justify-content: center; align-items: center;
             text-align: center; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(3px);
-            color: var(--text-inverted);
+            color: var(--text-primary);
         }
         .card:hover .info { opacity: 1; }
 
         .info-date { font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; color: var(--color-pink); font-weight: bold; }
         .info-notes { font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.95rem; line-height: 1.4; max-height: 80%; overflow-y: auto; }
 
-        .card-details { margin-top: 12px; }
-        .card-title { font-family: 'Outfit', sans-serif; font-size: 0.9rem; line-height: 1.2; font-weight: 500; color: var(--text-primary); margin-bottom: 4px; }
-        .card-meta-row { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--text-dim); font-family: 'Outfit', sans-serif; margin-bottom: 4px; }
-        .card-rating { font-weight: bold; color: var(--color-olive-medium); font-family: 'Outfit', sans-serif; font-size: 0.8rem; }
+        .info-notes-details { margin-top: 12px; }
+        .card-title { font-family: 'Outfit', sans-serif; font-size: 0.9rem; line-height: 1.2; font-display: 500 ; color: var(--text-primary); margin-bottom: 4px; }
+        .card-meta-row { font-family: 'Outfit', sans-serif; font-size: 0.8rem; font-weight: 200; display: flex; justify-content: space-between; align-items: center;  color: var(--text-dim);  margin-bottom: 4px; }
+        .card-rating { font-family: 'Outfit', sans-serif; font-size: 0.8rem; font-weight: 200; color: var(--text-primary);  }
         .card-director { font-size: 0.8rem; color: var(--text-dim); font-style: italic; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; opacity: 0.7; }
 
         /* --- SIDE PANEL --- */
@@ -277,17 +293,17 @@
 
     <header>
         <h1>Chao's Movie List</h1>
-        <a href="analytics.html" class="nav-link">Analytics</a>
+        <a href="analytics.html" class="nav-link" style="float:right; margin-top:-40px;">Analytics</a>
     </header>
 
-    <!-- FEATURED SECTION (RESTORED ABOVE TABS) -->
+    <!-- FEATURED SECTION -->
     <div class="featured-wrapper" id="featured-section" style="display: none;">
-        <div class="label-recent">Most Recently Watch</div>
         <div class="featured-content">
             <div class="featured-poster">
                 <img id="f-img" src="" alt="Latest Movie">
             </div>
             <div class="featured-info">
+                <div class="label-recent">Just Watched On</div>
                 <div class="f-date" id="f-date"></div>
                 <div class="f-title" id="f-title"></div> <div class="f-year" id="f-year"></div>
                 <div class="f-notes" id="f-notes"></div>
@@ -296,8 +312,17 @@
     </div>
 
     <!-- YEAR TABS -->
+    <div class="control-wrapper">
     <div class="tabs-container" id="year-tabs">
         <!-- Injected by JS -->
+    </div>
+    <div class="filter-buttons">
+                <button class="btn-filter" onclick="openPanel('notes')">Notes</button>
+                <button class="btn-filter" onclick="openPanel('type')">Type</button>
+                <button class="btn-filter" onclick="openPanel('decade')">Decade</button>
+                <button class="btn-filter" onclick="openPanel('country')">Country</button>
+                <button class="btn-filter" onclick="openPanel('all')">All Filters</button>
+    </div>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -306,19 +331,10 @@
         <!-- CONTROL BAR -->
         <div class="control-bar">
             <div class="counter" id="count-display">0 Movies Watched</div>
-            <div class="filter-buttons">
-                <button class="btn-filter" onclick="openPanel('notes')">Notes</button>
-                <button class="btn-filter" onclick="openPanel('type')">Type</button>
-                <button class="btn-filter" onclick="openPanel('decade')">Decade</button>
-                <button class="btn-filter" onclick="openPanel('country')">Country</button>
-                <button class="btn-filter" onclick="openPanel('all')">All Filters</button>
-            </div>
         </div>
 
         <!-- GRID -->
         <div class="grid" id="movie-grid"></div>
-        
-        <div id="load-more-container" style="text-align: center; padding: 40px 0;"></div>
     </div>
 
     <!-- SIDE PANEL -->
@@ -388,8 +404,6 @@
         let allMovies = [];
         let filteredMovies = [];
         let currentYearMovies = [];
-        let currentlyDisplayed = 0;
-        const moviesPerPage = 30;
         let activeTabYear = null;
 
         const countryNames = new Intl.DisplayNames(['en'], { type: 'region' });
@@ -399,7 +413,7 @@
             .then(movies => {
                 allMovies = movies.filter(m => m.poster);
                 
-                renderFeatured(allMovies); // Show featured on top
+                renderFeatured(allMovies); 
                 setupTabs(allMovies);
                 populateDynamicFilters();
                 
@@ -426,18 +440,16 @@
 
         function setupTabs(movies) {
             const container = document.getElementById('year-tabs');
-            container.innerHTML = ''; // Clear existing
+            container.innerHTML = ''; 
 
-            // Get all unique years
             const allYears = [...new Set(movies.map(m => m.date_sort.substring(0,4)))].sort().reverse();
             
-            // 1. Filter for years > 2018
+            // 1. Years > 2018
             const recentYears = allYears.filter(y => parseInt(y) > 2018 && y !== "0000");
             
-            // 2. Check if we have older movies
+            // 2. Older?
             const hasOlder = allYears.some(y => parseInt(y) <= 2018 && y !== "0000");
 
-            // Create Recent Year Buttons
             recentYears.forEach(year => {
                 const btn = document.createElement('button');
                 btn.className = 'tab-btn';
@@ -447,12 +459,11 @@
                 container.appendChild(btn);
             });
 
-            // Create "2018 & Before" Button
             if (hasOlder) {
                 const btn = document.createElement('button');
                 btn.className = 'tab-btn';
                 btn.innerText = '2018 & Before';
-                btn.onclick = () => switchTab('earlier'); // We use a special ID 'earlier'
+                btn.onclick = () => switchTab('earlier');
                 btn.dataset.year = 'earlier';
                 container.appendChild(btn);
             }
@@ -460,32 +471,27 @@
 
         function switchTab(tabId) {
             activeTabYear = tabId;
-            
-            // Update Visual Active State
             document.querySelectorAll('.tab-btn').forEach(btn => {
                 if (btn.dataset.year === tabId) btn.classList.add('active');
                 else btn.classList.remove('active');
             });
 
-            // Filter Data Logic
             if (tabId === 'earlier') {
-                // Filter for 2018 and older
                 currentYearMovies = allMovies.filter(m => {
                     const y = parseInt(m.date_sort.substring(0,4));
                     return y <= 2018 && y !== 0;
                 });
             } else {
-                // Standard Year Filter (e.g., "2024")
                 currentYearMovies = allMovies.filter(m => m.date_sort.startsWith(tabId));
             }
 
-            // Reset sorting to newest first when switching tabs
+            // Reset sort to default
             document.querySelector('input[name="sort"][value="date-new"]').checked = true;
             
             applyFilters();
         }
 
-        // --- PANEL & FILTER LOGIC (Standard) ---
+        // --- PANEL & FILTER LOGIC ---
         const backdrop = document.getElementById('backdrop');
         const sidePanel = document.getElementById('side-panel');
         function getScrollbarWidth() { return window.innerWidth - document.documentElement.clientWidth; }
@@ -569,10 +575,12 @@
             let labelText = activeTabYear;
             if (activeTabYear === 'earlier') labelText = "2018 & Before";
 
-            document.getElementById('count-display').innerText = `${filteredMovies.length} movies watched`;
-            document.getElementById('movie-grid').innerHTML = ''; 
-            currentlyDisplayed = 0; 
-            renderMoreMovies(); 
+            document.getElementById('count-display').innerText = `${filteredMovies.length} movies`;
+            
+            // RENDER ALL AT ONCE
+            const grid = document.getElementById('movie-grid');
+            grid.innerHTML = ''; 
+            renderGrid(filteredMovies, grid);
             
             updateButtonState('notes', notesChecked);
             updateButtonState('type', checkedTypes.length > 0);
@@ -593,22 +601,6 @@
             const clean = movie.rating.toString().replace('/5', '');
             const num = parseFloat(clean);
             return isNaN(num) ? 0 : num;
-        }
-
-        function renderMoreMovies() {
-            const grid = document.getElementById('movie-grid');
-            const loadMoreContainer = document.getElementById('load-more-container');
-            const moviesToRender = filteredMovies.slice(currentlyDisplayed, currentlyDisplayed + moviesPerPage);
-            renderGrid(moviesToRender, grid);
-            currentlyDisplayed += moviesToRender.length;
-            loadMoreContainer.innerHTML = '';
-            if (currentlyDisplayed < filteredMovies.length) {
-                const loadMoreBtn = document.createElement('button');
-                loadMoreBtn.innerText = 'Load More';
-                loadMoreBtn.className = 'btn-filter'; 
-                loadMoreBtn.onclick = renderMoreMovies;
-                loadMoreContainer.appendChild(loadMoreBtn);
-            }
         }
 
         function renderGrid(movies, grid) {
