@@ -286,6 +286,109 @@
             .control-bar { flex-direction: column; align-items: flex-start; }
             .grid { grid-template-columns: repeat(2, 1fr); gap: 20px 10px; }
         }
+
+        /* --- CARD MODAL --- */
+        .modal-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.75);
+            z-index: 1000; display: flex; align-items: center; justify-content: center;
+            padding: 20px; opacity: 0; pointer-events: none; transition: opacity 0.25s;
+        }
+        .modal-overlay.open { opacity: 1; pointer-events: all; }
+
+        .card-modal {
+            background: var(--color-gray-dark); color: var(--text-primary);
+            border: 1px solid var(--border-ui); max-width: 660px; width: 100%;
+            max-height: 90vh; overflow-y: auto; position: relative;
+            display: flex; gap: 28px; padding: 36px;
+            transform: translateY(12px); transition: transform 0.25s;
+        }
+        .modal-overlay.open .card-modal { transform: translateY(0); }
+
+        .modal-close-btn {
+            position: absolute; top: 14px; right: 18px; background: none; border: none;
+            font-size: 1.5rem; cursor: pointer; color: var(--text-primary);
+            opacity: 0.5; line-height: 1; padding: 0; transition: opacity 0.15s;
+        }
+        .modal-close-btn:hover { opacity: 1; }
+
+        .modal-poster { flex-shrink: 0; width: 110px; }
+        .modal-poster img { width: 100%; height: auto; display: block; box-shadow: var(--shadow-retro); }
+
+        .modal-body { flex: 1; min-width: 0; }
+
+        .modal-watch-date {
+            font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase;
+            color: var(--color-olive-light); margin-bottom: 8px;
+        }
+        .modal-title {
+            font-family: 'Playfair Display', serif; font-size: 1.5rem; font-style: italic;
+            line-height: 1.2; margin-bottom: 6px;
+        }
+        .modal-sub {
+            font-size: 0.85rem; color: var(--color-gray-lighter);
+            margin-bottom: 20px; display: flex; gap: 10px;
+        }
+        .modal-notes-view {
+            font-family: 'Playfair Display', serif; font-style: italic;
+            font-size: 0.95rem; line-height: 1.65;
+            border-left: 2px solid var(--color-olive-dark);
+            padding-left: 14px; margin-bottom: 18px;
+        }
+        .modal-notes-view.empty { opacity: 0.35; }
+
+        .btn-edit-note {
+            background: transparent; border: 1px solid var(--border-ui);
+            color: var(--text-primary); padding: 5px 14px;
+            font-family: 'Outfit', sans-serif; font-size: 0.75rem;
+            text-transform: uppercase; letter-spacing: 1px;
+            cursor: pointer; opacity: 0.65; transition: 0.2s;
+        }
+        .btn-edit-note:hover { opacity: 1; background: var(--color-olive-dark); }
+
+        .modal-edit-area { display: none; }
+        .modal-edit-area textarea {
+            width: 100%; background: var(--color-gray-medium);
+            border: 1px solid var(--color-olive-dark); color: var(--text-primary);
+            padding: 10px 12px; font-family: 'Playfair Display', serif;
+            font-style: italic; font-size: 0.95rem; line-height: 1.6;
+            resize: vertical; min-height: 90px; box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        .modal-edit-area textarea:focus { outline: none; border-color: var(--color-olive-light); }
+
+        .edit-rating-row {
+            display: flex; align-items: center; gap: 10px; margin-bottom: 14px;
+            font-size: 0.8rem; color: var(--color-gray-lighter);
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .edit-rating-row input {
+            width: 72px; background: var(--color-gray-medium);
+            border: 1px solid var(--color-olive-dark); color: var(--text-primary);
+            padding: 5px 8px; font-family: 'Outfit', sans-serif; font-size: 0.9rem;
+        }
+        .edit-rating-row input:focus { outline: none; border-color: var(--color-olive-light); }
+
+        .edit-action-row { display: flex; gap: 8px; margin-bottom: 10px; }
+        .btn-complete {
+            background: var(--color-olive-dark); border: 1px solid var(--color-olive-dark);
+            color: var(--color-white); padding: 7px 18px;
+            font-family: 'Outfit', sans-serif; font-size: 0.75rem;
+            text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: 0.2s;
+        }
+        .btn-complete:hover { opacity: 0.8; }
+        .btn-cancel-edit {
+            background: transparent; border: 1px solid #444; color: var(--color-gray-lighter);
+            padding: 7px 18px; font-family: 'Outfit', sans-serif; font-size: 0.75rem;
+            text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: 0.2s;
+        }
+        .btn-cancel-edit:hover { border-color: #888; color: var(--text-primary); }
+
+        .modal-status { font-size: 0.8rem; color: var(--color-olive-light); min-height: 1.2em; }
+
+        @media (max-width: 560px) {
+            .card-modal { flex-direction: column; padding: 24px 20px; gap: 16px; }
+            .modal-poster { width: 80px; }
+        }
     </style>
 </head>
 <body>
@@ -390,6 +493,35 @@
         <div class="panel-footer">
             <button class="btn-action" onclick="clearAllFilters()">Clear All</button>
             <button class="btn-action primary" onclick="closePanel()">Done</button>
+        </div>
+    </div>
+
+    <!-- CARD MODAL -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
+        <div class="card-modal" onclick="event.stopPropagation()">
+            <button class="modal-close-btn" onclick="closeModal()">&times;</button>
+            <div class="modal-poster">
+                <img id="modal-img" src="" alt="">
+            </div>
+            <div class="modal-body">
+                <div class="modal-watch-date" id="modal-watch-date"></div>
+                <div class="modal-title" id="modal-title"></div>
+                <div class="modal-sub" id="modal-sub"></div>
+                <div class="modal-notes-view" id="modal-notes-view"></div>
+                <div class="modal-edit-area" id="modal-edit-area">
+                    <textarea id="edit-notes-input" rows="4" placeholder="Add your notes…"></textarea>
+                    <div class="edit-rating-row">
+                        <span>Rating (0–10)</span>
+                        <input type="number" id="edit-rating-input" step="0.5" min="0" max="10">
+                    </div>
+                    <div class="edit-action-row">
+                        <button class="btn-complete" onclick="saveEdit()">Complete</button>
+                        <button class="btn-cancel-edit" onclick="cancelEdit()">Cancel</button>
+                    </div>
+                    <div class="modal-status" id="modal-status"></div>
+                </div>
+                <button class="btn-edit-note" id="btn-edit-note" onclick="enterEditMode()" style="display:none">Edit</button>
+            </div>
         </div>
     </div>
 
@@ -627,9 +759,146 @@
                         <div class="card-director">${directorDisplay}</div>
                     </div>
                 `;
+                el.querySelector('.card-image-wrapper').addEventListener('click', () => openModal(movie));
                 grid.appendChild(el);
             });
         }
+
+        // --- MODAL ---
+        const GITHUB_REPO = 'cm-nai-rien/MovieSite';
+        const MOVIES_FILE = 'movies.json';
+        const adminToken = sessionStorage.getItem('adminToken');
+        let currentModalMovie = null;
+
+        function openModal(movie) {
+            currentModalMovie = movie;
+            const notes = (!movie.review || movie.review === 'nan') ? '' : movie.review;
+            const ratingNum = getRating(movie);
+            const ratingDisplay = ratingNum > 0 ? `★ ${movie.rating}` : 'Unrated';
+            const yearDisplay = (movie.year && movie.year !== 'Unknown') ? movie.year : '';
+            const directorDisplay = movie.director ? ` · ${movie.director}` : '';
+
+            document.getElementById('modal-img').src = movie.poster;
+            document.getElementById('modal-img').alt = movie.title;
+            document.getElementById('modal-watch-date').innerText = movie.date_display;
+            document.getElementById('modal-title').innerText = movie.title;
+            document.getElementById('modal-sub').innerText = [yearDisplay, ratingDisplay].filter(Boolean).join(' · ') + directorDisplay;
+
+            const notesEl = document.getElementById('modal-notes-view');
+            notesEl.innerText = notes || 'No notes added.';
+            notesEl.classList.toggle('empty', !notes);
+
+            document.getElementById('modal-edit-area').style.display = 'none';
+            document.getElementById('modal-notes-view').style.display = 'block';
+            document.getElementById('modal-status').innerText = '';
+            document.getElementById('btn-edit-note').style.display = adminToken ? 'inline-block' : 'none';
+
+            document.getElementById('modal-overlay').classList.add('open');
+            document.body.classList.add('panel-open');
+        }
+
+        function closeModal() {
+            document.getElementById('modal-overlay').classList.remove('open');
+            document.body.classList.remove('panel-open');
+            currentModalMovie = null;
+        }
+
+        function enterEditMode() {
+            const notes = (!currentModalMovie.review || currentModalMovie.review === 'nan') ? '' : currentModalMovie.review;
+            document.getElementById('edit-notes-input').value = notes;
+            document.getElementById('edit-rating-input').value = getRating(currentModalMovie) || '';
+            document.getElementById('modal-notes-view').style.display = 'none';
+            document.getElementById('btn-edit-note').style.display = 'none';
+            document.getElementById('modal-edit-area').style.display = 'block';
+            document.getElementById('modal-status').innerText = '';
+            document.getElementById('edit-notes-input').focus();
+        }
+
+        function cancelEdit() {
+            document.getElementById('modal-edit-area').style.display = 'none';
+            document.getElementById('modal-notes-view').style.display = 'block';
+            document.getElementById('btn-edit-note').style.display = adminToken ? 'inline-block' : 'none';
+        }
+
+        async function saveEdit() {
+            const newNotes = document.getElementById('edit-notes-input').value.trim();
+            const newRating = document.getElementById('edit-rating-input').value;
+            const statusEl = document.getElementById('modal-status');
+
+            statusEl.innerText = 'Saving…';
+            document.querySelector('.btn-complete').disabled = true;
+
+            try {
+                const getRes = await fetch(
+                    `https://api.github.com/repos/${GITHUB_REPO}/contents/${MOVIES_FILE}`,
+                    { headers: { Authorization: `token ${adminToken}` } }
+                );
+                if (!getRes.ok) throw new Error(`GitHub GET failed: ${getRes.status}`);
+                const fileData = await getRes.json();
+                const _b64 = fileData.content.replace(/\n/g, '');
+                const _bytes = Uint8Array.from(atob(_b64), c => c.charCodeAt(0));
+                const movies = JSON.parse(new TextDecoder('utf-8').decode(_bytes));
+
+                const idx = movies.findIndex(m =>
+                    m.title === currentModalMovie.title && m.date_sort === currentModalMovie.date_sort
+                );
+                if (idx !== -1) {
+                    movies[idx].review = newNotes;
+                    movies[idx].rating = newRating;
+                }
+
+                const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(movies, null, 4))));
+                const putRes = await fetch(
+                    `https://api.github.com/repos/${GITHUB_REPO}/contents/${MOVIES_FILE}`,
+                    {
+                        method: 'PUT',
+                        headers: { Authorization: `token ${adminToken}`, 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            message: `Edit: ${currentModalMovie.title} notes`,
+                            content: newContent,
+                            sha: fileData.sha
+                        })
+                    }
+                );
+                if (!putRes.ok) {
+                    const err = await putRes.json();
+                    throw new Error(err.message || `GitHub PUT failed: ${putRes.status}`);
+                }
+
+                // Update local data so UI reflects immediately
+                currentModalMovie.review = newNotes;
+                currentModalMovie.rating = newRating;
+                const localIdx = allMovies.findIndex(m =>
+                    m.title === currentModalMovie.title && m.date_sort === currentModalMovie.date_sort
+                );
+                if (localIdx !== -1) {
+                    allMovies[localIdx].review = newNotes;
+                    allMovies[localIdx].rating = newRating;
+                }
+
+                // Refresh notes view
+                const notesEl = document.getElementById('modal-notes-view');
+                notesEl.innerText = newNotes || 'No notes added.';
+                notesEl.classList.toggle('empty', !newNotes);
+
+                statusEl.innerText = '✓ Saved';
+                setTimeout(() => {
+                    cancelEdit();
+                    statusEl.innerText = '';
+                }, 800);
+
+            } catch (e) {
+                statusEl.innerText = `Error: ${e.message}`;
+            } finally {
+                document.querySelector('.btn-complete').disabled = false;
+            }
+        }
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && document.getElementById('modal-overlay').classList.contains('open')) {
+                closeModal();
+            }
+        });
     </script>
 </body>
 </html>
