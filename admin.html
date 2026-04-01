@@ -12,6 +12,8 @@
             --text: #f0f0f0;
             --accent: #C6BF65;
             --input-bg: #2a2a2a;
+            --color-red: #ff4757;
+            --color-green: #2ed573;
         }
 
         body {
@@ -32,7 +34,7 @@
 
         /* --- ADMIN PANEL --- */
         #admin-panel {
-            display: none; /* Hidden by default */
+            display: none;
             width: 600px;
             max-width: 90%;
             background: #222;
@@ -57,7 +59,7 @@
         }
 
         .form-group { margin-bottom: 20px; }
-        
+
         label {
             display: block;
             margin-bottom: 8px;
@@ -76,6 +78,7 @@
             border-radius: 8px;
             font-family: inherit;
             font-size: 1rem;
+            box-sizing: border-box;
         }
 
         input:focus, textarea:focus {
@@ -98,6 +101,7 @@
         }
 
         button:hover { opacity: 0.9; }
+        button:disabled { opacity: 0.5; cursor: not-allowed; }
 
         /* PREVIEW SECTION */
         .preview {
@@ -112,23 +116,128 @@
         .preview-title { font-weight: bold; font-size: 1.1rem; }
         .preview-meta { font-size: 0.9rem; color: #888; }
 
-        /* CODE BOX */
-        .code-box {
+        /* STATUS MESSAGE */
+        #status-msg {
             margin-top: 20px;
-            background: #111;
-            padding: 15px;
-            font-family: monospace;
-            color: #0f0;
+            padding: 12px 16px;
             border-radius: 8px;
-            word-break: break-all;
-            font-size: 0.8rem;
+            font-size: 0.95rem;
             display: none;
-            cursor: pointer;
-            border: 1px dashed #444;
+            text-align: center;
         }
-        .code-box:hover { background: #000; border-color: #0f0; }
-        .copy-hint { text-align: center; font-size: 0.8rem; color: #666; margin-top: 5px; }
+        #status-msg.success { background: rgba(46, 213, 115, 0.15); color: var(--color-green); border: 1px solid var(--color-green); }
+        #status-msg.error   { background: rgba(255, 71, 87, 0.15);  color: var(--color-red);   border: 1px solid var(--color-red); }
+        #status-msg.loading { background: rgba(198, 191, 101, 0.15); color: var(--accent); border: 1px solid var(--accent); }
 
+        .token-hint {
+            font-size: 0.75rem;
+            color: #555;
+            margin-top: 6px;
+            text-align: left;
+            width: 260px;
+        }
+
+        /* SEARCH DROPDOWN */
+        .search-wrapper {
+            position: relative;
+        }
+
+        #search-input {
+            width: 100%;
+            padding: 12px;
+            padding-right: 36px;
+            background: var(--input-bg);
+            border: 1px solid #333;
+            color: white;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        #search-input:focus { outline: none; border-color: var(--accent); }
+
+        .search-spinner {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            border: 2px solid #444;
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            display: none;
+        }
+        @keyframes spin { to { transform: translateY(-50%) rotate(360deg); } }
+
+        #search-dropdown {
+            position: absolute;
+            top: calc(100% + 4px);
+            left: 0;
+            right: 0;
+            background: #1e1e1e;
+            border: 1px solid #444;
+            border-radius: 10px;
+            max-height: 340px;
+            overflow-y: auto;
+            z-index: 100;
+            display: none;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+
+        .search-result-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 14px;
+            cursor: pointer;
+            transition: background 0.15s;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .search-result-item:last-child { border-bottom: none; }
+        .search-result-item:hover, .search-result-item.highlighted { background: #2a2a2a; }
+
+        .result-poster {
+            width: 36px;
+            height: 54px;
+            object-fit: cover;
+            border-radius: 4px;
+            background: #333;
+            flex-shrink: 0;
+        }
+        .result-poster-placeholder {
+            width: 36px;
+            height: 54px;
+            border-radius: 4px;
+            background: #333;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .result-info { flex: 1; min-width: 0; }
+        .result-title { font-weight: 600; font-size: 0.95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .result-meta { font-size: 0.8rem; color: #888; margin-top: 2px; }
+        .result-badge {
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+            flex-shrink: 0;
+        }
+        .badge-movie { background: rgba(198,191,101,0.2); color: var(--accent); }
+        .badge-tv    { background: rgba(46,213,115,0.15); color: var(--color-green); }
+
+        #search-no-results {
+            padding: 16px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
@@ -136,30 +245,36 @@
     <!-- 1. LOGIN SCREEN -->
     <div id="login-screen">
         <h1>Chaos Movie Portal</h1>
-    <div class="access-btn-group">
-        <input type="password" id="password-input" placeholder="Enter Secret Key" style="text-align: center; width: 200px;">
-        <button onclick="checkAccess()" style="width: 200px; margin-top: 20px;">Enter</button>
-        <p id="error-msg" style="color: var(--color-red); display: none; margin-top: 10px;">Access Denied</p>
-    </div>
+        <div class="access-btn-group">
+            <input type="password" id="password-input" placeholder="Secret Key" style="text-align: center; width: 260px;">
+            <input type="password" id="token-input" placeholder="GitHub Token" style="text-align: center; width: 260px; margin-top: 8px;">
+            <p class="token-hint">Fine-grained PAT with Contents: Read &amp; Write on MovieSite repo</p>
+            <button onclick="checkAccess()" style="width: 200px; margin-top: 16px;">Enter</button>
+            <p id="error-msg" style="color: var(--color-red); display: none; margin-top: 10px;">Access Denied</p>
+        </div>
     </div>
 
     <!-- 2. ADMIN PANEL -->
     <div id="admin-panel">
         <h1>Add New Movie</h1>
-        
+
         <div class="form-group">
-            <label>TMDB Link (Movie or TV) *</label>
-            <input type="text" id="tmdb-link" placeholder="https://www.themoviedb.org/movie/..." onchange="fetchMetadata()" required>
+            <label>Movie / TV Show *</label>
+            <div class="search-wrapper">
+                <input type="text" id="search-input" placeholder="Search by title…" autocomplete="off" oninput="onSearchInput()">
+                <div class="search-spinner" id="search-spinner"></div>
+                <div id="search-dropdown"></div>
+            </div>
         </div>
 
         <div class="form-group">
-            <label>Watched Date*</label>
+            <label>Watched Date *</label>
             <input type="date" id="watch-date" required>
         </div>
 
         <div class="form-group">
-            <label>Rating (0-10)*</label>
-            <input type="number" id="rating" step="0.5" max="10" value="5" required>
+            <label>Rating (0–10) *</label>
+            <input type="number" id="rating" step="0.5" min="0" max="10" value="5" required>
         </div>
 
         <div class="form-group">
@@ -173,104 +288,298 @@
             <div class="preview-info">
                 <div id="p-title" class="preview-title"></div>
                 <div class="preview-meta">
-                    <span id="p-year"></span> • <span id="p-country"></span>
+                    <span id="p-year"></span> • <span id="p-country"></span> • <span id="p-type"></span>
                 </div>
             </div>
         </div>
 
-        <button onclick="generateCSV()" id="gen-btn" style="display:none;">Generate CSV Data</button>
+        <button onclick="addMovieToSite()" id="add-btn" style="display:none;">Add to Movie List</button>
+        <a href="index.html" style="display:block; text-align:center; margin-top:12px; padding:12px; background:transparent; border:1px solid #444; border-radius:8px; color:#aaa; font-size:0.85rem; text-decoration:none; letter-spacing:1px; text-transform:uppercase; transition:0.2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='#444';this.style.color='#aaa'">← Back to Movie List</a>
 
-        <div id="result-box" class="code-box" onclick="copyToClipboard()">
-            <!-- Result goes here -->
-        </div>
-        <div class="copy-hint" id="copy-hint" style="display:none;">Click box to copy to clipboard</div>
+        <div id="status-msg"></div>
     </div>
 
     <script>
-        // --- CONFIGURATION ---
-        const SECRET_KEY = "chaos"; // <--- CHANGE THIS TO YOUR PASSWORD
-        const API_KEY = 'd8a1d72438cc3042bcfb451bd4ef1a07'; // <--- PASTE YOUR TMDB API KEY HERE
+        const SECRET_KEY = "chaos";
+        const API_KEY = 'd8a1d72438cc3042bcfb451bd4ef1a07';
+        const GITHUB_REPO = 'cm-nai-rien/MovieSite';
+        const MOVIES_FILE = 'movies.json';
+
+        let githubToken = '';
+        let fetchedData = {};
+        let searchTimer = null;
+        let highlightedIndex = -1;
+        let currentResults = [];
 
         // 1. AUTHENTICATION
         function checkAccess() {
-            const input = document.getElementById('password-input').value;
-            if(input === SECRET_KEY) {
+            const pwd = document.getElementById('password-input').value;
+            const tok = document.getElementById('token-input').value.trim();
+            if (pwd === SECRET_KEY && tok) {
+                githubToken = tok;
                 document.getElementById('login-screen').style.display = 'none';
                 document.getElementById('admin-panel').style.display = 'block';
-                
-                // Set default date to today
                 document.getElementById('watch-date').valueAsDate = new Date();
             } else {
                 document.getElementById('error-msg').style.display = 'block';
+                document.getElementById('error-msg').innerText = !tok ? 'GitHub token required' : 'Access Denied';
             }
         }
 
-        // 2. FETCH METADATA
-        let fetchedData = {};
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Enter' && document.getElementById('login-screen').style.display !== 'none') {
+                checkAccess();
+            }
+        });
 
-        async function fetchMetadata() {
-            const link = document.getElementById('tmdb-link').value;
-            const match = link.match(/themoviedb\.org\/(movie|tv)\/(\d+)/);
+        // 2. SEARCH
+        function onSearchInput() {
+            clearTimeout(searchTimer);
+            const q = document.getElementById('search-input').value.trim();
+            if (q.length < 2) { closeDropdown(); return; }
+            searchTimer = setTimeout(() => searchTMDB(q), 350);
+        }
 
-            if (match && API_KEY) {
-                const type = match[1];
-                const id = match[2];
-                const url = `https://api.themoviedb.org/3/${type}/${id}?api_key=${API_KEY}`;
-
-                try {
-                    const response = await fetch(url);
-                    const data = await response.json();
-
-                    // Save for generation
-                    fetchedData.title = data.title || data.name;
-                    fetchedData.year = (data.release_date || data.first_air_date || "").substring(0,4);
-                    fetchedData.poster = `https://image.tmdb.org/t/p/w200${data.poster_path}`;
-                    fetchedData.link = link;
-
-                    // Show Preview
-                    document.getElementById('p-poster').src = fetchedData.poster;
-                    document.getElementById('p-title').innerText = fetchedData.title;
-                    document.getElementById('p-year').innerText = fetchedData.year;
-                    document.getElementById('preview-area').style.display = 'flex';
-                    document.getElementById('gen-btn').style.display = 'block';
-
-                } catch (e) {
-                    console.error(e);
-                    alert("Could not fetch data. Check API Key or Link.");
-                }
+        async function searchTMDB(query) {
+            const spinner = document.getElementById('search-spinner');
+            spinner.style.display = 'block';
+            try {
+                const res = await fetch(
+                    `https://api.themoviedb.org/3/search/multi?query=${encodeURIComponent(query)}&api_key=${API_KEY}&include_adult=false`
+                );
+                const data = await res.json();
+                currentResults = (data.results || []).filter(r => r.media_type === 'movie' || r.media_type === 'tv').slice(0, 8);
+                renderDropdown(currentResults);
+            } catch (e) {
+                closeDropdown();
+            } finally {
+                spinner.style.display = 'none';
             }
         }
 
-        // 3. GENERATE CSV STRING
-        function generateCSV() {
-            // Data from inputs
-            const dateVal = document.getElementById('watch-date').value;
-            // Convert 2025-11-21 to November 21, 2025
-            const dateObj = new Date(dateVal);
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            const formattedDate = dateObj.toLocaleDateString('en-US', options);
+        function renderDropdown(results) {
+            const dropdown = document.getElementById('search-dropdown');
+            highlightedIndex = -1;
 
-            const rating = document.getElementById('rating').value;
-            const notes = document.getElementById('notes').value.replace(/"/g, '""'); // Escape quotes
-            
-            // CSV Order based on your python script logic:
-            // Name, Empty, Date, Director, Notes, Rate, Year, TMDB Link
-            // Note: We put Title in col 1, leave col 2 empty as per your script fix
-            
-            const csvLine = `"${fetchedData.title}",,"${formattedDate}",,"${notes}",${rating},${fetchedData.year},${fetchedData.link}`;
+            if (results.length === 0) {
+                dropdown.innerHTML = '<div id="search-no-results">No results found</div>';
+                dropdown.style.display = 'block';
+                return;
+            }
 
-            const box = document.getElementById('result-box');
-            box.innerText = csvLine;
-            box.style.display = 'block';
-            document.getElementById('copy-hint').style.display = 'block';
+            dropdown.innerHTML = results.map((r, i) => {
+                const title = r.title || r.name || 'Untitled';
+                const year  = (r.release_date || r.first_air_date || '').substring(0, 4);
+                const type  = r.media_type;
+                const poster = r.poster_path
+                    ? `<img class="result-poster" src="https://image.tmdb.org/t/p/w92${r.poster_path}" alt="">`
+                    : `<div class="result-poster-placeholder">🎬</div>`;
+                return `
+                <div class="search-result-item" data-index="${i}" onmousedown="selectResult(${i})">
+                    ${poster}
+                    <div class="result-info">
+                        <div class="result-title">${escapeHtml(title)}</div>
+                        <div class="result-meta">${year || '—'}</div>
+                    </div>
+                    <span class="result-badge ${type === 'tv' ? 'badge-tv' : 'badge-movie'}">${type === 'tv' ? 'TV' : 'Film'}</span>
+                </div>`;
+            }).join('');
+            dropdown.style.display = 'block';
         }
 
-        // 4. COPY
-        function copyToClipboard() {
-            const text = document.getElementById('result-box').innerText;
-            navigator.clipboard.writeText(text).then(() => {
-                alert("Copied! Now paste it into the bottom of chaosmovielist.csv");
+        // Keyboard navigation in dropdown
+        document.addEventListener('keydown', e => {
+            const dropdown = document.getElementById('search-dropdown');
+            if (dropdown.style.display === 'none' || currentResults.length === 0) return;
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                highlightedIndex = Math.min(highlightedIndex + 1, currentResults.length - 1);
+                updateHighlight();
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                highlightedIndex = Math.max(highlightedIndex - 1, 0);
+                updateHighlight();
+            } else if (e.key === 'Enter' && highlightedIndex >= 0) {
+                e.preventDefault();
+                selectResult(highlightedIndex);
+            } else if (e.key === 'Escape') {
+                closeDropdown();
+            }
+        });
+
+        function updateHighlight() {
+            document.querySelectorAll('.search-result-item').forEach((el, i) => {
+                el.classList.toggle('highlighted', i === highlightedIndex);
             });
+        }
+
+        function closeDropdown() {
+            document.getElementById('search-dropdown').style.display = 'none';
+            currentResults = [];
+            highlightedIndex = -1;
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', e => {
+            if (!e.target.closest('.search-wrapper')) closeDropdown();
+        });
+
+        async function selectResult(index) {
+            const result = currentResults[index];
+            if (!result) return;
+
+            closeDropdown();
+            document.getElementById('search-input').value = result.title || result.name;
+            document.getElementById('preview-area').style.display = 'none';
+            document.getElementById('add-btn').style.display = 'none';
+
+            // Fetch full details for country info
+            const type = result.media_type;
+            const url  = `https://api.themoviedb.org/3/${type}/${result.id}?api_key=${API_KEY}`;
+            try {
+                const res  = await fetch(url);
+                const data = await res.json();
+
+                let country = 'Unknown';
+                if (data.origin_country && data.origin_country.length > 0) {
+                    country = data.origin_country[0];
+                } else if (data.production_countries && data.production_countries.length > 0) {
+                    country = data.production_countries[0].iso_3166_1;
+                } else if (data.original_language) {
+                    country = data.original_language.toUpperCase();
+                }
+
+                fetchedData = {
+                    title:   data.title || data.name,
+                    year:    (data.release_date || data.first_air_date || '').substring(0, 4),
+                    poster:  `https://image.tmdb.org/t/p/w500${data.poster_path}`,
+                    type:    type,
+                    country: country
+                };
+
+                document.getElementById('p-poster').src = `https://image.tmdb.org/t/p/w200${data.poster_path}`;
+                document.getElementById('p-title').innerText = fetchedData.title;
+                document.getElementById('p-year').innerText = fetchedData.year;
+                document.getElementById('p-country').innerText = country;
+                document.getElementById('p-type').innerText = type === 'tv' ? 'TV' : 'Movie';
+                document.getElementById('preview-area').style.display = 'flex';
+                document.getElementById('add-btn').style.display = 'block';
+                setStatus('');
+            } catch (e) {
+                setStatus('Could not fetch details. Try again.', 'error');
+            }
+        }
+
+        function escapeHtml(str) {
+            return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+        }
+
+        // 3. ADD MOVIE TO SITE via GitHub API
+        async function addMovieToSite() {
+            if (!fetchedData.title) {
+                setStatus('Please enter a valid TMDB link first.', 'error');
+                return;
+            }
+
+            const dateVal  = document.getElementById('watch-date').value;
+            const rating   = document.getElementById('rating').value;
+            const notes    = document.getElementById('notes').value.trim();
+
+            // Parse date safely (avoid timezone shift)
+            const [yyyy, mm, dd] = dateVal.split('-').map(Number);
+            const dateObj = new Date(yyyy, mm - 1, dd);
+            const dateDisplay = dateObj.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+            const dateSort = dateVal; // already YYYY-MM-DD
+
+            const newEntry = {
+                title:        fetchedData.title,
+                date_display: dateDisplay,
+                date_sort:    dateSort,
+                review:       notes,
+                rating:       rating,
+                poster:       fetchedData.poster,
+                type:         fetchedData.type,
+                year:         fetchedData.year,
+                country:      fetchedData.country
+            };
+
+            const btn = document.getElementById('add-btn');
+            btn.disabled = true;
+            setStatus('Saving to GitHub…', 'loading');
+
+            try {
+                // Fetch current movies.json from GitHub
+                const getRes = await fetch(
+                    `https://api.github.com/repos/${GITHUB_REPO}/contents/${MOVIES_FILE}`,
+                    { headers: { Authorization: `token ${githubToken}` } }
+                );
+                if (!getRes.ok) throw new Error(`GitHub GET failed: ${getRes.status}`);
+                const fileData = await getRes.json();
+
+                const currentMovies = JSON.parse(atob(fileData.content.replace(/\n/g, '')));
+
+                // Check for duplicate
+                const isDuplicate = currentMovies.some(
+                    m => m.title === newEntry.title && m.date_sort === newEntry.date_sort
+                );
+                if (isDuplicate) {
+                    setStatus(`"${newEntry.title}" on ${dateDisplay} already exists.`, 'error');
+                    btn.disabled = false;
+                    return;
+                }
+
+                // Prepend new entry (newest first in file)
+                const updatedMovies = [newEntry, ...currentMovies];
+                const newContent = btoa(unescape(encodeURIComponent(
+                    JSON.stringify(updatedMovies, null, 4)
+                )));
+
+                // Commit back to GitHub
+                const putRes = await fetch(
+                    `https://api.github.com/repos/${GITHUB_REPO}/contents/${MOVIES_FILE}`,
+                    {
+                        method: 'PUT',
+                        headers: {
+                            Authorization: `token ${githubToken}`,
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            message: `Add: ${newEntry.title} (${dateSort})`,
+                            content: newContent,
+                            sha:     fileData.sha
+                        })
+                    }
+                );
+                if (!putRes.ok) {
+                    const err = await putRes.json();
+                    throw new Error(err.message || `GitHub PUT failed: ${putRes.status}`);
+                }
+
+                setStatus(`✓ "${newEntry.title}" added! The live site will update in ~1 minute.`, 'success');
+                resetForm();
+
+            } catch (e) {
+                setStatus(`Error: ${e.message}`, 'error');
+            } finally {
+                btn.disabled = false;
+            }
+        }
+
+        function resetForm() {
+            document.getElementById('search-input').value = '';
+            document.getElementById('notes').value = '';
+            document.getElementById('rating').value = '5';
+            document.getElementById('watch-date').valueAsDate = new Date();
+            document.getElementById('preview-area').style.display = 'none';
+            document.getElementById('add-btn').style.display = 'none';
+            fetchedData = {};
+        }
+
+        function setStatus(msg, type) {
+            const el = document.getElementById('status-msg');
+            el.className = type || '';
+            el.innerText = msg;
+            el.style.display = msg ? 'block' : 'none';
         }
     </script>
 </body>
