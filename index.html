@@ -84,9 +84,18 @@
 
         header {
             text-align: left;
-            padding: 2rem 5% 3rem; 
+            padding: 2rem 0 3rem;
+            width: 90%;
             max-width: 1600px;
             margin: 0 auto;
+        }
+
+        h1 a {
+            color: inherit;
+            text-decoration: none;
+        }
+        h1 a:hover {
+            opacity: 0.75;
         }
 
         h1 {
@@ -128,8 +137,8 @@
             visibility: visible;
         }
         .f-date { font-family: 'Outfit', sans-serif; font-size: 1rem; margin-bottom: 20px; display: inline-block; padding: 2px 10px;  }
-        .f-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; line-height: 1.1; margin: 0 0 10px 0; font-style: italic; }
-        .f-year { font-family: 'Outfit', sans-serif; font-size: 1rem; margin-bottom: 10px; display: inline-block; padding: 2px 10px; }
+        .f-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; line-height: 1.1; margin: 0 0 8px 0; font-style: italic; }
+        .f-rating { font-family: 'Outfit', sans-serif; font-size: 1rem; margin-bottom: 14px; display: inline-block; opacity: 0.8; }
         .f-notes { 
             max-width: 720px;
             font-family: 'Playfair Display', serif; font-size: 1.1rem; line-height: 1.6; position: relative; padding-left: 20px; border-left: 2px solid var(--color-olive-dark); }
@@ -170,16 +179,15 @@
         }
 
         /* --- MAIN WRAPPER --- */
-        .main-content-wrapper { margin: 0 auto 50px auto; max-width: 1600px; padding: 0 5%; }
+        .main-content-wrapper { margin: 0 auto 50px auto; width: 90%; max-width: 1600px; }
 
         /* --- CONTROL WRAPPER --- */
         .control-wrapper {
-            margin: 0 auto 60px auto;
             display: flex;
             justify-content: space-between;
             width: 90%;
-            margin-top: 30px;
-            margin-bottom: 30px;
+            max-width: 1600px;
+            margin: 30px auto;
             flex-wrap: wrap;
         }
 
@@ -194,7 +202,41 @@
             gap: 20px;
         }
 
-        .filter-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+        .filter-buttons { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+
+        .btn-search-toggle {
+            background: transparent; border: 1px solid var(--border-ui);
+            color: var(--text-primary); padding: 6px 10px;
+            cursor: pointer; transition: all 0.2s; display: flex; align-items: center;
+        }
+        .btn-search-toggle:hover, .btn-search-toggle.active {
+            background: var(--color-olive-dark); color: var(--color-white);
+        }
+        .btn-search-toggle svg { display: block; }
+
+        .search-row {
+            width: 90%; max-width: 1600px; margin: 0 auto 10px auto;
+            animation: searchSlide 0.18s ease;
+        }
+        @keyframes searchSlide {
+            from { opacity: 0; transform: translateY(-6px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .search-bar-wrapper { position: relative; max-width: 360px; }
+        .search-bar-wrapper input {
+            width: 100%; padding: 7px 34px 7px 12px;
+            background: transparent; border: 1px solid var(--border-ui);
+            color: var(--text-primary); font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem; box-sizing: border-box; letter-spacing: 0.3px;
+        }
+        .search-bar-wrapper input::placeholder { color: var(--color-gray-lighter); }
+        .search-bar-wrapper input:focus { outline: none; border-color: var(--color-olive-light); }
+        .search-clear {
+            position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+            background: none; border: none; color: var(--color-gray-lighter);
+            font-size: 1.1rem; cursor: pointer; padding: 0; line-height: 1; transition: 0.15s;
+        }
+        .search-clear:hover { color: var(--text-primary); }
 
         .btn-filter {
             background: transparent;
@@ -235,8 +277,8 @@
 
         .info {
             position: absolute; inset: 0; background: var(--bg-overlay); padding: 0.3rem;
-            display: flex; flex-direction: column; justify-content: center; align-items: center;
-            text-align: center; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(3px);
+            display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;
+            text-align: left; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(3px);
             color: var(--text-primary);
         }
         .card:hover .info { opacity: 1; }
@@ -249,6 +291,7 @@
         .card-meta-row { font-family: 'Outfit', sans-serif; font-size: 0.8rem; font-weight: 200; display: flex; justify-content: space-between; align-items: center;  color: var(--text-dim);  margin-bottom: 4px; }
         .card-rating { font-family: 'Outfit', sans-serif; font-size: 0.8rem; font-weight: 200; color: var(--text-primary);  }
         .card-director { font-size: 0.8rem; color: var(--text-dim); font-style: italic; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; opacity: 0.7; }
+        .card-watched { font-family: 'Outfit', sans-serif; font-size: 0.75rem; font-style: italic; font-weight: 200; color: var(--text-primary); text-align: right; opacity: 0.5; margin-top: 2px; }
 
         /* --- SIDE PANEL --- */
         .panel-backdrop { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 998; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
@@ -395,7 +438,7 @@
 
 
     <header>
-        <h1>Chao's Movie List</h1>
+        <h1><a href="index.html">Chao's Movie List</a></h1>
         <a href="analytics.html" class="nav-link" style="float:right; margin-top:-40px;">Analytics</a>
     </header>
 
@@ -408,7 +451,8 @@
             <div class="featured-info">
                 <div class="label-recent">Just Watched On</div>
                 <div class="f-date" id="f-date"></div>
-                <div class="f-title" id="f-title"></div> <div class="f-year" id="f-year"></div>
+                <div class="f-title" id="f-title"></div>
+                <div class="f-rating" id="f-rating"></div>
                 <div class="f-notes" id="f-notes"></div>
             </div>
         </div>
@@ -425,7 +469,18 @@
                 <button class="btn-filter" onclick="openPanel('decade')">Decade</button>
                 <button class="btn-filter" onclick="openPanel('country')">Country</button>
                 <button class="btn-filter" onclick="openPanel('all')">All Filters</button>
+                <button class="btn-search-toggle" id="btn-search-toggle" onclick="toggleSearch()" title="Search">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                </button>
     </div>
+    </div>
+    <div class="search-row" id="search-row" style="display:none">
+        <div class="search-bar-wrapper">
+            <input type="text" id="movie-search-input" placeholder="Search your movie list…" oninput="onMovieSearch()" autocomplete="off">
+            <button class="search-clear" onclick="clearSearch()" title="Clear">×</button>
+        </div>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -526,7 +581,7 @@
     </div>
 
     <div class="footer">
-        <div>© 2025 Chao Wu</div>
+        <div>© 2026 Chao Wu</div>
         <div style="margin-top: 1rem; opacity: 0.5;">
             <a href="admin.html" style="color: inherit; text-decoration: none; font-size: 0.7rem; letter-spacing: 1px; text-transform: uppercase;">Admin Portal</a>
         </div>
@@ -561,9 +616,11 @@
             if (latestMovie) {
                 document.getElementById('featured-section').style.display = 'block';
                 document.getElementById('f-img').src = latestMovie.poster;
-                document.getElementById('f-title').innerText = latestMovie.title;
+                const year = latestMovie.year && latestMovie.year !== 'Unknown' ? ` (${latestMovie.year})` : '';
+                document.getElementById('f-title').innerText = latestMovie.title + year;
                 document.getElementById('f-date').innerText = latestMovie.date_display;
-                document.getElementById('f-year').innerText = latestMovie.year || "";
+                const ratingNum = getRating(latestMovie);
+                document.getElementById('f-rating').innerText = ratingNum > 0 ? `★ ${latestMovie.rating} / 10` : '';
                 let notes = latestMovie.review;
                 if (!notes || notes === "nan") notes = "No notes added.";
                 document.getElementById('f-notes').innerHTML = `&ldquo;${notes}&rdquo;`;
@@ -757,6 +814,7 @@
                         <div class="card-title">${movie.title}</div>
                         <div class="card-meta-row"><span>${yearDisplay}</span><span class="card-rating">${ratingDisplay}</span></div>
                         <div class="card-director">${directorDisplay}</div>
+                        <div class="card-watched">${movie.date_display}</div>
                     </div>
                 `;
                 el.querySelector('.card-image-wrapper').addEventListener('click', () => openModal(movie));
@@ -895,10 +953,49 @@
         }
 
         document.addEventListener('keydown', e => {
-            if (e.key === 'Escape' && document.getElementById('modal-overlay').classList.contains('open')) {
-                closeModal();
+            if (e.key === 'Escape') {
+                if (document.getElementById('modal-overlay').classList.contains('open')) {
+                    closeModal();
+                } else if (document.getElementById('search-row').style.display !== 'none') {
+                    clearSearch();
+                }
             }
         });
+
+        // --- SEARCH ---
+        let searchActive = false;
+
+        function toggleSearch() {
+            searchActive = !searchActive;
+            const row = document.getElementById('search-row');
+            const btn = document.getElementById('btn-search-toggle');
+            if (searchActive) {
+                row.style.display = 'block';
+                document.getElementById('movie-search-input').focus();
+                btn.classList.add('active');
+            } else {
+                clearSearch();
+            }
+        }
+
+        function clearSearch() {
+            document.getElementById('search-row').style.display = 'none';
+            document.getElementById('movie-search-input').value = '';
+            document.getElementById('btn-search-toggle').classList.remove('active');
+            searchActive = false;
+            applyFilters();
+        }
+
+        function onMovieSearch() {
+            const query = document.getElementById('movie-search-input').value.trim().toLowerCase();
+            if (!query) { applyFilters(); return; }
+            const results = allMovies.filter(m => m.title && m.title.toLowerCase().includes(query));
+            const grid = document.getElementById('movie-grid');
+            grid.innerHTML = '';
+            renderGrid(results, grid);
+            document.getElementById('count-display').innerText =
+                `${results.length} result${results.length !== 1 ? 's' : ''} for "${query}"`;
+        }
     </script>
 </body>
 </html>
