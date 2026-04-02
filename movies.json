@@ -1,9 +1,20 @@
 [
     {
+        "title": "Island in Between",
+        "date_display": "April 1, 2026",
+        "date_sort": "2026-04-01",
+        "review": "so short and just an introductory.",
+        "rating": "7",
+        "poster": "https://image.tmdb.org/t/p/w500/2tTXYn0BulJurNxtiSMV6eAfrTF.jpg",
+        "type": "movie",
+        "year": "2023",
+        "country": "TW"
+    },
+    {
         "title": "Avatar: The Way of Water",
         "date_display": "February 1, 2026",
         "date_sort": "2026-02-01",
-        "review": "ugh its bad.",
+        "review": "ugh it's so bad.",
         "rating": "4",
         "poster": "https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
         "type": "movie",
@@ -2794,7 +2805,7 @@
         "country": "HK"
     },
     {
-        "title": "不過就是世界末日",
+        "title": "ÃÂÃÂÃÂÃÂ¤ÃÂÃÂÃÂÃÂ¸ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¥ÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ±ÃÂÃÂÃÂÃÂ¦ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¯ÃÂÃÂÃÂÃÂ¤ÃÂÃÂÃÂÃÂ¸ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ§ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¦ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ«ÃÂÃÂÃÂÃÂ¦ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¥",
         "date_display": "January 1, 2017",
         "date_sort": "2017-01-01",
         "review": "",
@@ -3326,7 +3337,7 @@
         "date_display": "January 7, 2024",
         "date_sort": "2024-01-07",
         "review": "",
-        "rating": "",
+        "rating": "7",
         "poster": "https://image.tmdb.org/t/p/w500/uRy6fpVNrxtjt03YgO2YdY4yoje.jpg",
         "type": "tv",
         "year": "2024",
