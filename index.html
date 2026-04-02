@@ -84,9 +84,18 @@
 
         header {
             text-align: left;
-            padding: 2rem 5% 3rem; 
+            padding: 2rem 0 3rem;
+            width: 90%;
             max-width: 1600px;
             margin: 0 auto;
+        }
+
+        h1 a {
+            color: inherit;
+            text-decoration: none;
+        }
+        h1 a:hover {
+            opacity: 0.75;
         }
 
         h1 {
@@ -128,8 +137,8 @@
             visibility: visible;
         }
         .f-date { font-family: 'Outfit', sans-serif; font-size: 1rem; margin-bottom: 20px; display: inline-block; padding: 2px 10px;  }
-        .f-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; line-height: 1.1; margin: 0 0 10px 0; font-style: italic; }
-        .f-year { font-family: 'Outfit', sans-serif; font-size: 1rem; margin-bottom: 10px; display: inline-block; padding: 2px 10px; }
+        .f-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; line-height: 1.1; margin: 0 0 8px 0; font-style: italic; }
+        .f-rating { font-family: 'Outfit', sans-serif; font-size: 1rem; margin-bottom: 14px; display: inline-block; opacity: 0.8; }
         .f-notes { 
             max-width: 720px;
             font-family: 'Playfair Display', serif; font-size: 1.1rem; line-height: 1.6; position: relative; padding-left: 20px; border-left: 2px solid var(--color-olive-dark); }
@@ -170,16 +179,15 @@
         }
 
         /* --- MAIN WRAPPER --- */
-        .main-content-wrapper { margin: 0 auto 50px auto; max-width: 1600px; padding: 0 5%; }
+        .main-content-wrapper { margin: 0 auto 50px auto; width: 90%; max-width: 1600px; }
 
         /* --- CONTROL WRAPPER --- */
         .control-wrapper {
-            margin: 0 auto 60px auto;
             display: flex;
             justify-content: space-between;
             width: 90%;
-            margin-top: 30px;
-            margin-bottom: 30px;
+            max-width: 1600px;
+            margin: 30px auto;
             flex-wrap: wrap;
         }
 
@@ -194,7 +202,41 @@
             gap: 20px;
         }
 
-        .filter-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+        .filter-buttons { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+
+        .btn-search-toggle {
+            background: transparent; border: 1px solid var(--border-ui);
+            color: var(--text-primary); padding: 6px 10px;
+            cursor: pointer; transition: all 0.2s; display: flex; align-items: center;
+        }
+        .btn-search-toggle:hover, .btn-search-toggle.active {
+            background: var(--color-olive-dark); color: var(--color-white);
+        }
+        .btn-search-toggle svg { display: block; }
+
+        .search-row {
+            width: 90%; max-width: 1600px; margin: 0 auto 10px auto;
+            animation: searchSlide 0.18s ease;
+        }
+        @keyframes searchSlide {
+            from { opacity: 0; transform: translateY(-6px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .search-bar-wrapper { position: relative; max-width: 360px; }
+        .search-bar-wrapper input {
+            width: 100%; padding: 7px 34px 7px 12px;
+            background: transparent; border: 1px solid var(--border-ui);
+            color: var(--text-primary); font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem; box-sizing: border-box; letter-spacing: 0.3px;
+        }
+        .search-bar-wrapper input::placeholder { color: var(--color-gray-lighter); }
+        .search-bar-wrapper input:focus { outline: none; border-color: var(--color-olive-light); }
+        .search-clear {
+            position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+            background: none; border: none; color: var(--color-gray-lighter);
+            font-size: 1.1rem; cursor: pointer; padding: 0; line-height: 1; transition: 0.15s;
+        }
+        .search-clear:hover { color: var(--text-primary); }
 
         .btn-filter {
             background: transparent;
@@ -235,8 +277,8 @@
 
         .info {
             position: absolute; inset: 0; background: var(--bg-overlay); padding: 0.3rem;
-            display: flex; flex-direction: column; justify-content: center; align-items: center;
-            text-align: center; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(3px);
+            display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;
+            text-align: left; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(3px);
             color: var(--text-primary);
         }
         .card:hover .info { opacity: 1; }
@@ -249,6 +291,7 @@
         .card-meta-row { font-family: 'Outfit', sans-serif; font-size: 0.8rem; font-weight: 200; display: flex; justify-content: space-between; align-items: center;  color: var(--text-dim);  margin-bottom: 4px; }
         .card-rating { font-family: 'Outfit', sans-serif; font-size: 0.8rem; font-weight: 200; color: var(--text-primary);  }
         .card-director { font-size: 0.8rem; color: var(--text-dim); font-style: italic; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; opacity: 0.7; }
+        .card-watched { font-family: 'Outfit', sans-serif; font-size: 0.75rem; font-style: italic; font-weight: 200; color: var(--text-primary); text-align: right; opacity: 0.5; margin-top: 2px; }
 
         /* --- SIDE PANEL --- */
         .panel-backdrop { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 998; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
@@ -286,13 +329,116 @@
             .control-bar { flex-direction: column; align-items: flex-start; }
             .grid { grid-template-columns: repeat(2, 1fr); gap: 20px 10px; }
         }
+
+        /* --- CARD MODAL --- */
+        .modal-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.75);
+            z-index: 1000; display: flex; align-items: center; justify-content: center;
+            padding: 20px; opacity: 0; pointer-events: none; transition: opacity 0.25s;
+        }
+        .modal-overlay.open { opacity: 1; pointer-events: all; }
+
+        .card-modal {
+            background: var(--color-gray-dark); color: var(--text-primary);
+            border: 1px solid var(--border-ui); max-width: 660px; width: 100%;
+            max-height: 90vh; overflow-y: auto; position: relative;
+            display: flex; gap: 28px; padding: 36px;
+            transform: translateY(12px); transition: transform 0.25s;
+        }
+        .modal-overlay.open .card-modal { transform: translateY(0); }
+
+        .modal-close-btn {
+            position: absolute; top: 14px; right: 18px; background: none; border: none;
+            font-size: 1.5rem; cursor: pointer; color: var(--text-primary);
+            opacity: 0.5; line-height: 1; padding: 0; transition: opacity 0.15s;
+        }
+        .modal-close-btn:hover { opacity: 1; }
+
+        .modal-poster { flex-shrink: 0; width: 110px; }
+        .modal-poster img { width: 100%; height: auto; display: block; box-shadow: var(--shadow-retro); }
+
+        .modal-body { flex: 1; min-width: 0; }
+
+        .modal-watch-date {
+            font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase;
+            color: var(--color-olive-light); margin-bottom: 8px;
+        }
+        .modal-title {
+            font-family: 'Playfair Display', serif; font-size: 1.5rem; font-style: italic;
+            line-height: 1.2; margin-bottom: 6px;
+        }
+        .modal-sub {
+            font-size: 0.85rem; color: var(--color-gray-lighter);
+            margin-bottom: 20px; display: flex; gap: 10px;
+        }
+        .modal-notes-view {
+            font-family: 'Playfair Display', serif; font-style: italic;
+            font-size: 0.95rem; line-height: 1.65;
+            border-left: 2px solid var(--color-olive-dark);
+            padding-left: 14px; margin-bottom: 18px;
+        }
+        .modal-notes-view.empty { opacity: 0.35; }
+
+        .btn-edit-note {
+            background: transparent; border: 1px solid var(--border-ui);
+            color: var(--text-primary); padding: 5px 14px;
+            font-family: 'Outfit', sans-serif; font-size: 0.75rem;
+            text-transform: uppercase; letter-spacing: 1px;
+            cursor: pointer; opacity: 0.65; transition: 0.2s;
+        }
+        .btn-edit-note:hover { opacity: 1; background: var(--color-olive-dark); }
+
+        .modal-edit-area { display: none; }
+        .modal-edit-area textarea {
+            width: 100%; background: var(--color-gray-medium);
+            border: 1px solid var(--color-olive-dark); color: var(--text-primary);
+            padding: 10px 12px; font-family: 'Playfair Display', serif;
+            font-style: italic; font-size: 0.95rem; line-height: 1.6;
+            resize: vertical; min-height: 90px; box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        .modal-edit-area textarea:focus { outline: none; border-color: var(--color-olive-light); }
+
+        .edit-rating-row {
+            display: flex; align-items: center; gap: 10px; margin-bottom: 14px;
+            font-size: 0.8rem; color: var(--color-gray-lighter);
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .edit-rating-row input {
+            width: 72px; background: var(--color-gray-medium);
+            border: 1px solid var(--color-olive-dark); color: var(--text-primary);
+            padding: 5px 8px; font-family: 'Outfit', sans-serif; font-size: 0.9rem;
+        }
+        .edit-rating-row input:focus { outline: none; border-color: var(--color-olive-light); }
+
+        .edit-action-row { display: flex; gap: 8px; margin-bottom: 10px; }
+        .btn-complete {
+            background: var(--color-olive-dark); border: 1px solid var(--color-olive-dark);
+            color: var(--color-white); padding: 7px 18px;
+            font-family: 'Outfit', sans-serif; font-size: 0.75rem;
+            text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: 0.2s;
+        }
+        .btn-complete:hover { opacity: 0.8; }
+        .btn-cancel-edit {
+            background: transparent; border: 1px solid #444; color: var(--color-gray-lighter);
+            padding: 7px 18px; font-family: 'Outfit', sans-serif; font-size: 0.75rem;
+            text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: 0.2s;
+        }
+        .btn-cancel-edit:hover { border-color: #888; color: var(--text-primary); }
+
+        .modal-status { font-size: 0.8rem; color: var(--color-olive-light); min-height: 1.2em; }
+
+        @media (max-width: 560px) {
+            .card-modal { flex-direction: column; padding: 24px 20px; gap: 16px; }
+            .modal-poster { width: 80px; }
+        }
     </style>
 </head>
 <body>
 
 
     <header>
-        <h1>Chao's Movie List</h1>
+        <h1><a href="index.html">Chao's Movie List</a></h1>
         <a href="analytics.html" class="nav-link" style="float:right; margin-top:-40px;">Analytics</a>
     </header>
 
@@ -305,7 +451,8 @@
             <div class="featured-info">
                 <div class="label-recent">Just Watched On</div>
                 <div class="f-date" id="f-date"></div>
-                <div class="f-title" id="f-title"></div> <div class="f-year" id="f-year"></div>
+                <div class="f-title" id="f-title"></div>
+                <div class="f-rating" id="f-rating"></div>
                 <div class="f-notes" id="f-notes"></div>
             </div>
         </div>
@@ -322,7 +469,18 @@
                 <button class="btn-filter" onclick="openPanel('decade')">Decade</button>
                 <button class="btn-filter" onclick="openPanel('country')">Country</button>
                 <button class="btn-filter" onclick="openPanel('all')">All Filters</button>
+                <button class="btn-search-toggle" id="btn-search-toggle" onclick="toggleSearch()" title="Search">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                </button>
     </div>
+    </div>
+    <div class="search-row" id="search-row" style="display:none">
+        <div class="search-bar-wrapper">
+            <input type="text" id="movie-search-input" placeholder="Search your movie list…" oninput="onMovieSearch()" autocomplete="off">
+            <button class="search-clear" onclick="clearSearch()" title="Clear">×</button>
+        </div>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -393,8 +551,37 @@
         </div>
     </div>
 
+    <!-- CARD MODAL -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
+        <div class="card-modal" onclick="event.stopPropagation()">
+            <button class="modal-close-btn" onclick="closeModal()">&times;</button>
+            <div class="modal-poster">
+                <img id="modal-img" src="" alt="">
+            </div>
+            <div class="modal-body">
+                <div class="modal-watch-date" id="modal-watch-date"></div>
+                <div class="modal-title" id="modal-title"></div>
+                <div class="modal-sub" id="modal-sub"></div>
+                <div class="modal-notes-view" id="modal-notes-view"></div>
+                <div class="modal-edit-area" id="modal-edit-area">
+                    <textarea id="edit-notes-input" rows="4" placeholder="Add your notes…"></textarea>
+                    <div class="edit-rating-row">
+                        <span>Rating (0–10)</span>
+                        <input type="number" id="edit-rating-input" step="0.5" min="0" max="10">
+                    </div>
+                    <div class="edit-action-row">
+                        <button class="btn-complete" onclick="saveEdit()">Complete</button>
+                        <button class="btn-cancel-edit" onclick="cancelEdit()">Cancel</button>
+                    </div>
+                    <div class="modal-status" id="modal-status"></div>
+                </div>
+                <button class="btn-edit-note" id="btn-edit-note" onclick="enterEditMode()" style="display:none">Edit</button>
+            </div>
+        </div>
+    </div>
+
     <div class="footer">
-        <div>© 2025 Chao Wu</div>
+        <div>© 2026 Chao Wu</div>
         <div style="margin-top: 1rem; opacity: 0.5;">
             <a href="admin.html" style="color: inherit; text-decoration: none; font-size: 0.7rem; letter-spacing: 1px; text-transform: uppercase;">Admin Portal</a>
         </div>
@@ -429,9 +616,11 @@
             if (latestMovie) {
                 document.getElementById('featured-section').style.display = 'block';
                 document.getElementById('f-img').src = latestMovie.poster;
-                document.getElementById('f-title').innerText = latestMovie.title;
+                const year = latestMovie.year && latestMovie.year !== 'Unknown' ? ` (${latestMovie.year})` : '';
+                document.getElementById('f-title').innerText = latestMovie.title + year;
                 document.getElementById('f-date').innerText = latestMovie.date_display;
-                document.getElementById('f-year').innerText = latestMovie.year || "";
+                const ratingNum = getRating(latestMovie);
+                document.getElementById('f-rating').innerText = ratingNum > 0 ? `★ ${latestMovie.rating} / 10` : '';
                 let notes = latestMovie.review;
                 if (!notes || notes === "nan") notes = "No notes added.";
                 document.getElementById('f-notes').innerHTML = `&ldquo;${notes}&rdquo;`;
@@ -625,10 +814,187 @@
                         <div class="card-title">${movie.title}</div>
                         <div class="card-meta-row"><span>${yearDisplay}</span><span class="card-rating">${ratingDisplay}</span></div>
                         <div class="card-director">${directorDisplay}</div>
+                        <div class="card-watched">${movie.date_display}</div>
                     </div>
                 `;
+                el.querySelector('.card-image-wrapper').addEventListener('click', () => openModal(movie));
                 grid.appendChild(el);
             });
+        }
+
+        // --- MODAL ---
+        const GITHUB_REPO = 'cm-nai-rien/MovieSite';
+        const MOVIES_FILE = 'movies.json';
+        const adminToken = sessionStorage.getItem('adminToken');
+        let currentModalMovie = null;
+
+        function openModal(movie) {
+            currentModalMovie = movie;
+            const notes = (!movie.review || movie.review === 'nan') ? '' : movie.review;
+            const ratingNum = getRating(movie);
+            const ratingDisplay = ratingNum > 0 ? `★ ${movie.rating}` : 'Unrated';
+            const yearDisplay = (movie.year && movie.year !== 'Unknown') ? movie.year : '';
+            const directorDisplay = movie.director ? ` · ${movie.director}` : '';
+
+            document.getElementById('modal-img').src = movie.poster;
+            document.getElementById('modal-img').alt = movie.title;
+            document.getElementById('modal-watch-date').innerText = movie.date_display;
+            document.getElementById('modal-title').innerText = movie.title;
+            document.getElementById('modal-sub').innerText = [yearDisplay, ratingDisplay].filter(Boolean).join(' · ') + directorDisplay;
+
+            const notesEl = document.getElementById('modal-notes-view');
+            notesEl.innerText = notes || 'No notes added.';
+            notesEl.classList.toggle('empty', !notes);
+
+            document.getElementById('modal-edit-area').style.display = 'none';
+            document.getElementById('modal-notes-view').style.display = 'block';
+            document.getElementById('modal-status').innerText = '';
+            document.getElementById('btn-edit-note').style.display = adminToken ? 'inline-block' : 'none';
+
+            document.getElementById('modal-overlay').classList.add('open');
+            document.body.classList.add('panel-open');
+        }
+
+        function closeModal() {
+            document.getElementById('modal-overlay').classList.remove('open');
+            document.body.classList.remove('panel-open');
+            currentModalMovie = null;
+        }
+
+        function enterEditMode() {
+            const notes = (!currentModalMovie.review || currentModalMovie.review === 'nan') ? '' : currentModalMovie.review;
+            document.getElementById('edit-notes-input').value = notes;
+            document.getElementById('edit-rating-input').value = getRating(currentModalMovie) || '';
+            document.getElementById('modal-notes-view').style.display = 'none';
+            document.getElementById('btn-edit-note').style.display = 'none';
+            document.getElementById('modal-edit-area').style.display = 'block';
+            document.getElementById('modal-status').innerText = '';
+            document.getElementById('edit-notes-input').focus();
+        }
+
+        function cancelEdit() {
+            document.getElementById('modal-edit-area').style.display = 'none';
+            document.getElementById('modal-notes-view').style.display = 'block';
+            document.getElementById('btn-edit-note').style.display = adminToken ? 'inline-block' : 'none';
+        }
+
+        async function saveEdit() {
+            const newNotes = document.getElementById('edit-notes-input').value.trim();
+            const newRating = document.getElementById('edit-rating-input').value;
+            const statusEl = document.getElementById('modal-status');
+
+            statusEl.innerText = 'Saving…';
+            document.querySelector('.btn-complete').disabled = true;
+
+            try {
+                const getRes = await fetch(
+                    `https://api.github.com/repos/${GITHUB_REPO}/contents/${MOVIES_FILE}`,
+                    { headers: { Authorization: `token ${adminToken}` } }
+                );
+                if (!getRes.ok) throw new Error(`GitHub GET failed: ${getRes.status}`);
+                const fileData = await getRes.json();
+                const _b64 = fileData.content.replace(/\n/g, '');
+                const _bytes = Uint8Array.from(atob(_b64), c => c.charCodeAt(0));
+                const movies = JSON.parse(new TextDecoder('utf-8').decode(_bytes));
+
+                const idx = movies.findIndex(m =>
+                    m.title === currentModalMovie.title && m.date_sort === currentModalMovie.date_sort
+                );
+                if (idx !== -1) {
+                    movies[idx].review = newNotes;
+                    movies[idx].rating = newRating;
+                }
+
+                const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(movies, null, 4))));
+                const putRes = await fetch(
+                    `https://api.github.com/repos/${GITHUB_REPO}/contents/${MOVIES_FILE}`,
+                    {
+                        method: 'PUT',
+                        headers: { Authorization: `token ${adminToken}`, 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            message: `Edit: ${currentModalMovie.title} notes`,
+                            content: newContent,
+                            sha: fileData.sha
+                        })
+                    }
+                );
+                if (!putRes.ok) {
+                    const err = await putRes.json();
+                    throw new Error(err.message || `GitHub PUT failed: ${putRes.status}`);
+                }
+
+                // Update local data so UI reflects immediately
+                currentModalMovie.review = newNotes;
+                currentModalMovie.rating = newRating;
+                const localIdx = allMovies.findIndex(m =>
+                    m.title === currentModalMovie.title && m.date_sort === currentModalMovie.date_sort
+                );
+                if (localIdx !== -1) {
+                    allMovies[localIdx].review = newNotes;
+                    allMovies[localIdx].rating = newRating;
+                }
+
+                // Refresh notes view
+                const notesEl = document.getElementById('modal-notes-view');
+                notesEl.innerText = newNotes || 'No notes added.';
+                notesEl.classList.toggle('empty', !newNotes);
+
+                statusEl.innerText = '✓ Saved';
+                setTimeout(() => {
+                    cancelEdit();
+                    statusEl.innerText = '';
+                }, 800);
+
+            } catch (e) {
+                statusEl.innerText = `Error: ${e.message}`;
+            } finally {
+                document.querySelector('.btn-complete').disabled = false;
+            }
+        }
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') {
+                if (document.getElementById('modal-overlay').classList.contains('open')) {
+                    closeModal();
+                } else if (document.getElementById('search-row').style.display !== 'none') {
+                    clearSearch();
+                }
+            }
+        });
+
+        // --- SEARCH ---
+        let searchActive = false;
+
+        function toggleSearch() {
+            searchActive = !searchActive;
+            const row = document.getElementById('search-row');
+            const btn = document.getElementById('btn-search-toggle');
+            if (searchActive) {
+                row.style.display = 'block';
+                document.getElementById('movie-search-input').focus();
+                btn.classList.add('active');
+            } else {
+                clearSearch();
+            }
+        }
+
+        function clearSearch() {
+            document.getElementById('search-row').style.display = 'none';
+            document.getElementById('movie-search-input').value = '';
+            document.getElementById('btn-search-toggle').classList.remove('active');
+            searchActive = false;
+            applyFilters();
+        }
+
+        function onMovieSearch() {
+            const query = document.getElementById('movie-search-input').value.trim().toLowerCase();
+            if (!query) { applyFilters(); return; }
+            const results = allMovies.filter(m => m.title && m.title.toLowerCase().includes(query));
+            const grid = document.getElementById('movie-grid');
+            grid.innerHTML = '';
+            renderGrid(results, grid);
+            document.getElementById('count-display').innerText =
+                `${results.length} result${results.length !== 1 ? 's' : ''} for "${query}"`;
         }
     </script>
 </body>

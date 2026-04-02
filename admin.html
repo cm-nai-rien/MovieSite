@@ -317,6 +317,7 @@
             const tok = document.getElementById('token-input').value.trim();
             if (pwd === SECRET_KEY && tok) {
                 githubToken = tok;
+                sessionStorage.setItem('adminToken', tok);
                 document.getElementById('login-screen').style.display = 'none';
                 document.getElementById('admin-panel').style.display = 'block';
                 document.getElementById('watch-date').valueAsDate = new Date();
@@ -516,7 +517,9 @@
                 if (!getRes.ok) throw new Error(`GitHub GET failed: ${getRes.status}`);
                 const fileData = await getRes.json();
 
-                const currentMovies = JSON.parse(atob(fileData.content.replace(/\n/g, '')));
+                const _b64 = fileData.content.replace(/\n/g, '');
+                const _bytes = Uint8Array.from(atob(_b64), c => c.charCodeAt(0));
+                const currentMovies = JSON.parse(new TextDecoder('utf-8').decode(_bytes));
 
                 // Check for duplicate
                 const isDuplicate = currentMovies.some(
