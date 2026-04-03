@@ -1,5 +1,16 @@
 [
     {
+        "title": "The Photo from 1977",
+        "date_display": "December 22, 2025",
+        "date_sort": "2025-12-22",
+        "review": "刻畫的時代氛圍是蠻有的，唯獨因為試著連結台韓當時相似的情緒與歷史脈絡，又要加諸於男女主角之上，顯得轉折太過生硬",
+        "rating": "6",
+        "poster": "https://image.tmdb.org/t/p/w500/3QIRaf4yHONrvIwaLwWOOizEnst.jpg",
+        "type": "movie",
+        "year": "2025",
+        "country": "TW"
+    },
+    {
         "title": "Island in Between",
         "date_display": "April 1, 2026",
         "date_sort": "2026-04-01",
