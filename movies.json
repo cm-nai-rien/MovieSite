@@ -1,5 +1,16 @@
 [
     {
+        "title": "The Drama",
+        "date_display": "April 3, 2026",
+        "date_sort": "2026-04-03",
+        "review": "Our past will always haunt us…and our past will define us…to some extent. Choosing to forgive or not, and what draws the lines: no right answers for each person/ couple, but we definitely all wish for grace, whether we give it or not.",
+        "rating": "9.5",
+        "poster": "https://image.tmdb.org/t/p/w500/ikcNOWB6Qo1ER1H1BJL6Vf0W22s.jpg",
+        "type": "movie",
+        "year": "2026",
+        "country": "US"
+    },
+    {
         "title": "The Photo from 1977",
         "date_display": "December 22, 2025",
         "date_sort": "2025-12-22",
