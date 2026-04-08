@@ -428,6 +428,27 @@
 
         .modal-status { font-size: 0.8rem; color: var(--color-olive-light); min-height: 1.2em; }
 
+        .btn-delete-movie {
+            background: transparent; border: 1px solid #555; color: var(--color-gray-lighter);
+            padding: 7px 18px; font-family: 'Outfit', sans-serif; font-size: 0.75rem;
+            text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: 0.2s;
+            margin-left: auto;
+        }
+        .btn-delete-movie:hover { border-color: #ff4757; color: #ff4757; }
+
+        .confirm-delete-row {
+            display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+            margin-bottom: 10px; padding: 10px 12px;
+            border: 1px solid #ff4757; background: rgba(255,71,87,0.08);
+        }
+        .confirm-delete-row span { font-size: 0.8rem; color: #ff6b6b; flex: 1; }
+        .btn-confirm-delete {
+            background: #ff4757; border: 1px solid #ff4757; color: #fff;
+            padding: 5px 14px; font-family: 'Outfit', sans-serif; font-size: 0.75rem;
+            text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: 0.2s;
+        }
+        .btn-confirm-delete:hover { opacity: 0.8; }
+
         @media (max-width: 560px) {
             .card-modal { flex-direction: column; padding: 24px 20px; gap: 16px; }
             .modal-poster { width: 80px; }
@@ -572,6 +593,12 @@
                     <div class="edit-action-row">
                         <button class="btn-complete" onclick="saveEdit()">Complete</button>
                         <button class="btn-cancel-edit" onclick="cancelEdit()">Cancel</button>
+                        <button class="btn-delete-movie" id="btn-delete-movie" onclick="promptDelete()">Delete</button>
+                    </div>
+                    <div class="confirm-delete-row" id="confirm-delete-row" style="display:none">
+                        <span>Remove this movie permanently?</span>
+                        <button class="btn-confirm-delete" onclick="deleteMovie()">Yes, Delete</button>
+                        <button class="btn-cancel-edit" onclick="cancelDeletePrompt()">No</button>
                     </div>
                     <div class="modal-status" id="modal-status"></div>
                 </div>
@@ -869,6 +896,8 @@
             document.getElementById('btn-edit-note').style.display = 'none';
             document.getElementById('modal-edit-area').style.display = 'block';
             document.getElementById('modal-status').innerText = '';
+            document.getElementById('confirm-delete-row').style.display = 'none';
+            document.getElementById('btn-delete-movie').style.display = 'block';
             document.getElementById('edit-notes-input').focus();
         }
 
@@ -949,6 +978,73 @@
                 statusEl.innerText = `Error: ${e.message}`;
             } finally {
                 document.querySelector('.btn-complete').disabled = false;
+            }
+        }
+
+        function promptDelete() {
+            document.getElementById('confirm-delete-row').style.display = 'flex';
+            document.getElementById('btn-delete-movie').style.display = 'none';
+            document.getElementById('modal-status').innerText = '';
+        }
+
+        function cancelDeletePrompt() {
+            document.getElementById('confirm-delete-row').style.display = 'none';
+            document.getElementById('btn-delete-movie').style.display = 'block';
+        }
+
+        async function deleteMovie() {
+            const statusEl = document.getElementById('modal-status');
+            const confirmRow = document.getElementById('confirm-delete-row');
+            statusEl.innerText = 'Deleting…';
+            confirmRow.style.display = 'none';
+
+            try {
+                const getRes = await fetch(
+                    `https://api.github.com/repos/${GITHUB_REPO}/contents/${MOVIES_FILE}`,
+                    { headers: { Authorization: `token ${adminToken}` } }
+                );
+                if (!getRes.ok) throw new Error(`GitHub GET failed: ${getRes.status}`);
+                const fileData = await getRes.json();
+                const _b64 = fileData.content.replace(/\n/g, '');
+                const _bytes = Uint8Array.from(atob(_b64), c => c.charCodeAt(0));
+                const movies = JSON.parse(new TextDecoder('utf-8').decode(_bytes));
+
+                const idx = movies.findIndex(m =>
+                    m.title === currentModalMovie.title && m.date_sort === currentModalMovie.date_sort
+                );
+                if (idx === -1) throw new Error('Movie not found in data.');
+                movies.splice(idx, 1);
+
+                const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(movies, null, 4))));
+                const putRes = await fetch(
+                    `https://api.github.com/repos/${GITHUB_REPO}/contents/${MOVIES_FILE}`,
+                    {
+                        method: 'PUT',
+                        headers: { Authorization: `token ${adminToken}`, 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            message: `Delete: ${currentModalMovie.title}`,
+                            content: newContent,
+                            sha: fileData.sha
+                        })
+                    }
+                );
+                if (!putRes.ok) {
+                    const err = await putRes.json();
+                    throw new Error(err.message || `GitHub PUT failed: ${putRes.status}`);
+                }
+
+                // Remove from local arrays and re-render
+                const localIdx = allMovies.findIndex(m =>
+                    m.title === currentModalMovie.title && m.date_sort === currentModalMovie.date_sort
+                );
+                if (localIdx !== -1) allMovies.splice(localIdx, 1);
+
+                closeModal();
+                applyFilters();
+
+            } catch (e) {
+                statusEl.innerText = `Error: ${e.message}`;
+                document.getElementById('btn-delete-movie').style.display = 'block';
             }
         }
 
