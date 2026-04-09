@@ -1,5 +1,16 @@
 [
     {
+        "title": "Blade Runner 2049",
+        "date_display": "November 8, 2020",
+        "date_sort": "2020-11-08",
+        "review": "WoodHorse.\nAn exceptional sequel. Outstanding cinematography.",
+        "rating": "9.5",
+        "poster": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+        "type": "movie",
+        "year": "2017",
+        "country": "US"
+    },
+    {
         "title": "Moonlight",
         "date_display": "November 9, 2020",
         "date_sort": "2020-11-09",
