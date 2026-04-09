@@ -1,5 +1,16 @@
 [
     {
+        "title": "Maggie",
+        "date_display": "November 10, 2019",
+        "date_sort": "2019-11-10",
+        "review": "",
+        "rating": "9.5",
+        "poster": "https://image.tmdb.org/t/p/w500/6p2C6HlFY8cKZQDTvVu2ppQnocV.jpg",
+        "type": "movie",
+        "year": "2019",
+        "country": "KR"
+    },
+    {
         "title": "Mahjong",
         "date_display": "October 15, 2019",
         "date_sort": "2019-10-15",
