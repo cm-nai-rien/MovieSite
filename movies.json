@@ -1,5 +1,16 @@
 [
     {
+        "title": "Kinetta",
+        "date_display": "November 23, 2019",
+        "date_sort": "2019-11-23",
+        "review": "",
+        "rating": "5.5",
+        "poster": "https://image.tmdb.org/t/p/w500/bjgIJAcL0HonVzvvZ2ebTN1F9SA.jpg",
+        "type": "movie",
+        "year": "2005",
+        "country": "GR"
+    },
+    {
         "title": "Maggie",
         "date_display": "November 10, 2019",
         "date_sort": "2019-11-10",
