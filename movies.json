@@ -1,5 +1,16 @@
 [
     {
+        "title": "Kung-Fu Master!",
+        "date_display": "July 3, 2019",
+        "date_sort": "2019-07-03",
+        "review": "",
+        "rating": "7.5",
+        "poster": "https://image.tmdb.org/t/p/w500/ymnlN8fhRDx0dmkqmZW4mQCbLXs.jpg",
+        "type": "movie",
+        "year": "1988",
+        "country": "FR"
+    },
+    {
         "title": "Stalker",
         "date_display": "June 30, 2019",
         "date_sort": "2019-06-30",
