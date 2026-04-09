@@ -272,8 +272,12 @@
             transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             cursor: pointer; 
         }
-        .card:hover .card-image-wrapper { transform: translateY(-5px); box-shadow: 0 20px 30px rgba(176, 176, 176, 0.15); }
         .card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+        @media (hover: hover) {
+            .card:hover .card-image-wrapper { transform: translateY(-5px); box-shadow: 0 20px 30px rgba(176, 176, 176, 0.15); }
+            .card:hover .info { opacity: 1; }
+        }
 
         .info {
             position: absolute; inset: 0; background: var(--bg-overlay); padding: 0.3rem;
@@ -281,8 +285,6 @@
             text-align: left; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(3px);
             color: var(--text-primary);
         }
-        .card:hover .info { opacity: 1; }
-
         .info-date { font-size: 0.75rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; color: var(--color-pink); font-weight: bold; }
         .info-notes { font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.95rem; line-height: 1.4; max-height: 80%; overflow-y: auto; }
 
@@ -326,6 +328,8 @@
         @media (max-width: 800px) {
             h1 {font-size: clamp(2rem, 10vw, 3rem);}
             .featured-content { flex-direction: column; align-items: center; text-align: center; gap: 20px; }
+            .control-wrapper { flex-direction: column; gap: 10px; align-items: flex-start; }
+            .tabs-container { max-width: 100%; width: 100%; }
             .control-bar { flex-direction: column; align-items: flex-start; }
             .grid { grid-template-columns: repeat(2, 1fr); gap: 20px 10px; }
         }
@@ -410,6 +414,7 @@
             padding: 5px 8px; font-family: 'Outfit', sans-serif; font-size: 0.9rem;
         }
         .edit-rating-row input:focus { outline: none; border-color: var(--color-olive-light); }
+        #edit-date-input { width: 160px; }
 
         .edit-action-row { display: flex; gap: 8px; margin-bottom: 10px; }
         .btn-complete {
@@ -589,6 +594,10 @@
                     <div class="edit-rating-row">
                         <span>Rating (0–10)</span>
                         <input type="number" id="edit-rating-input" step="0.5" min="0" max="10">
+                    </div>
+                    <div class="edit-rating-row">
+                        <span>Watch Date</span>
+                        <input type="date" id="edit-date-input">
                     </div>
                     <div class="edit-action-row">
                         <button class="btn-complete" onclick="saveEdit()">Complete</button>
@@ -812,6 +821,12 @@
             }
         }
 
+        function formatDateDisplay(dateSort) {
+            if (!dateSort || dateSort === '0000-00-00') return '';
+            const [y, m, d] = dateSort.split('-').map(Number);
+            return new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+        }
+
         function getRating(movie) {
             if (!movie.rating) return 0;
             const clean = movie.rating.toString().replace('/5', '');
@@ -892,6 +907,8 @@
             const notes = (!currentModalMovie.review || currentModalMovie.review === 'nan') ? '' : currentModalMovie.review;
             document.getElementById('edit-notes-input').value = notes;
             document.getElementById('edit-rating-input').value = getRating(currentModalMovie) || '';
+            const ds = currentModalMovie.date_sort;
+            document.getElementById('edit-date-input').value = (ds && ds !== '0000-00-00') ? ds : '';
             document.getElementById('modal-notes-view').style.display = 'none';
             document.getElementById('btn-edit-note').style.display = 'none';
             document.getElementById('modal-edit-area').style.display = 'block';
@@ -910,6 +927,8 @@
         async function saveEdit() {
             const newNotes = document.getElementById('edit-notes-input').value.trim();
             const newRating = document.getElementById('edit-rating-input').value;
+            const newDateSort = document.getElementById('edit-date-input').value;
+            const newDateDisplay = formatDateDisplay(newDateSort);
             const statusEl = document.getElementById('modal-status');
 
             statusEl.innerText = 'Saving…';
@@ -932,6 +951,7 @@
                 if (idx !== -1) {
                     movies[idx].review = newNotes;
                     movies[idx].rating = newRating;
+                    if (newDateSort) { movies[idx].date_sort = newDateSort; movies[idx].date_display = newDateDisplay; }
                 }
 
                 const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(movies, null, 4))));
@@ -953,15 +973,19 @@
                 }
 
                 // Update local data so UI reflects immediately
+                const oldDateSort = currentModalMovie.date_sort;
+                const localIdx = allMovies.findIndex(m =>
+                    m.title === currentModalMovie.title && m.date_sort === oldDateSort
+                );
                 currentModalMovie.review = newNotes;
                 currentModalMovie.rating = newRating;
-                const localIdx = allMovies.findIndex(m =>
-                    m.title === currentModalMovie.title && m.date_sort === currentModalMovie.date_sort
-                );
+                if (newDateSort) { currentModalMovie.date_sort = newDateSort; currentModalMovie.date_display = newDateDisplay; }
                 if (localIdx !== -1) {
                     allMovies[localIdx].review = newNotes;
                     allMovies[localIdx].rating = newRating;
+                    if (newDateSort) { allMovies[localIdx].date_sort = newDateSort; allMovies[localIdx].date_display = newDateDisplay; }
                 }
+                if (newDateSort) document.getElementById('modal-watch-date').innerText = newDateDisplay;
 
                 // Refresh notes view
                 const notesEl = document.getElementById('modal-notes-view');
