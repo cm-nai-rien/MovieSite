@@ -2904,17 +2904,6 @@
         "country": "US"
     },
     {
-        "title": "The Pianist",
-        "date_display": "January 30, 2018",
-        "date_sort": "2018-01-30",
-        "review": "",
-        "rating": "",
-        "poster": "https://image.tmdb.org/t/p/w500/2hFvxCCWrTmCYwfy7yum0GKRi3Y.jpg",
-        "type": "movie",
-        "year": "2002",
-        "country": "US"
-    },
-    {
         "title": "Howards End",
         "date_display": "April 14, 2018",
         "date_sort": "2018-04-14",
