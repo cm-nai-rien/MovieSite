@@ -1,5 +1,16 @@
 [
     {
+        "title": "Shoplifters",
+        "date_display": "July 13, 2018",
+        "date_sort": "2018-07-13",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/4nfRUOv3LX5zLn98WS1WqVBk9E9.jpg",
+        "type": "movie",
+        "year": "2018",
+        "country": "JP"
+    },
+    {
         "title": "Amy",
         "date_display": "September 6, 2018",
         "date_sort": "2018-09-06",
