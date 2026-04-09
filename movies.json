@@ -1,5 +1,16 @@
 [
     {
+        "title": "Lions Love",
+        "date_display": "July 7, 2019",
+        "date_sort": "2019-07-07",
+        "review": "Watched it during Taipei Film Festival. A film about Hollywood desires",
+        "rating": "7",
+        "poster": "https://image.tmdb.org/t/p/w500/ahLU10GZeVLFg1KoC6wblOk8ZlW.jpg",
+        "type": "movie",
+        "year": "1969",
+        "country": "FR"
+    },
+    {
         "title": "Street of Shame",
         "date_display": "July 7, 2019",
         "date_sort": "2019-07-07",
