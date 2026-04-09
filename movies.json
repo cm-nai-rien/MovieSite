@@ -1,5 +1,16 @@
 [
     {
+        "title": "Fury",
+        "date_display": "December 18, 2019",
+        "date_sort": "2019-12-18",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/u1kjLTUqmqjDMlRxcwCqWagjf6r.jpg",
+        "type": "movie",
+        "year": "1936",
+        "country": "US"
+    },
+    {
         "title": "Vivre Sa Vie",
         "date_display": "November 28, 2019",
         "date_sort": "2019-11-28",
