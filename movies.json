@@ -1,5 +1,16 @@
 [
     {
+        "title": "1917",
+        "date_display": "March 5, 2020",
+        "date_sort": "2020-03-05",
+        "review": "watched it with Tuan",
+        "rating": "7",
+        "poster": "https://image.tmdb.org/t/p/w500/iZf0KyrE25z1sage4SYFLCCrMi9.jpg",
+        "type": "movie",
+        "year": "2019",
+        "country": "US"
+    },
+    {
         "title": "Knives Out",
         "date_display": "April 9, 2026",
         "date_sort": "2026-04-09",
