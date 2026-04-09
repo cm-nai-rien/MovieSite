@@ -1,5 +1,16 @@
 [
     {
+        "title": "Knives Out",
+        "date_display": "April 9, 2026",
+        "date_sort": "2026-04-09",
+        "review": "watched it with my ex lol",
+        "rating": "7",
+        "poster": "https://image.tmdb.org/t/p/w500/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
+        "type": "movie",
+        "year": "2019",
+        "country": "US"
+    },
+    {
         "title": "Tokyo-Ga",
         "date_display": "January 20, 2020",
         "date_sort": "2020-01-20",
