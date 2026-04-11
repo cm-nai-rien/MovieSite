@@ -76,13 +76,96 @@
             color: var(--color-olive-dark);
         }
 
+        /* Stats row */
+        .stat-row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 10px 0;
+        }
+        .stat-item { text-align: center; }
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--color-olive-dark);
+            line-height: 1;
+        }
+        .stat-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #888;
+            margin-top: 6px;
+        }
+
         .top-list { padding-left: 20px; }
-        .top-list li { padding: 8px 0; font-size: 1rem; border-bottom: 1px dashed #eee; }
+        .top-list li {
+            padding: 8px 0;
+            font-size: 1rem;
+            border-bottom: 1px dashed #eee;
+            cursor: default;
+            transition: background 0.15s;
+        }
+        .top-list li:hover { background: rgba(198,191,101,0.15); }
         .top-list .rating { float: right; font-weight: bold; color: #5c5815; }
+
+        /* Cursor poster tooltip */
+        #poster-tooltip {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            display: none;
+            width: 200px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        #poster-tooltip img { width: 100%; display: block; }
+
+        /* Rating diff section */
+        .diff-list { list-style: none; padding: 0; margin: 0; }
+        .diff-list li {
+            padding: 12px 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .diff-list li:last-child { border-bottom: none; }
+        .diff-movie-title { font-weight: 600; font-size: 1rem; }
+        .diff-ratings {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+        }
+        .diff-mine { color: #5c5815; font-weight: bold; }
+        .diff-public { color: #888; }
+        .diff-badge {
+            margin-left: auto;
+            font-weight: bold;
+            font-size: 0.85rem;
+            padding: 2px 8px;
+            border-radius: 99px;
+        }
+        .diff-badge.higher { background: #e8f5e9; color: #2e7d32; }
+        .diff-badge.lower  { background: #fce4ec; color: #c62828; }
+        .diff-review {
+            font-size: 0.82rem;
+            color: #666;
+            font-style: italic;
+            line-height: 1.4;
+        }
 
     </style>
 </head>
 <body>
+
+    <!-- Floating poster tooltip -->
+    <div id="poster-tooltip"><img id="poster-tooltip-img" src="" alt=""></div>
 
     <header>
         <h1>Movie Analytics</h1>
@@ -90,10 +173,26 @@
     </header>
 
     <div class="dashboard">
-        <!-- Widget 1: Top 10 -->
-        <div class="dash-widget">
-            <h3 class="dash-title">Top 10 Highest Rated</h3>
-            <ol id="top-ten-list" class="top-list"></ol>
+        <!-- Widget: Stats Summary -->
+        <div class="dash-widget" style="flex-basis: 100%; max-width: 100%;">
+            <h3 class="dash-title">At a Glance</h3>
+            <div class="stat-row" id="stat-row"></div>
+        </div>
+
+        <!-- Left column: Top 10 + Rating Diff -->
+        <div style="flex: 1; display: flex; flex-direction: column; gap: 30px; min-width: 350px;">
+            <!-- Widget 1: Top 10 -->
+            <div class="dash-widget">
+                <h3 class="dash-title">Top 10 Highest Rated</h3>
+                <ol id="top-ten-list" class="top-list"></ol>
+            </div>
+
+            <!-- Widget: Rating Comparison -->
+            <div class="dash-widget">
+                <h3 class="dash-title">vs. Public Rating</h3>
+                <p style="font-size:0.8rem;color:#888;margin:0 0 16px;">Top 5 biggest gaps between my rating and TMDB average (scaled to /10)</p>
+                <ul id="rating-diff-list" class="diff-list"></ul>
+            </div>
         </div>
 
         <!-- Widget 2: Charts Column -->
@@ -112,16 +211,47 @@
     </div>
 
     <script>
-        fetch('movies.json')
+        fetch('movies.json?v=' + Date.now())
             .then(r => r.json())
             .then(movies => {
                 setupDashboard(movies.filter(m => m.poster));
             });
 
         function setupDashboard(movies) {
+            renderStats(movies);
             createWatchedByYearChart(movies);
             createDecadePieChart(movies);
             renderTopTenList(movies);
+            renderRatingDiff(movies);
+        }
+
+        function renderStats(movies) {
+            const totalMovies = movies.length;
+            const rated = movies.filter(m => getRating(m) > 0);
+            const avgRating = rated.length
+                ? (rated.reduce((s, m) => s + getRating(m), 0) / rated.length).toFixed(1)
+                : '—';
+            const countries = new Set(movies.map(m => m.country).filter(Boolean)).size;
+            const years = new Set(movies.map(m => m.date_sort?.substring(0, 4)).filter(y => y && y !== '0000')).size;
+
+            document.getElementById('stat-row').innerHTML = `
+                <div class="stat-item">
+                    <div class="stat-number">${totalMovies}</div>
+                    <div class="stat-label">Movies Watched</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">${avgRating}<span style="font-size:1rem;font-weight:300">/10</span></div>
+                    <div class="stat-label">Avg Rating</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">${countries}</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">${years}</div>
+                    <div class="stat-label">Years Active</div>
+                </div>
+            `;
         }
 
         function getRating(movie) {
@@ -190,12 +320,77 @@
                 .sort((a, b) => getRating(b) - getRating(a))
                 .slice(0, 10);
 
+            const tooltip = document.getElementById('poster-tooltip');
+            const tooltipImg = document.getElementById('poster-tooltip-img');
+
             const listEl = document.getElementById('top-ten-list');
-            listEl.innerHTML = topTen.map(movie => `
-                <li>
+            listEl.innerHTML = topTen.map((movie, i) => `
+                <li data-poster="${movie.poster || ''}">
                     ${movie.title} <span class="rating">★${movie.rating}</span>
                 </li>
             `).join('');
+
+            // Hover poster follow cursor
+            listEl.querySelectorAll('li').forEach(li => {
+                const poster = li.dataset.poster;
+                if (!poster) return;
+
+                li.addEventListener('mouseenter', () => {
+                    tooltipImg.src = poster;
+                    tooltip.style.display = 'block';
+                });
+                li.addEventListener('mouseleave', () => {
+                    tooltip.style.display = 'none';
+                });
+                li.addEventListener('mousemove', (e) => {
+                    const offset = 16;
+                    let x = e.clientX + offset;
+                    let y = e.clientY + offset;
+                    // Keep within viewport
+                    if (x + 200 > window.innerWidth) x = e.clientX - 200 - offset;
+                    if (y + 300 > window.innerHeight) y = e.clientY - 300 - offset;
+                    tooltip.style.left = x + 'px';
+                    tooltip.style.top  = y + 'px';
+                });
+            });
+        }
+
+        function renderRatingDiff(movies) {
+            // Both my ratings and TMDB are on /10 scale
+            const candidates = movies.filter(m => {
+                const mine = getRating(m);
+                return mine > 0 && m.tmdb_rating != null && m.tmdb_rating > 0;
+            }).map(m => {
+                const mine = getRating(m);
+                const diff = mine - m.tmdb_rating;
+                return { ...m, diff };
+            });
+
+            candidates.sort((a, b) => Math.abs(b.diff) - Math.abs(a.diff));
+            const top5 = candidates.slice(0, 5);
+
+            const listEl = document.getElementById('rating-diff-list');
+            if (!top5.length) {
+                listEl.innerHTML = '<li style="color:#aaa;font-size:0.9rem;">No comparison data available.</li>';
+                return;
+            }
+            listEl.innerHTML = top5.map(m => {
+                const sign = m.diff > 0 ? '+' : '';
+                const cls  = m.diff > 0 ? 'higher' : 'lower';
+                const note = m.review && m.review.length > 5
+                    ? `<div class="diff-review">"${m.review.slice(0, 120)}${m.review.length > 120 ? '…' : ''}"</div>`
+                    : '';
+                return `
+                <li>
+                    <div class="diff-movie-title">${m.title}</div>
+                    <div class="diff-ratings">
+                        <span class="diff-mine">Me: ${parseFloat(m.rating).toFixed(1)}</span>
+                        <span class="diff-public">TMDB: ${m.tmdb_rating.toFixed(1)}</span>
+                        <span class="diff-badge ${cls}">${sign}${m.diff.toFixed(1)}</span>
+                    </div>
+                    ${note}
+                </li>`;
+            }).join('');
         }
     </script>
 </body>

@@ -692,6 +692,13 @@
                 btn.dataset.year = 'earlier';
                 container.appendChild(btn);
             }
+
+            const allBtn = document.createElement('button');
+            allBtn.className = 'tab-btn';
+            allBtn.innerText = 'ALL';
+            allBtn.onclick = () => switchTab('all');
+            allBtn.dataset.year = 'all';
+            container.appendChild(allBtn);
         }
 
         function switchTab(tabId) {
@@ -701,7 +708,9 @@
                 else btn.classList.remove('active');
             });
 
-            if (tabId === 'earlier') {
+            if (tabId === 'all') {
+                currentYearMovies = [...allMovies];
+            } else if (tabId === 'earlier') {
                 currentYearMovies = allMovies.filter(m => {
                     const y = parseInt(m.date_sort.substring(0,4));
                     return y <= 2018 && y !== 0;

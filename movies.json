@@ -1,5 +1,233 @@
 [
     {
+        "title": "Yesterday, Today and Tomorrow",
+        "date_display": "May 26, 2021",
+        "date_sort": "2021-05-26",
+        "review": "1. 走私菸：第一顆鏡頭好精彩，一對夫婦因為妻子在市場販售走私菸被警察取締而被法官判刑，卻因為懷孕得以不用服刑。為了躲避被關進監獄，懷孕懷不停，卻苦了丈夫。最後因為丈夫太操勞實在無法懷孕只好服刑，但卻有滿堂小孩。\n2. Rolls Royce：一個富有官員的夫人受不了丈夫的朋友老是在談論錢、成功，遇上作家後不斷示愛想要和他一起到處旅遊，作家知道彼此的落差卻還是喜歡她。沒想到他開著她的RR為了閃避一個小孩出擦撞，夫人馬上氣壞露出本性。\n3. 妓女變聖女：妓女住在一個神學院學生隔壁，在頂樓總是會碰到。神學院學生暗戀這個美麗姊姊甚至要為了她投奔世俗放棄神父的前景。奶奶知道了跑去妓女家求情求助，於是奶奶和妓女一起合作讓神學院學生死了心，妓女發願禁欲一個禮拜，意外成聖女",
+        "rating": "8",
+        "poster": "https://image.tmdb.org/t/p/w500/vydCOfhrnKqMSbYcI0cUkkKuCND.jpg",
+        "type": "movie",
+        "year": "1963",
+        "country": "IT",
+        "tmdb_rating": 7.4
+    },
+    {
+        "title": "Yi Yi",
+        "date_display": "January 1, 2015",
+        "date_sort": "2015-01-01",
+        "review": "",
+        "rating": "8",
+        "poster": "https://image.tmdb.org/t/p/w500/mR8dSQZI8X6Z1NClJhFrtJp636z.jpg",
+        "type": "movie",
+        "year": "2000",
+        "country": "TW",
+        "tmdb_rating": 7.7
+    },
+    {
+        "title": "Love Letter",
+        "date_display": "December 9, 2013",
+        "date_sort": "2013-12-09",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/9iAgQSkt9z34DTYQfpG0M69SyiL.jpg",
+        "type": "movie",
+        "year": "1995",
+        "country": "JP",
+        "tmdb_rating": 8.0
+    },
+    {
+        "title": "A Scene at the Sea",
+        "date_display": "April 18, 2016",
+        "date_sort": "2016-04-18",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/uSwYQjd48iXVU8KHSSV9V6QYvBd.jpg",
+        "type": "movie",
+        "year": "1991",
+        "country": "JP",
+        "tmdb_rating": 7.4
+    },
+    {
+        "title": "It's Only the End of the World",
+        "date_display": "April 3, 2017",
+        "date_sort": "2017-04-03",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/riWa3WZrO3n8lLWuaEVMgaqAZGn.jpg",
+        "type": "movie",
+        "year": "2016",
+        "country": "CA",
+        "tmdb_rating": 7.2
+    },
+    {
+        "title": "Kikujiro",
+        "date_display": "April 9, 2017",
+        "date_sort": "2017-04-09",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/zTelT1xAO4Owxk1jHJM4puoei5N.jpg",
+        "type": "movie",
+        "year": "1999",
+        "country": "JP",
+        "tmdb_rating": 7.5
+    },
+    {
+        "title": "2046",
+        "date_display": "January 9, 2017",
+        "date_sort": "2017-01-09",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/jIN65qw0Giplo4CshzMrxz204Wn.jpg",
+        "type": "movie",
+        "year": "2004",
+        "country": "HK",
+        "tmdb_rating": 7.2
+    },
+    {
+        "title": "The Piano Teacher",
+        "date_display": "January 30, 2018",
+        "date_sort": "2018-01-30",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/gNHKYQnP1RnqEhkivHJzBPb4MOP.jpg",
+        "type": "movie",
+        "year": "2001",
+        "country": "FR",
+        "tmdb_rating": 7.3
+    },
+    {
+        "title": "Before Sunset",
+        "date_display": "January 30, 2018",
+        "date_sort": "2018-01-30",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/4sW5XH9ZfYXpvFzev00S1IGAEbg.jpg",
+        "type": "movie",
+        "year": "2004",
+        "country": "US",
+        "tmdb_rating": 7.8
+    },
+    {
+        "title": "Fireworks",
+        "date_display": "February 5, 2018",
+        "date_sort": "2018-02-05",
+        "review": "",
+        "rating": "8.5",
+        "poster": "https://image.tmdb.org/t/p/w500/bWIo1nDJnSyGJvVt8bRw8PHBqo4.jpg",
+        "type": "movie",
+        "year": "1997",
+        "country": "JP",
+        "tmdb_rating": 7.8
+    },
+    {
+        "title": "Nostalgia",
+        "date_display": "July 2, 2018",
+        "date_sort": "2018-07-02",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/fCYSidPXp3LpDa9wlLNv0gZvjyF.jpg",
+        "type": "movie",
+        "year": "1983",
+        "country": "SU",
+        "tmdb_rating": 5.4
+    },
+    {
+        "title": "The Ciambra",
+        "date_display": "July 5, 2018",
+        "date_sort": "2018-07-05",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/bIkDmCWDIWyHAQgKCZpuD5d8kKl.jpg",
+        "type": "movie",
+        "year": "2017",
+        "country": "BR",
+        "tmdb_rating": 7.1
+    },
+    {
+        "title": "Hanagatami",
+        "date_display": "July 8, 2018",
+        "date_sort": "2018-07-08",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/gk6q7uRWKHgHEnqQLttKy7Bqhee.jpg",
+        "type": "movie",
+        "year": "2017",
+        "country": "JP",
+        "tmdb_rating": 7.0
+    },
+    {
+        "title": "Burning",
+        "date_display": "July 10, 2018",
+        "date_sort": "2018-07-10",
+        "review": "",
+        "rating": "7",
+        "poster": "https://image.tmdb.org/t/p/w500/kXiF80o74fE9gf3Utf9moAI7ar0.jpg",
+        "type": "movie",
+        "year": "2018",
+        "country": "KR",
+        "tmdb_rating": null
+    },
+    {
+        "title": "Ryuichi Sakamoto: Coda",
+        "date_display": "July 13, 2018",
+        "date_sort": "2018-07-13",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/iwd9X3YDEvLy7M8aZsgdpfOKows.jpg",
+        "type": "movie",
+        "year": "2017",
+        "country": "JP",
+        "tmdb_rating": 7.3
+    },
+    {
+        "title": "Shoplifters",
+        "date_display": "July 13, 2018",
+        "date_sort": "2018-07-13",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/4nfRUOv3LX5zLn98WS1WqVBk9E9.jpg",
+        "type": "movie",
+        "year": "2018",
+        "country": "JP",
+        "tmdb_rating": 10.0
+    },
+    {
+        "title": "Amy",
+        "date_display": "September 6, 2018",
+        "date_sort": "2018-09-06",
+        "review": "",
+        "rating": "9.5",
+        "poster": "https://image.tmdb.org/t/p/w500/qL0RepWSNUuZoeDXfyhqowVYhrn.jpg",
+        "type": "movie",
+        "year": "2015",
+        "country": "GB",
+        "tmdb_rating": 7.6
+    },
+    {
+        "title": "grain",
+        "date_display": "November 28, 2019",
+        "date_sort": "2019-11-28",
+        "review": "Grain / 如果麥子消失 金馬影展 2018 Taipei Golden Horse Festival",
+        "rating": "5",
+        "poster": "https://image.tmdb.org/t/p/w500null",
+        "type": "movie",
+        "year": "2016",
+        "country": "US",
+        "tmdb_rating": null
+    },
+    {
+        "title": "Mystery Train",
+        "date_display": "November 28, 2018",
+        "date_sort": "2018-11-28",
+        "review": "",
+        "rating": "",
+        "poster": "https://image.tmdb.org/t/p/w500/f11xq7dBGhz9UDc3dabldAGeXVH.jpg",
+        "type": "movie",
+        "year": "1989",
+        "country": "JP",
+        "tmdb_rating": 7.3
+    },
+    {
         "title": "Red Desert",
         "date_display": "December 19, 2019",
         "date_sort": "2019-12-19",
@@ -8,7 +236,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/rGcTVdyhaGzMxPPRVApXre6F7SD.jpg",
         "type": "movie",
         "year": "1964",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": null
     },
     {
         "title": "Fury",
@@ -19,7 +248,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/u1kjLTUqmqjDMlRxcwCqWagjf6r.jpg",
         "type": "movie",
         "year": "1936",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Vivre Sa Vie",
@@ -30,7 +260,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/A0BjScjASfMFgyGI5sU0CwfKh3l.jpg",
         "type": "movie",
         "year": "1962",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.7
     },
     {
         "title": "Kinetta",
@@ -41,7 +272,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/bjgIJAcL0HonVzvvZ2ebTN1F9SA.jpg",
         "type": "movie",
         "year": "2005",
-        "country": "GR"
+        "country": "GR",
+        "tmdb_rating": 5.0
     },
     {
         "title": "Maggie",
@@ -52,7 +284,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/6p2C6HlFY8cKZQDTvVu2ppQnocV.jpg",
         "type": "movie",
         "year": "2019",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Mahjong",
@@ -63,7 +296,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/mMDogr2D9FTIsA7xleOG3Lps93K.jpg",
         "type": "movie",
         "year": "1996",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 5.8
     },
     {
         "title": "My Sons",
@@ -74,7 +308,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/3Fp8GiGAC2uohvanWq5nibTpDJz.jpg",
         "type": "movie",
         "year": "1991",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 6.5
     },
     {
         "title": "Zombieland",
@@ -85,7 +320,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/dUkAmAyPVqubSBNRjRqCgHggZcK.jpg",
         "type": "movie",
         "year": "2009",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Objectified",
@@ -96,7 +332,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/zwzizbx09vLedeD2gcAaFbo9fes.jpg",
         "type": "movie",
         "year": "2009",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 5.0
     },
     {
         "title": "Shoeshine",
@@ -107,7 +344,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/qhhbo7rzJ1U8y1jW5cpR2j5GhvR.jpg",
         "type": "movie",
         "year": "1946",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 5.0
     },
     {
         "title": "Umberto D.",
@@ -118,7 +356,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/5I7SYsNQmZRZpQ2MAarIQYU9vaX.jpg",
         "type": "movie",
         "year": "1952",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 7.9
     },
     {
         "title": "Lions Love",
@@ -129,7 +368,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ahLU10GZeVLFg1KoC6wblOk8ZlW.jpg",
         "type": "movie",
         "year": "1969",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 5.8
     },
     {
         "title": "Street of Shame",
@@ -140,7 +380,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/eVKXkGG9xQiVj9kTt9PbdxJJoKS.jpg",
         "type": "movie",
         "year": "1956",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.7
     },
     {
         "title": "Contempt",
@@ -151,7 +392,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/kNElbRcp4Qz6wmJ9kH5vdY004Hq.jpg",
         "type": "movie",
         "year": "1963",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": null
     },
     {
         "title": "Kung-Fu Master!",
@@ -162,7 +404,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ymnlN8fhRDx0dmkqmZW4mQCbLXs.jpg",
         "type": "movie",
         "year": "1988",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 6.8
     },
     {
         "title": "Stalker",
@@ -173,7 +416,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/1qhOyf5C4s9ZdvY8d5JDx9DFMeT.jpg",
         "type": "movie",
         "year": "1979",
-        "country": "SU"
+        "country": "SU",
+        "tmdb_rating": 6.7
     },
     {
         "title": "Typhoon",
@@ -184,7 +428,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/wDZFmFiYV9sTNFZ4QLjCfGRcIOF.jpg",
         "type": "movie",
         "year": "1962",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": null
     },
     {
         "title": "Parasite",
@@ -195,7 +440,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
         "type": "movie",
         "year": "2019",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 8.5
     },
     {
         "title": "Roma",
@@ -206,7 +452,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/dtIIyQyALk57ko5bjac7hi01YQ.jpg",
         "type": "movie",
         "year": "2018",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Mauvais Sang",
@@ -217,7 +464,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/yjUmAFx8Z3E0K1IUpQSyUilL5P9.jpg",
         "type": "movie",
         "year": "1986",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.1
     },
     {
         "title": "Paradise Next",
@@ -228,7 +476,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/yUan4rXT9cjhy5YplT7ejUOa4MI.jpg",
         "type": "movie",
         "year": "2019",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 6.0
     },
     {
         "title": "Oldboy",
@@ -239,7 +488,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/pWDtjs568ZfOTMbURQBYuT4Qxka.jpg",
         "type": "movie",
         "year": "2003",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 5.9
     },
     {
         "title": "Rocco and His Brothers",
@@ -250,7 +500,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/pngL8AraChIDOiWnKF2o3S9kJzJ.jpg",
         "type": "movie",
         "year": "1960",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": null
     },
     {
         "title": "Le Notti Bianche",
@@ -261,7 +512,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/vD3cTATsUwQtYxFL9qDZiUgPYxQ.jpg",
         "type": "movie",
         "year": "1957",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Death in Venice",
@@ -272,7 +524,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/s81SuFBSqY8T5Lrn5R8ucX8LKxi.jpg",
         "type": "movie",
         "year": "1971",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": null
     },
     {
         "title": "Star Wars: Episode II - Attack of the Clones",
@@ -283,18 +536,20 @@
         "poster": "https://image.tmdb.org/t/p/w500/oZNPzxqM2s5DyVWab09NTQScDQt.jpg",
         "type": "movie",
         "year": "2002",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.6
     },
     {
         "title": "Star Wars: Episode I - The Phantom Menace",
-        "date_display": "April 9, 2026",
-        "date_sort": "2026-04-09",
+        "date_display": "April 9, 2019",
+        "date_sort": "2019-04-09",
         "review": "",
         "rating": "",
         "poster": "https://image.tmdb.org/t/p/w500/6wkfovpn7Eq8dYNKaG5PY3q2oq6.jpg",
         "type": "movie",
         "year": "1999",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.6
     },
     {
         "title": "Return of the Jedi",
@@ -305,7 +560,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/jQYlydvHm3kUix1f8prMucrplhm.jpg",
         "type": "movie",
         "year": "1983",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.9
     },
     {
         "title": "The Empire Strikes Back",
@@ -316,7 +572,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/nNAeTmF4CtdSgMDplXTDPOpYzsX.jpg",
         "type": "movie",
         "year": "1980",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.4
     },
     {
         "title": "Star Wars",
@@ -327,7 +584,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
         "type": "movie",
         "year": "1977",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.2
     },
     {
         "title": "Border",
@@ -338,7 +596,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/8KzOTRlKjdAKQTemV41hq86ldFS.jpg",
         "type": "movie",
         "year": "2018",
-        "country": "SE"
+        "country": "SE",
+        "tmdb_rating": 7.1
     },
     {
         "title": "Blade Runner 2049",
@@ -349,7 +608,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
         "type": "movie",
         "year": "2017",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Moonlight",
@@ -360,7 +620,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/qLnfEmPrDjJfPyyddLJPkXmshkp.jpg",
         "type": "movie",
         "year": "2016",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.3
     },
     {
         "title": "The Age of Innocence",
@@ -371,7 +632,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/5Tuyt26v7qNR8Cl3m7ZRx36rduf.jpg",
         "type": "movie",
         "year": "1993",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.0
     },
     {
         "title": "Scenes from a Marriage",
@@ -382,7 +644,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ArKEdvJesIktFX8OAhcdKAOLl6I.jpg",
         "type": "movie",
         "year": "1974",
-        "country": "SE"
+        "country": "SE",
+        "tmdb_rating": 7.2
     },
     {
         "title": "The Naked Director",
@@ -393,7 +656,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/nbeRva0jrmJAvRflXAe89CbD3Kg.jpg",
         "type": "tv",
         "year": "2019",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.3
     },
     {
         "title": "1917",
@@ -404,18 +668,20 @@
         "poster": "https://image.tmdb.org/t/p/w500/iZf0KyrE25z1sage4SYFLCCrMi9.jpg",
         "type": "movie",
         "year": "2019",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.0
     },
     {
         "title": "Knives Out",
-        "date_display": "April 9, 2026",
-        "date_sort": "2026-04-09",
+        "date_display": "January 3, 2020",
+        "date_sort": "2020-01-03",
         "review": "watched it with my ex lol",
         "rating": "7",
         "poster": "https://image.tmdb.org/t/p/w500/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
         "type": "movie",
         "year": "2019",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Tokyo-Ga",
@@ -426,18 +692,20 @@
         "poster": "https://image.tmdb.org/t/p/w500/uNH1TqJPFuoxW0YZmwBuiZqSBU1.jpg",
         "type": "movie",
         "year": "1985",
-        "country": "DE"
+        "country": "DE",
+        "tmdb_rating": null
     },
     {
         "title": "The Host",
-        "date_display": "April 8, 2026",
-        "date_sort": "2026-04-08",
+        "date_display": "December 31, 2020",
+        "date_sort": "2020-12-31",
         "review": "#貧窮 #Beer Bad SE but interesting take of monster films and South Korea social issues",
         "rating": "7.5",
         "poster": "https://image.tmdb.org/t/p/w500/m3OE5bpcGHMWYlPkYvgIrncuuGN.jpg",
         "type": "movie",
         "year": "2006",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 6.3
     },
     {
         "title": "The Ballad of Buster Scruggs",
@@ -448,7 +716,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/voxl654m7p36y8FLu8oQD7dfwwK.jpg",
         "type": "movie",
         "year": "2018",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.1
     },
     {
         "title": "The Yellow Sea",
@@ -459,7 +728,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/16Pkg2ChCdACbBKVIAPAZtLL6eb.jpg",
         "type": "movie",
         "year": "2010",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Brokeback Mountain",
@@ -470,7 +740,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/aByfQOQBNa4CMFwIgq3QrqY2ZHh.jpg",
         "type": "movie",
         "year": "2005",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.8
     },
     {
         "title": "The Third Wife",
@@ -481,7 +752,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/lU5WzfaCT5WbqNY6JvdNkvf0ngd.jpg",
         "type": "movie",
         "year": "2019",
-        "country": "VN"
+        "country": "VN",
+        "tmdb_rating": null
     },
     {
         "title": "Kramer vs. Kramer",
@@ -492,7 +764,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/3CUP5V5SWfHSK4qvkZF7lMNyugY.jpg",
         "type": "movie",
         "year": "1979",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Godzilla vs. Kong",
@@ -503,7 +776,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg",
         "type": "movie",
         "year": "2021",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Blue Valentine",
@@ -514,7 +788,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/dc8BdKnDY5Iy28KzUGtHIXuqqFK.jpg",
         "type": "movie",
         "year": "2010",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.0
     },
     {
         "title": "The Drama",
@@ -525,7 +800,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ikcNOWB6Qo1ER1H1BJL6Vf0W22s.jpg",
         "type": "movie",
         "year": "2026",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.1
     },
     {
         "title": "The Photo from 1977",
@@ -536,18 +812,20 @@
         "poster": "https://image.tmdb.org/t/p/w500/3QIRaf4yHONrvIwaLwWOOizEnst.jpg",
         "type": "movie",
         "year": "2025",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": null
     },
     {
         "title": "Island in Between",
         "date_display": "April 1, 2026",
         "date_sort": "2026-04-01",
         "review": "so short and just an introductory.",
-        "rating": "7",
+        "rating": "6.5",
         "poster": "https://image.tmdb.org/t/p/w500/2tTXYn0BulJurNxtiSMV6eAfrTF.jpg",
         "type": "movie",
         "year": "2023",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 6.3
     },
     {
         "title": "Avatar: The Way of Water",
@@ -558,7 +836,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
         "type": "movie",
         "year": "2022",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Poor Things",
@@ -569,7 +848,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg",
         "type": "movie",
         "year": "2023",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Left-Handed Girl",
@@ -580,7 +860,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/hfuxIKRCNsecLmoDdO0HJ1YUvv1.jpg",
         "type": "movie",
         "year": "2025",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.4
     },
     {
         "title": "First They Killed My Father",
@@ -591,7 +872,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/5370jxJfZQY8TUZiiGkpNgvRwU9.jpg",
         "type": "movie",
         "year": "2017",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Cabaret",
@@ -602,7 +884,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/fMhOeJ2TvuY46iYGmsowhgRXfnr.jpg",
         "type": "movie",
         "year": "1972",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Labyrinth",
@@ -613,7 +896,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/hbSdA1DmNA9IlfVoqJkIWYF2oYm.jpg",
         "type": "movie",
         "year": "1986",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Reservoir Dogs",
@@ -624,7 +908,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/xi8Iu6qyTfyZVDVy60raIOYJJmk.jpg",
         "type": "movie",
         "year": "1992",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.1
     },
     {
         "title": "Tokyo Story",
@@ -635,7 +920,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/g2YbTYKpY7N2yDSk7BfXZ18I5QV.jpg",
         "type": "movie",
         "year": "1953",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Phantom Thread",
@@ -646,7 +932,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/hgoWjp9Sh0MI97eAMZCnIoVfgvq.jpg",
         "type": "movie",
         "year": "2017",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Addams Family Values",
@@ -657,7 +944,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/sdxT2VjVSx9DRicwnuECUdBHeE7.jpg",
         "type": "movie",
         "year": "1993",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.0
     },
     {
         "title": "The Addams Family",
@@ -668,7 +956,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/9eqmCtAY9d2WwafLBYXRKYepgeA.jpg",
         "type": "tv",
         "year": "1964",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.0
     },
     {
         "title": "Alice in the Wonderland",
@@ -679,7 +968,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ipLBlkU7IXDS6bMgpG4cv92eHwG.jpg",
         "type": "tv",
         "year": "1983",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 6.1
     },
     {
         "title": "Road to Perdition",
@@ -690,7 +980,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/loSpBeirRfTPJ3cMIqpQArstGhh.jpg",
         "type": "movie",
         "year": "2002",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.3
     },
     {
         "title": "The Grandmaster",
@@ -701,7 +992,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/yXX0DGjQQhZomXLAmE9JDUKDtUT.jpg",
         "type": "tv",
         "year": "2018",
-        "country": "HK"
+        "country": "HK",
+        "tmdb_rating": 2.0
     },
     {
         "title": "Casablanca",
@@ -712,7 +1004,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/oyGRZVIthHJjc98ekKpeWpDh8Ws.jpg",
         "type": "movie",
         "year": "1943",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.1
     },
     {
         "title": "Vanilla Sky",
@@ -723,7 +1016,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg",
         "type": "movie",
         "year": "2001",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": null
     },
     {
         "title": "咒",
@@ -734,7 +1028,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/cWz28oGV3cSajWdziVQbqrYCmnX.jpg",
         "type": "movie",
         "year": "2022",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 6.8
     },
     {
         "title": "Clueless",
@@ -745,7 +1040,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/2gYRjzWmgS2sNFlUfJBWXZyAOnw.jpg",
         "type": "tv",
         "year": "1996",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.2
     },
     {
         "title": "凜冬烈火：烏克蘭自由之戰",
@@ -756,7 +1052,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/xGKMWhYsK3OxQ6ceqMnvXBfFd7G.jpg",
         "type": "movie",
         "year": "2015",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.9
     },
     {
         "title": "The Day I Met El Chapo: The Kate Del Castillo Story",
@@ -767,7 +1064,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/cHJ08CcTSCBkBfcVDQRRiOFKoM2.jpg",
         "type": "tv",
         "year": "2017",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 5.8
     },
     {
         "title": "Cooking with Paris",
@@ -778,7 +1076,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/lDIXKLKDCGDLum19WrkNwZT60a0.jpg",
         "type": "tv",
         "year": "2021",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.4
     },
     {
         "title": "El Camino",
@@ -789,7 +1088,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/2wr93c3thHdWTVdq9MVDe4aBhFP.jpg",
         "type": "movie",
         "year": "2008",
-        "country": "ES"
+        "country": "ES",
+        "tmdb_rating": 5.7
     },
     {
         "title": "Sleepers",
@@ -800,7 +1100,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/yUpiEk2EojS9ZEXb3nIQonQCYYF.jpg",
         "type": "movie",
         "year": "1996",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "財閥家的小兒子",
@@ -811,7 +1112,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ksXvHQEzcOy8wyxZUivhfHakiXg.jpg",
         "type": "tv",
         "year": "2022",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 8.0
     },
     {
         "title": "Swann in Love",
@@ -822,7 +1124,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/r5viJgAJrfxw226K1OMnAkcoDCz.jpg",
         "type": "movie",
         "year": "1984",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 5.5
     },
     {
         "title": "Irish Man",
@@ -833,7 +1136,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/yjDvqAMyFlesBtWNUUZMgglo78y.jpg",
         "type": "movie",
         "year": "2011",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.8
     },
     {
         "title": "鄧不利多的秘密",
@@ -844,7 +1148,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/3c5GNLB4yRSLBby0trHoA1DSQxQ.jpg",
         "type": "movie",
         "year": "2022",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.6
     },
     {
         "title": "Don’t Look Up",
@@ -855,7 +1160,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg",
         "type": "movie",
         "year": "2021",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.1
     },
     {
         "title": "Cowboy Bebop",
@@ -866,7 +1172,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/xDiXDfZwC6XYC6fxHI1jl3A3Ill.jpg",
         "type": "tv",
         "year": "1998",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.5
     },
     {
         "title": "Decision to Leave",
@@ -877,18 +1184,20 @@
         "poster": "https://image.tmdb.org/t/p/w500/N0rskx91Eh6aWjvBybeY6epNic.jpg",
         "type": "movie",
         "year": "2022",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 7.3
     },
     {
         "title": "World’s Most Wanted",
         "date_display": "March 12, 2022",
         "date_sort": "2022-03-12",
-        "review": "Documentary",
+        "review": "1. Ismael \"EI Mayo\" Zambada Garcia: The Head of the Sinaloa Cartel 比矮子低調的大頭頭，兒子很帥被抓走了\n2. Felicien Kabuga G: The Financer of the Genocide in Rwanda 進口一堆開山刀、利用電台散播民族仇恨\n3. Samantha Lewthwaite: The White Widow\" 愛爾蘭白人女性信伊斯蘭教後變成恐怖份子，策劃很多炸彈客事件\n4. Semion Mogilevich： The Russian Mafia Boss\" 俄羅斯最大的頭頭，在美國詐騙、歐洲人口販賣\n5. Matteo Messina Denaro2: Cosa Nostra's Last Godfather 27E",
         "rating": "4",
         "poster": "https://image.tmdb.org/t/p/w500/dDaIGQvHHP4xixwqwhgwn8WMZx.jpg",
         "type": "tv",
         "year": "2020",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.8
     },
     {
         "title": "Love, Death, Robot",
@@ -899,7 +1208,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/asDqvkE66EegtKJJXIRhBJPxscr.jpg",
         "type": "tv",
         "year": "2019",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.2
     },
     {
         "title": "The Worst Person in the World",
@@ -910,7 +1220,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/1NxGNQchGBTHXJ6RShLY1IlZqWn.jpg",
         "type": "movie",
         "year": "2021",
-        "country": "NO"
+        "country": "NO",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Spycraft",
@@ -921,7 +1232,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/3JJMgQ09UpZKzfsbjHatqhSmPJc.jpg",
         "type": "tv",
         "year": "2021",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.9
     },
     {
         "title": "Marie Antoinette",
@@ -932,7 +1244,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/hHx98HeZOPNCJjXXLr7WRoE4NeY.jpg",
         "type": "tv",
         "year": "2022",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Fear City: New York vs The Mafia",
@@ -943,7 +1256,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/jQntaJvCakqbGJs8ihahXV8xk9f.jpg",
         "type": "tv",
         "year": "2020",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.8
     },
     {
         "title": "Meek’s Cutoff",
@@ -954,7 +1268,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/jxjLpZseFdzMBvGfTscTTpM94Yk.jpg",
         "type": "movie",
         "year": "2011",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.5
     },
     {
         "title": "Ali Wong: Don Wong",
@@ -965,7 +1280,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/rhwfoNRrTTLbdkkqjjC6yCDZXte.jpg",
         "type": "movie",
         "year": "2022",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.9
     },
     {
         "title": "Better Call Saul",
@@ -976,7 +1292,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/fC2HDm5t0kHl7mTm7jxMR31b7by.jpg",
         "type": "tv",
         "year": "2015",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.7
     },
     {
         "title": "諧星乘車買咖啡",
@@ -987,7 +1304,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/hpK5MsFa7k7RQdClvRglBo0wAoT.jpg",
         "type": "tv",
         "year": "2012",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.1
     },
     {
         "title": "Everything Everywhere All At Once",
@@ -998,7 +1316,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
         "type": "movie",
         "year": "2022",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.7
     },
     {
         "title": "頭七",
@@ -1009,7 +1328,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/eUOs2z9sE6c59bBhss0fhjPXlGn.jpg",
         "type": "movie",
         "year": "2009",
-        "country": "HK"
+        "country": "HK",
+        "tmdb_rating": 4.1
     },
     {
         "title": "The Gangster, The Cop, The Devil",
@@ -1020,7 +1340,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/oHlM4abRm6BzrRcz9Nup1uidw9H.jpg",
         "type": "movie",
         "year": "2019",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Drug Lords",
@@ -1031,7 +1352,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/g2SuNwbP8CDwSBaviIct8WmXy4V.jpg",
         "type": "tv",
         "year": "2018",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Top Gun 2",
@@ -1042,7 +1364,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/2lUHMJDIhdeTSUbGFtbzgDEUJ1C.jpg",
         "type": "movie",
         "year": "2002",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": null
     },
     {
         "title": "讓子彈飛",
@@ -1053,7 +1376,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/pkwBO3XkQLhgb31vl5ZwmGC5meT.jpg",
         "type": "movie",
         "year": "2010",
-        "country": "CN"
+        "country": "CN",
+        "tmdb_rating": 7.1
     },
     {
         "title": "傑瑞·史菲德：23 小時殺時間",
@@ -1064,7 +1388,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/qvAymJkltRoaxvievYiJfXGusD3.jpg",
         "type": "movie",
         "year": "2020",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.2
     },
     {
         "title": "傑瑞·史菲德：我再說最後一次",
@@ -1075,7 +1400,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/jffjpqXw6W9x6etUSYBkMPEQWRY.jpg",
         "type": "movie",
         "year": "1998",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Bojack Horseman",
@@ -1086,7 +1412,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/6JFWzlChcGgLiIUo2COgNlWGFKy.jpg",
         "type": "tv",
         "year": "2014",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.5
     },
     {
         "title": "Inside the World’s Toughest Prisons",
@@ -1097,7 +1424,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ebp1dNueJth2aLXRitU4decZY6D.jpg",
         "type": "tv",
         "year": "2016",
-        "country": "GB"
+        "country": "GB",
+        "tmdb_rating": 7.1
     },
     {
         "title": "傑瑞·史菲德哪一位",
@@ -1108,7 +1436,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/1HsldceVUztgRztwp3pOaVRJVlp.jpg",
         "type": "movie",
         "year": "2017",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.8
     },
     {
         "title": "Drive My Car",
@@ -1119,7 +1448,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/3cOsf5HBjPK2QCz9ebQlGHNnE7y.jpg",
         "type": "movie",
         "year": "2021",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.4
     },
     {
         "title": "American Girl",
@@ -1130,7 +1460,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/lRWpwTW5YSbZSu6xUqIBy2VCvKH.jpg",
         "type": "movie",
         "year": "2021",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 5.3
     },
     {
         "title": "海上花",
@@ -1141,7 +1472,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/9N3TdNbr5pyT69M5cHODmfc4zTs.jpg",
         "type": "movie",
         "year": "1998",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 6.9
     },
     {
         "title": "蜂巢的幽靈",
@@ -1152,7 +1484,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/p2wx4EWasQaPGxnbS2IsW74ewVN.jpg",
         "type": "movie",
         "year": "1973",
-        "country": "ES"
+        "country": "ES",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Alias Grace",
@@ -1163,7 +1496,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/m6ChYjCPMpzAPzR7jm0omLbu9hS.jpg",
         "type": "tv",
         "year": "2017",
-        "country": "CA"
+        "country": "CA",
+        "tmdb_rating": 7.2
     },
     {
         "title": "Arrested Development",
@@ -1174,7 +1508,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/p4r4RD7RsNcJVoz0H6z3dBoTBtW.jpg",
         "type": "tv",
         "year": "2003",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.9
     },
     {
         "title": "Lock, stock, and two smoking barrels",
@@ -1185,7 +1520,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/6pJB2t3MbQUy9m5pFIBHXLqnqNd.jpg",
         "type": "movie",
         "year": "1998",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.1
     },
     {
         "title": "Bridesmaid",
@@ -1196,7 +1532,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/sWUbCdTRRX20gVuJ5xVYGhLS4Q3.jpg",
         "type": "movie",
         "year": "2005",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": null
     },
     {
         "title": "Barry",
@@ -1207,7 +1544,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/j1XpwD11f0BAEI7pX6UdMhUVX2F.jpg",
         "type": "tv",
         "year": "2018",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.9
     },
     {
         "title": "Three Billboards Outside Ebbing, Missouri",
@@ -1218,7 +1556,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/uGMM9ZObmPUFrGqcbFMVyv8L1lU.jpg",
         "type": "movie",
         "year": "2017",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.1
     },
     {
         "title": "今際之國的闖關者",
@@ -1229,7 +1568,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/Ac8ruycRXzgcsndTZFK6ouGA0FA.jpg",
         "type": "tv",
         "year": "2020",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.1
     },
     {
         "title": "Inside Llewyn Davis",
@@ -1240,7 +1580,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/nNxK3pC3DMpPpWKMvo2p3liREVT.jpg",
         "type": "movie",
         "year": "2013",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.2
     },
     {
         "title": "John Wick: Chapter 2",
@@ -1251,7 +1592,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/hXWBc0ioZP3cN4zCu6SN3YHXZVO.jpg",
         "type": "movie",
         "year": "2017",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.3
     },
     {
         "title": "The Office",
@@ -1262,7 +1604,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/dg9e5fPRRId8PoBE0F6jl5y85Eu.jpg",
         "type": "tv",
         "year": "2005",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.6
     },
     {
         "title": "Django Unchained",
@@ -1273,7 +1616,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
         "type": "movie",
         "year": "2012",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.2
     },
     {
         "title": "The Naked Director",
@@ -1284,7 +1628,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/nbeRva0jrmJAvRflXAe89CbD3Kg.jpg",
         "type": "tv",
         "year": "2019",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Nebraska",
@@ -1295,7 +1640,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/o1t2Mw18EEBnl8v4Nby3PFjxnM1.jpg",
         "type": "movie",
         "year": "2013",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Ready Player One",
@@ -1306,7 +1652,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg",
         "type": "movie",
         "year": "2018",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Call My Agent",
@@ -1317,7 +1664,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/3whFzxzeKuTIgPzm2c0pm5xAhEL.jpg",
         "type": "tv",
         "year": "2015",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.7
     },
     {
         "title": "The Nice Guys",
@@ -1328,7 +1676,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/clq4So9spa9cXk3MZy2iMdqkxP2.jpg",
         "type": "movie",
         "year": "2016",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.1
     },
     {
         "title": "Hateful Eight",
@@ -1339,7 +1688,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/jIywvdPjia2t3eKYbjVTcwBQlG8.jpg",
         "type": "movie",
         "year": "2015",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.8
     },
     {
         "title": "非誠勿擾",
@@ -1350,7 +1700,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/eMsP44KNK4jspZxvZj1E9GE6nk9.jpg",
         "type": "movie",
         "year": "2023",
-        "country": "CN"
+        "country": "CN",
+        "tmdb_rating": 4.8
     },
     {
         "title": "Divorce Italian Style",
@@ -1361,7 +1712,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/vZbdSpUFyFiDBBTY0AiSrN9f303.jpg",
         "type": "movie",
         "year": "1961",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 7.9
     },
     {
         "title": "Legally Blonde",
@@ -1372,7 +1724,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/9ohlMrJHQqKhfUKh7Zr3JQqHNLZ.jpg",
         "type": "movie",
         "year": "2001",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.8
     },
     {
         "title": "攻殼機動隊",
@@ -1383,7 +1736,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/9gC88zYUBARRSThcG93MvW14sqx.jpg",
         "type": "movie",
         "year": "1995",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.2
     },
     {
         "title": "無間道2",
@@ -1394,7 +1748,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/l9q4HRj3kxQt4AKKBDtwej6G0HU.jpg",
         "type": "movie",
         "year": "2003",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": null
     },
     {
         "title": "Marriage Italian Style",
@@ -1405,7 +1760,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/1VVQFXwr4i6QSAoPnCs9UmGTUVw.jpg",
         "type": "movie",
         "year": "1964",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 7.7
     },
     {
         "title": "Goblin Slayer",
@@ -1416,7 +1772,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/x8ZQyxAFjz9jtCGivbOMYUC4Tp3.jpg",
         "type": "tv",
         "year": "2018",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.1
     },
     {
         "title": "無間道",
@@ -1427,7 +1784,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gix9thDBXfjJ8M7rYbihqbQGBcP.jpg",
         "type": "movie",
         "year": "2002",
-        "country": "HK"
+        "country": "HK",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Mind Hunter",
@@ -1438,7 +1796,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ketKS3Q4L0fjpm17fk1I0J5GPyg.jpg",
         "type": "tv",
         "year": "2017",
-        "country": "HK"
+        "country": "HK",
+        "tmdb_rating": null
     },
     {
         "title": "Seinfeld",
@@ -1449,7 +1808,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/aCw8ONfyz3AhngVQa1E2Ss4KSUQ.jpg",
         "type": "tv",
         "year": "1989",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.3
     },
     {
         "title": "下女的誘惑",
@@ -1460,7 +1820,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/dLlH4aNHdnmf62umnInL8xPlPzw.jpg",
         "type": "movie",
         "year": "2016",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 8.2
     },
     {
         "title": "Die Hard",
@@ -1471,7 +1832,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/aJCpHDC6RoGz7d1Fzayl019xnxX.jpg",
         "type": "movie",
         "year": "1988",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Bergman: A Year in a Life",
@@ -1482,18 +1844,20 @@
         "poster": "https://image.tmdb.org/t/p/w500/1uaqyt9GhBDNoh8XFsFYO9tQ5Pl.jpg",
         "type": "movie",
         "year": "2018",
-        "country": "SV"
+        "country": "SV",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Yojimbo",
         "date_display": "June 1, 2021",
         "date_sort": "2021-06-01",
-        "review": "#三船敏郎 #仲代達矢",
+        "review": "#三船敏郎 #仲代達矢\n一個浪跡天涯、看似狼狽窮酸卻刀藝精湛的武士桑畑三十郎（Kuwabatake Sanjuro），來到一座荒蕪小鎮，當地兩方惡勢力清兵衛（Seibei）掌控妓院、和當地市長多左衛門（Tazaemon）的絲綢生意；丑寅（Ushitora）則扶持徳右衛門（Tokuemon）的清酒事業。雙方為了爭奪地盤和暴利賭場械鬥不息，小鎮上血腥討債與血戰時傳，流氓罪犯當道，使小鎮的鎮民不是蕭條落魄，就是趁亂圖利。\n\n三十郎在小鎮為了餬口與懲奸除惡，展現自己的刀術，策劃讓雙方為了爭奪自己而掀起血拼，使之互相減損傾軋。其中小平（Kohei）因賭債被德右衛門奪去的妻子ぬい（Nui）遭丑寅綁架，三十郎為拯救Nui讓一家人團聚，殺死丑寅的六名手下，偽裝成是清兵衛的突襲。\n\n然而丑寅最小的弟弟卯之助（Unosuke）精明狡猾，從外地帶回新式手槍，並逐漸懷疑三十郎居中搗亂，是三十郎最危險的敵手。先前的計劃被揭穿後，三十郎被丑寅捉去痛打，利用地下道與居酒屋老闆権爺（Gonji）的藏匿，趁著丑寅和卯之助一夥人屠殺清兵衛（Seibei）黨人時遣逃到鎮外墓園旁的小寺廟喘息。\n\n幾天後當権爺要送飯食被丑寅捉去，三十郎在黃沙滾滾、煙塵瀰漫中正面與卯之助等人對峙，最後成功解救権爺，使村鎮恢復平靜，瀟灑揚長而去。\n\n1860年（定位時代）江戶末期的浪人武士，除了利用謀略餵養自己，同時也尋求武士道尊嚴。這種類似羅賓漢的角色，似乎永遠無法融入正統與合法的社會，反抗權威與失序社會的武士，卻也不會甘於安逸和平靜。",
         "rating": "5",
         "poster": "https://image.tmdb.org/t/p/w500/o37Uc0FxQoQyA7mssn4TkWI6aa1.jpg",
         "type": "tv",
         "year": "2001",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.4
     },
     {
         "title": "咒術回戰",
@@ -1504,7 +1868,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg",
         "type": "tv",
         "year": "2020",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.6
     },
     {
         "title": "RED",
@@ -1515,7 +1880,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/8eeK3OB5PeSRQD7BpZcGZKkehG.jpg",
         "type": "movie",
         "year": "2010",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.7
     },
     {
         "title": "Merry Christmas, Mr. Lawrence",
@@ -1526,7 +1892,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/qxlu6aiWxD16gkOUyGkcWDzrfwV.jpg",
         "type": "movie",
         "year": "1983",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.3
     },
     {
         "title": "令人討厭的松子的一生",
@@ -1537,18 +1904,20 @@
         "poster": "https://image.tmdb.org/t/p/w500/epizm54ChIajXYHz5RBQYzdtjoR.jpg",
         "type": "movie",
         "year": "2006",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.8
     },
     {
         "title": "The Sons of Sam: A Descent into Darkness",
         "date_display": "May 31, 2021",
         "date_sort": "2021-05-31",
-        "review": "",
+        "review": "從旁白敘述 1976 Son of sam 連續殺人案的事件經過，身處其中的一位記者 Maury Terry 的第一人稱的內心想法，穿插專訪Terry友人的訪談證詞，去談論 Terry 如何開始調查這件事，挖掘到不合邏輯的證據，發現 The Process 的撒旦主義邪教組織，以及這個組織與 David Berkowitz（Son of Sam）、他的鄰居 Sam Carr 的兒子John & Michael Carr 的關係，而這整個事件又如何和 Terry 本人的人生交纏，他也越陷越深。第四集拍得比較差，除了收尾在 Terry 心力交瘁後心臟病發，並沒有帶來和當代邪教組織相關的論述或發現或 David Berkowitz 本人後續的說詞。\n\n比較像是一種警惕甚至立正，但卻不確定看完之後要如何解讀資料。",
         "rating": "4",
         "poster": "https://image.tmdb.org/t/p/w500/jtswwFmnOv14Li1hdry8tZiZ4Mk.jpg",
         "type": "tv",
         "year": "2021",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.9
     },
     {
         "title": "Notting Hill",
@@ -1559,7 +1928,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/hHRIf2XHeQMbyRb3HUx19SF5Ujw.jpg",
         "type": "movie",
         "year": "1999",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Seven Samurai",
@@ -1570,7 +1940,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/lOMGc8bnSwQhS4XyE1S99uH8NXf.jpg",
         "type": "movie",
         "year": "1954",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.5
     },
     {
         "title": "Memento",
@@ -1581,7 +1952,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
         "type": "movie",
         "year": "2000",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.2
     },
     {
         "title": "江湖兒女",
@@ -1592,7 +1964,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/pnVGq5mEvKwlKJzoqFRM46Jzm1g.jpg",
         "type": "movie",
         "year": "1952",
-        "country": "CN"
+        "country": "CN",
+        "tmdb_rating": null
     },
     {
         "title": "Atlanta",
@@ -1603,7 +1976,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/8HZyGMnPLVVb00rmrh6A2SbK9NX.jpg",
         "type": "tv",
         "year": "2016",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.0
     },
     {
         "title": "Meet Joe Black",
@@ -1614,7 +1988,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/fDPAjvfPMomkKF7cMRmL5Anak61.jpg",
         "type": "movie",
         "year": "1998",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.4
     },
     {
         "title": "青春弒戀",
@@ -1625,7 +2000,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/7znt6XqsRACqdXPWy2zdMjJ5iPn.jpg",
         "type": "movie",
         "year": "2021",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 5.9
     },
     {
         "title": "NANA",
@@ -1636,7 +2012,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/mUZ5FMw2Xcj6VAakhIQ2KMgmp3w.jpg",
         "type": "tv",
         "year": "2006",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.5
     },
     {
         "title": "South Park",
@@ -1647,7 +2024,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/1CGwZCFX2qerXaXQJJUB3qUvxq7.jpg",
         "type": "tv",
         "year": "1997",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.3
     },
     {
         "title": "American Gangster",
@@ -1658,7 +2036,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/m7kJge9DG86Bj7hsBW6xFCMyDkY.jpg",
         "type": "movie",
         "year": "2007",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Youth",
@@ -1669,7 +2048,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ceRN51oeadmccAvqvDxpnnNRcLU.jpg",
         "type": "movie",
         "year": "2015",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": null
     },
     {
         "title": "Atlanta",
@@ -1680,7 +2060,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/8HZyGMnPLVVb00rmrh6A2SbK9NX.jpg",
         "type": "tv",
         "year": "2016",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.0
     },
     {
         "title": "Nomadland",
@@ -1691,7 +2072,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/dKT8rGDR55cM1vGn7QZLA9Tg9YC.jpg",
         "type": "movie",
         "year": "2021",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.2
     },
     {
         "title": "末代皇帝",
@@ -1702,7 +2084,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/sZjWYotdZpipEoTdHJfU7S7HcIS.jpg",
         "type": "tv",
         "year": "1988",
-        "country": "CN"
+        "country": "CN",
+        "tmdb_rating": 8.0
     },
     {
         "title": "滾滾紅塵",
@@ -1713,7 +2096,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/v2AUiGfNJm2RgfiX708OYzNb2N.jpg",
         "type": "movie",
         "year": "1990",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 6.8
     },
     {
         "title": "Love, Death, Robot",
@@ -1724,7 +2108,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/asDqvkE66EegtKJJXIRhBJPxscr.jpg",
         "type": "tv",
         "year": "2019",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.2
     },
     {
         "title": "Bojack Horseman",
@@ -1735,7 +2120,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/6JFWzlChcGgLiIUo2COgNlWGFKy.jpg",
         "type": "tv",
         "year": "2014",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.5
     },
     {
         "title": "I’m a cyborg but that’s OK",
@@ -1746,7 +2132,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/x48ecVD1HbfQh3KZeK6LwRgVrOl.jpg",
         "type": "movie",
         "year": "2006",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 7.0
     },
     {
         "title": "Almost Famous",
@@ -1757,7 +2144,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/3rrkyLYbgLj84AYvjhdcJot4JPx.jpg",
         "type": "movie",
         "year": "2000",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Mind, Explained",
@@ -1768,7 +2156,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/8ShULolWRDYbyACvWK9NbsWcqFJ.jpg",
         "type": "tv",
         "year": "2019",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "The Eternal Sunshine of the Spotless Mind",
@@ -1779,7 +2168,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/5MwkWH9tYHv3mV9OdYTMR5qreIz.jpg",
         "type": "movie",
         "year": "2004",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.1
     },
     {
         "title": "Dead Poets Society",
@@ -1790,7 +2180,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/erzbMlcNHOdx24AXOcn2ZKA7R1q.jpg",
         "type": "movie",
         "year": "1989",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.3
     },
     {
         "title": "Amadeus",
@@ -1801,7 +2192,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/1n5VUlCqgmVax1adxGZm8oCFaKc.jpg",
         "type": "movie",
         "year": "1984",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.0
     },
     {
         "title": "Sleepless in Seattle",
@@ -1812,7 +2204,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/jAXfku1u1uaLGh4cUmK0ESf1pPu.jpg",
         "type": "movie",
         "year": "1993",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.7
     },
     {
         "title": "Okja",
@@ -1823,7 +2216,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/lHBYG2NcBMW7UpFL4rSCpsgvz4m.jpg",
         "type": "movie",
         "year": "2017",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Landscape in the Mist",
@@ -1834,7 +2228,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/AernfUrb48q0GBul7xs4f8GndmI.jpg",
         "type": "movie",
         "year": "1988",
-        "country": "GR"
+        "country": "GR",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Beastars",
@@ -1845,7 +2240,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/sh9iNWkleOjEHRHj8WPHhmMi8HL.jpg",
         "type": "tv",
         "year": "2019",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.4
     },
     {
         "title": "Weeping Meadow",
@@ -1856,7 +2252,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gLH8vr0XTN4xhwz5iMhBxyw9frI.jpg",
         "type": "movie",
         "year": "2004",
-        "country": "GR"
+        "country": "GR",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Breaking Bad",
@@ -1867,7 +2264,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ztkUQFLlC19CCMYHW9o1zWhJRNq.jpg",
         "type": "tv",
         "year": "2008",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.9
     },
     {
         "title": "Paris, Texas",
@@ -1878,7 +2276,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/sP27Qm4THyRZyHjHYMfIDtJP6YE.jpg",
         "type": "movie",
         "year": "1984",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.1
     },
     {
         "title": "Eyes Wide Shut",
@@ -1889,7 +2288,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/knEIz1eNGl5MQDbrEAVWA7iRqF9.jpg",
         "type": "movie",
         "year": "1999",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Gozu",
@@ -1900,7 +2300,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/mo5L0XzMYmLhdsvgA40qlYiHhAF.jpg",
         "type": "movie",
         "year": "2003",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 6.8
     },
     {
         "title": "Lisbon Story",
@@ -1911,7 +2312,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/iqxvLET9q43BxxNXmit9nNiEPPM.jpg",
         "type": "movie",
         "year": "1994",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.1
     },
     {
         "title": "La Dolce Vita",
@@ -1922,7 +2324,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/2KU52apQyvyZuPsqEGMcWb4BKu2.jpg",
         "type": "movie",
         "year": "1960",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 8.0
     },
     {
         "title": "La Strada",
@@ -1933,7 +2336,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/rwjbT0zlsUDMztaCcWjlWuxaEL1.jpg",
         "type": "movie",
         "year": "1954",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 7.9
     },
     {
         "title": "Nights of Cabiria (Le notti di Cabiria)",
@@ -1944,7 +2348,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/xF4oCG3PLNbcrtPZbqB3BtkIbKg.jpg",
         "type": "movie",
         "year": "1957",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 8.0
     },
     {
         "title": "The Bullocks (I vitelloni)",
@@ -1955,7 +2360,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/boqcM6bhQICnNue4pkgmauj9JN3.jpg",
         "type": "movie",
         "year": "1953",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Gone With the Wind",
@@ -1966,7 +2372,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/lNz2Ow0wGCAvzckW7EOjE03KcYv.jpg",
         "type": "movie",
         "year": "1939",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.9
     },
     {
         "title": "Citizen Kane",
@@ -1977,7 +2384,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/sav0jxhqiH0bPr2vZFU0Kjt2nZL.jpg",
         "type": "movie",
         "year": "1941",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.0
     },
     {
         "title": "Early Summer",
@@ -1988,7 +2396,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/qVJsIMOYT7pNEldMttuATep6mtB.jpg",
         "type": "movie",
         "year": "1951",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.8
     },
     {
         "title": "John Wick 1",
@@ -1999,7 +2408,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/fZPSd91yGE9fCcCe6OoQr6E3Bev.jpg",
         "type": "movie",
         "year": "2014",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "South Park",
@@ -2010,7 +2420,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/1CGwZCFX2qerXaXQJJUB3qUvxq7.jpg",
         "type": "tv",
         "year": "1997",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.3
     },
     {
         "title": "Howl’s Moving Castle",
@@ -2021,7 +2432,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/13kOl2v0nD2OLbVSHnHk8GUFEhO.jpg",
         "type": "movie",
         "year": "2004",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.4
     },
     {
         "title": "Fight Club",
@@ -2032,7 +2444,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
         "type": "movie",
         "year": "1999",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.4
     },
     {
         "title": "Better Call Saul",
@@ -2043,7 +2456,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/fC2HDm5t0kHl7mTm7jxMR31b7by.jpg",
         "type": "tv",
         "year": "2015",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.7
     },
     {
         "title": "The Dreamers",
@@ -2054,7 +2468,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/8xYTTQVCxVXkMtPitvwEudNrgtd.jpg",
         "type": "movie",
         "year": "2003",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.2
     },
     {
         "title": "Cabiria",
@@ -2065,7 +2480,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/oZhgcHHapkzYmB0OhQcRfZ7LdLM.jpg",
         "type": "movie",
         "year": "1914",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 7.2
     },
     {
         "title": "Paris is Burning",
@@ -2076,7 +2492,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/90rCWH41mj9hjHUEy2SOHfuAOl3.jpg",
         "type": "movie",
         "year": "1991",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.0
     },
     {
         "title": "Ocean’s Eleven",
@@ -2087,7 +2504,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/hQQCdZrsHtZyR6NbKH2YyCqd2fR.jpg",
         "type": "movie",
         "year": "2001",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "In the Realm of Senses 感官世界",
@@ -2098,7 +2516,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/AiFQbgjgSXWPfbi9iIYT39iXWMW.jpg",
         "type": "movie",
         "year": "1976",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 6.6
     },
     {
         "title": "American Psycho",
@@ -2109,7 +2528,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/9uGHEgsiUXjCNq8wdq4r49YL8A1.jpg",
         "type": "movie",
         "year": "2000",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Ocean’s Twelve",
@@ -2120,7 +2540,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/pE5anFf7nf6ah7V3VRezQ1KSovi.jpg",
         "type": "movie",
         "year": "2004",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.6
     },
     {
         "title": "Ocean’s Thirteen",
@@ -2131,7 +2552,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/pBsZs4zYUiUTemqbikTZ76iQRaU.jpg",
         "type": "movie",
         "year": "2007",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.7
     },
     {
         "title": "Stagecoach",
@@ -2142,7 +2564,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/wsifrzutFIzt51FLVDbWW5AOTUG.jpg",
         "type": "movie",
         "year": "1966",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Notorious",
@@ -2153,7 +2576,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/4RERYb1NIQrJHYY5e8nUlYM7t2z.jpg",
         "type": "movie",
         "year": "1946",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.2
     },
     {
         "title": "The Big Lebowski",
@@ -2164,7 +2588,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/9mprbw31MGdd66LR0AQKoDMoFRv.jpg",
         "type": "movie",
         "year": "1998",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Total Recall",
@@ -2175,7 +2600,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/wVbeL6fkbTKSmNfalj4VoAUUqJv.jpg",
         "type": "movie",
         "year": "1990",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Gladiator",
@@ -2186,7 +2612,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
         "type": "movie",
         "year": "2000",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.2
     },
     {
         "title": "In the Mood for Love",
@@ -2197,7 +2624,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/8BgGbbWiLNhPtkMkN0gGTnbtvBv.jpg",
         "type": "movie",
         "year": "2000",
-        "country": "HK"
+        "country": "HK",
+        "tmdb_rating": 8.1
     },
     {
         "title": "True Grit",
@@ -2208,7 +2636,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/tCrB8pcjadZjsDk7rleGJaIv78k.jpg",
         "type": "movie",
         "year": "2010",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.3
     },
     {
         "title": "What's Eating Gilbert Grape",
@@ -2219,7 +2648,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/8r9yts6XHbB1xNLaPC6ExNAK1Qu.jpg",
         "type": "movie",
         "year": "1993",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.7
     },
     {
         "title": "Identity Thief",
@@ -2230,7 +2660,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/lIliJCGoWT6tEVaDivLpXEf038w.jpg",
         "type": "movie",
         "year": "2013",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 5.9
     },
     {
         "title": "Gilmore Girls",
@@ -2241,7 +2672,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gwtzCwU2wdLLf8oejQu2TINiWfQ.jpg",
         "type": "tv",
         "year": "2000",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.9
     },
     {
         "title": "District 9",
@@ -2252,7 +2684,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/tuGlQkqLxnodDSk6mp5c2wvxUEd.jpg",
         "type": "movie",
         "year": "2009",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Inglorious Basterds",
@@ -2263,7 +2696,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/7sfbEnaARXDDhKm0CZ7D7uc2sbo.jpg",
         "type": "movie",
         "year": "2009",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.2
     },
     {
         "title": "Jules et Jim",
@@ -2274,7 +2708,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/kuFjZlcZhQFDtIjuI3GQJjsQG03.jpg",
         "type": "movie",
         "year": "1962",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Senso",
@@ -2285,7 +2720,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/iyWApADv4UD9KtVQvJ1mkKn9WXV.jpg",
         "type": "movie",
         "year": "1954",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 7.2
     },
     {
         "title": "The Love Eterne",
@@ -2296,7 +2732,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/dZW1z3ACCtGeeG87umzOQ04pOe7.jpg",
         "type": "movie",
         "year": "1963",
-        "country": "HK"
+        "country": "HK",
+        "tmdb_rating": null
     },
     {
         "title": "Taxi Driver",
@@ -2307,7 +2744,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ekstpH614fwDX8DUln1a2Opz0N8.jpg",
         "type": "movie",
         "year": "1976",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.2
     },
     {
         "title": "Sicario",
@@ -2318,7 +2756,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/lz8vNyXeidqqOdJW9ZjnDAMb5Vr.jpg",
         "type": "movie",
         "year": "2015",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Apocalypse Now",
@@ -2329,7 +2768,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gQB8Y5RCMkv2zwzFHbUJX3kAhvA.jpg",
         "type": "movie",
         "year": "1979",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.3
     },
     {
         "title": "20th Century Women",
@@ -2340,7 +2780,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/mso2rEr9i0MilRIOao5HaWFipS9.jpg",
         "type": "movie",
         "year": "2016",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Paris, Texas",
@@ -2351,7 +2792,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/sP27Qm4THyRZyHjHYMfIDtJP6YE.jpg",
         "type": "movie",
         "year": "1984",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.1
     },
     {
         "title": "Wings of Desire",
@@ -2362,7 +2804,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/iZQs2vUeCzvS1KfZJ6uYNCGJBBV.jpg",
         "type": "movie",
         "year": "1987",
-        "country": "DE"
+        "country": "DE",
+        "tmdb_rating": 7.8
     },
     {
         "title": "The Color of Pomegranate",
@@ -2373,7 +2816,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/35Sj3VeGLj8r8sT1XbxbrgD7KfI.jpg",
         "type": "movie",
         "year": "1969",
-        "country": "RU"
+        "country": "RU",
+        "tmdb_rating": 7.3
     },
     {
         "title": "La Pointe\r\n Courte",
@@ -2384,7 +2828,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/jPT3tkTu9U7oXkLTSpkPBAr5dwO.jpg",
         "type": "movie",
         "year": "1956",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 6.9
     },
     {
         "title": "五點到七點的克萊歐",
@@ -2395,7 +2840,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/oelBStY4xpguaplRv15P3Za7Xsr.jpg",
         "type": "movie",
         "year": "1962",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.7
     },
     {
         "title": "Daguerreotypes",
@@ -2406,7 +2852,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/3XXWWVKbePGBu6Q7e0ngve5cwBB.jpg",
         "type": "movie",
         "year": "1975",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Siblings of the Cape",
@@ -2417,7 +2864,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/iSHGNzQ0NlllCZQfgbucMOQYdBY.jpg",
         "type": "movie",
         "year": "2019",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 6.0
     },
     {
         "title": "The Heathers",
@@ -2428,7 +2876,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gpG8tPSKjZ6ozPQH9INcolhxCjZ.jpg",
         "type": "movie",
         "year": "2023",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.0
     },
     {
         "title": "Edward Scissorhands",
@@ -2439,7 +2888,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/e0FqKFvGPdQNWG8tF9cZBtev9Em.jpg",
         "type": "movie",
         "year": "1990",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.7
     },
     {
         "title": "L'eclisse",
@@ -2450,7 +2900,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/oXoe0Fp92Yw3mMJ9Vq0hPlaMELg.jpg",
         "type": "movie",
         "year": "1962",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 7.7
     },
     {
         "title": "L'amore",
@@ -2461,7 +2912,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/yhnoiJDFM39YYEoVqFnWv1x669e.jpg",
         "type": "movie",
         "year": "1948",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 6.7
     },
     {
         "title": "Fabiola",
@@ -2472,7 +2924,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/otnxpiWiM0DS7R03Kz2mPMmB4Xy.jpg",
         "type": "movie",
         "year": "1949",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": null
     },
     {
         "title": "Il Grido",
@@ -2483,7 +2936,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/anUoCgC45XL1nmLJoXD1kVKnwka.jpg",
         "type": "movie",
         "year": "1957",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Rome, Open City",
@@ -2494,7 +2948,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ijGV4v8JxgbNzgEhqKdzHdaZn8a.jpg",
         "type": "movie",
         "year": "1945",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 8.0
     },
     {
         "title": "My Own Private Idaho",
@@ -2505,7 +2960,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/p9TF90Pb5yg2MNb2UztzyXktMm4.jpg",
         "type": "movie",
         "year": "1991",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.1
     },
     {
         "title": "Ten things I hate about you",
@@ -2516,7 +2972,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ujERk3aKABXU3NDXOAxEQYTHe9A.jpg",
         "type": "movie",
         "year": "1999",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Faces Places",
@@ -2527,7 +2984,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/1NX6NTj9FiiJwEgRUmEifSzE7Na.jpg",
         "type": "movie",
         "year": "2017",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.6
     },
     {
         "title": "齊木楠雄的災難",
@@ -2538,7 +2996,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/tpym31HVeQgenaubvCxkMF3kFHy.jpg",
         "type": "tv",
         "year": "2016",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.3
     },
     {
         "title": "返校",
@@ -2549,18 +3008,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/2cVC8EPHuLFVOwgcjDOrdYyWAaM.jpg",
         "type": "tv",
         "year": "2020",
-        "country": "TW"
-    },
-    {
-        "title": "Zombieland 屍樂園",
-        "date_display": "October 10, 2019",
-        "date_sort": "2019-10-10",
-        "review": "",
-        "rating": "7.5",
-        "poster": "https://image.tmdb.org/t/p/w500/dUkAmAyPVqubSBNRjRqCgHggZcK.jpg",
-        "type": "movie",
-        "year": "2009",
-        "country": "US"
+        "country": "TW",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Neon Genesis Evangelio",
@@ -2571,7 +3020,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/y2ah9t0navXyIvoHg1uIbIHO3tt.jpg",
         "type": "tv",
         "year": "1995",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.6
     },
     {
         "title": "Une Femme est Une Femme 女人就是女人",
@@ -2582,7 +3032,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/xrZu21hriGJQY3qY8nifh2smVHu.jpg",
         "type": "movie",
         "year": "1961",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Zombieland 2",
@@ -2593,18 +3044,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/dtRbVsUb5O12WWO54SRpiMtHKC0.jpg",
         "type": "movie",
         "year": "2019",
-        "country": "US"
-    },
-    {
-        "title": "Zombieland 屍樂園",
-        "date_display": "October 10, 2019",
-        "date_sort": "2019-10-10",
-        "review": "",
-        "rating": "",
-        "poster": "https://image.tmdb.org/t/p/w500/dUkAmAyPVqubSBNRjRqCgHggZcK.jpg",
-        "type": "movie",
-        "year": "2009",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.9
     },
     {
         "title": "Confucius Confusion",
@@ -2615,7 +3056,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/sDEPrUoBf52AISJd5liP47ofKzp.jpg",
         "type": "movie",
         "year": "1994",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Sympathy for Lady Vengeance",
@@ -2626,7 +3068,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/3Oy3iLMqD79us2iAUD6fKqWebYU.jpg",
         "type": "movie",
         "year": "2005",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 7.5
     },
     {
         "title": "The Twilight Samurai",
@@ -2637,7 +3080,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/bB2M8UF8wc9flfGWkcgkTTf8Mzr.jpg",
         "type": "movie",
         "year": "2002",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.8
     },
     {
         "title": "陽光普照",
@@ -2648,7 +3092,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/oMdGYF0IBSJKgiNOuDoagmnOstu.jpg",
         "type": "movie",
         "year": "2019",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 7.7
     },
     {
         "title": "Nimic",
@@ -2659,7 +3104,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gRzUDFYke2DCVxmddotNatQ5FDl.jpg",
         "type": "movie",
         "year": "2020",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.6
     },
     {
         "title": "Metropolis",
@@ -2670,7 +3116,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/vZIJxGnjcswPCAa52jhbl01FQkV.jpg",
         "type": "movie",
         "year": "1927",
-        "country": "DE"
+        "country": "DE",
+        "tmdb_rating": 8.1
     },
     {
         "title": "Marriage Story",
@@ -2681,18 +3128,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/2JRyCKaRKyJAVpsIHeLvPw5nHmw.jpg",
         "type": "movie",
         "year": "2019",
-        "country": "US"
-    },
-    {
-        "title": "Sunrise",
-        "date_display": "January 30, 2018",
-        "date_sort": "2018-01-30",
-        "review": "",
-        "rating": "",
-        "poster": "https://image.tmdb.org/t/p/w500/4aRvg2ybz646gciX5M6qaclunC2.jpg",
-        "type": "movie",
-        "year": "2024",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.7
     },
     {
         "title": "Coffee and Cigarette",
@@ -2703,7 +3140,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/pfG02QCsutx3PIxFS8UY4iM9AsS.jpg",
         "type": "movie",
         "year": "2004",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.9
     },
     {
         "title": "I'm So Excited",
@@ -2714,7 +3152,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/sQSHPwWlqW9AJEac6sakeIhrMZx.jpg",
         "type": "movie",
         "year": "2013",
-        "country": "ES"
+        "country": "ES",
+        "tmdb_rating": 5.7
     },
     {
         "title": "青梅竹馬",
@@ -2725,7 +3164,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/veJ93QUnTBX4WXk5qSl1s42Uosj.jpg",
         "type": "movie",
         "year": "1985",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 7.4
     },
     {
         "title": "愛情萬歲",
@@ -2736,7 +3176,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/uiVAPBx9D2Gb9ZGejvxMhRboaYz.jpg",
         "type": "movie",
         "year": "1995",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 7.2
     },
     {
         "title": "牯嶺街少年殺人事件",
@@ -2747,7 +3188,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/rDZ2mNQkZrnSzHPLQ7SzhzgCSoj.jpg",
         "type": "movie",
         "year": "1991",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 8.3
     },
     {
         "title": "青少年哪吒",
@@ -2758,7 +3200,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/6fvS07LDOuL9610VeftTWRqHYTM.jpg",
         "type": "movie",
         "year": "1994",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Sonatine",
@@ -2769,7 +3212,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/mX9E4fEuG17L2e7bZmhBc0XdRbw.jpg",
         "type": "movie",
         "year": "1993",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Blow Up",
@@ -2780,40 +3224,32 @@
         "poster": "https://image.tmdb.org/t/p/w500/jVDVpydUw8Z50naUDAG4NbRCrSa.jpg",
         "type": "movie",
         "year": "1966",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": null
     },
     {
         "title": "A Room With a View",
         "date_display": "April 18, 2018",
         "date_sort": "2018-04-18",
-        "review": "",
-        "rating": "",
+        "review": "I’ve watched Howards End and A Room with a View, finding both interesting. They give a great deal of sense about Traditional English people and culture. Helen in HowardsEnd comparing to Lucy in *A Room with a View,* both sincere and clever, are well educated young woman, trying to realize their own personal pursuit of happiness, ideals and justice.Helen tries to prove justice and rights by narrowing the gap between the Wilcox and Leonard.Lucy challenges on her rationality (a model of well behaved English woman).\nTaken the wrong advice, Leonard is since unable to divorce from poverty rather than becoming more miserable, which depicts image of poor class and the discrimination against them. Attentive and sensitive men (George/Leonard) arise feelings within women who are brave, daring, and passionate.\nMargaret and Henry Wilcox are totally different person, which I couldn’t understand what brings them together. Margaret have been a perfect host during the wedding, even afterHenry’s rage over his own shame (which he misrecognized as a humiliation from Helen) and forgiven him for deceiving his past and (at the end) Ruth’s will. However, the Wilcoxes are stingy enough not to allow the pregnant Helen to stay in Howard’s End for a single night. Charlotte (A Room with a View) is also on the annoying team. Her nosiness literally spoiled what could have developed well, making Lucy and George came an unnecessary all way round. Were it not for Reverend and Mr. Emerson….",
+        "rating": "7.5",
         "poster": "https://image.tmdb.org/t/p/w500/5xRAqywVo6tNUNQbAESGVP930la.jpg",
         "type": "movie",
         "year": "1985",
-        "country": "US"
-    },
-    {
-        "title": "The Pianist",
-        "date_display": "January 30, 2018",
-        "date_sort": "2018-01-30",
-        "review": "",
-        "rating": "",
-        "poster": "https://image.tmdb.org/t/p/w500/2hFvxCCWrTmCYwfy7yum0GKRi3Y.jpg",
-        "type": "movie",
-        "year": "2002",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.9
     },
     {
         "title": "Howards End",
         "date_display": "April 14, 2018",
         "date_sort": "2018-04-14",
-        "review": "#EMForster",
+        "review": "#EMForster\nA Room with a View, in my point of view, bears much resemblance with the movie Call me by your name. (I then found that the screenplay was written by Ivory…how late) Pianos and architectures are used. Italy countryside was both depicted with cool ponds, water playing scenes, tree shades, unstopping sizzling of cicadas, bringing the idea of young, pure and innocent feelings happening within short time. Delicate shots of architectural details gave a sense of humanism.\nOverall, I enjoyed A Room with a View much more than Howards End. I guess it’s because there is a sense of humor in A Room with a View, but Howards End makes me feel powerless toward the world.",
         "rating": "",
         "poster": "https://image.tmdb.org/t/p/w500/1009nhfj28VhhQnVadtjkOacduX.jpg",
         "type": "movie",
         "year": "1992",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.0
     },
     {
         "title": "凶暴的男人",
@@ -2824,7 +3260,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/7ckmkyjf59Q0dRWe25cae4yGPye.jpg",
         "type": "movie",
         "year": "2016",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.2
     },
     {
         "title": "星際大戰首部曲",
@@ -2835,7 +3272,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/6wkfovpn7Eq8dYNKaG5PY3q2oq6.jpg",
         "type": "movie",
         "year": "1999",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.6
     },
     {
         "title": "星際大戰二部曲",
@@ -2846,7 +3284,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/oZNPzxqM2s5DyVWab09NTQScDQt.jpg",
         "type": "movie",
         "year": "2002",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.6
     },
     {
         "title": "Trois Couleurs : Bleu",
@@ -2857,7 +3296,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/33wsWxzsNstI8N7dvuwzFmj1qBd.jpg",
         "type": "movie",
         "year": "1993",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Trois Couleurs : Blanc",
@@ -2868,7 +3308,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/fdIet3NSa27gobMbaUml66oCQNT.jpg",
         "type": "movie",
         "year": "1994",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.4
     },
     {
         "title": "What Have I Done To Deserve This?",
@@ -2879,7 +3320,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/fcvNzyRQnzgUm31mpRhrq5L7nkY.jpg",
         "type": "movie",
         "year": "1984",
-        "country": "ES"
+        "country": "ES",
+        "tmdb_rating": 7.1
     },
     {
         "title": "瀕臨崩潰邊緣的女人",
@@ -2890,7 +3332,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/lOehCiqghODNrNBpI1JS76zl6Lx.jpg",
         "type": "movie",
         "year": "1988",
-        "country": "ES"
+        "country": "ES",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Ruben Brandt, Collector",
@@ -2901,7 +3344,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/c3Xztb6f0SUzyAyMMX10LO2rE5a.jpg",
         "type": "movie",
         "year": "2018",
-        "country": "HU"
+        "country": "HU",
+        "tmdb_rating": 7.1
     },
     {
         "title": "Farewell My Concubine",
@@ -2912,7 +3356,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ySf9I93w6kJiaEb2T4zpoQjY8PR.jpg",
         "type": "movie",
         "year": "1993",
-        "country": "CN"
+        "country": "CN",
+        "tmdb_rating": 7.9
     },
     {
         "title": "Mommy",
@@ -2923,7 +3368,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/uPDP0cHGOpkr47rdCdHWo4CyiPj.jpg",
         "type": "movie",
         "year": "2014",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 8.2
     },
     {
         "title": "千禧曼波",
@@ -2934,7 +3380,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/wSc6tOp1yoAFbZqxG5XVGHcFvRN.jpg",
         "type": "movie",
         "year": "2001",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 7.0
     },
     {
         "title": "花痕",
@@ -2945,7 +3392,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/1jg324RdXdz0j4xypuH9zXhraZU.jpg",
         "type": "movie",
         "year": "2010",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.2
     },
     {
         "title": "American Beauty",
@@ -2956,7 +3404,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/wby9315QzVKdW9BonAefg8jGTTb.jpg",
         "type": "movie",
         "year": "1999",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.0
     },
     {
         "title": "海街日記",
@@ -2967,7 +3416,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/x9A0AtEg5EEYbDGfP8NqH3C9w8M.jpg",
         "type": "movie",
         "year": "2015",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.6
     },
     {
         "title": "聽媽媽的話",
@@ -2978,7 +3428,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/v96rRd9iWSRUWVEKptGlwS5SUfE.jpg",
         "type": "movie",
         "year": "2024",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.0
     },
     {
         "title": "(500) Days of Summer",
@@ -2989,7 +3440,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/qXAuQ9hF30sQRsXf40OfRVl0MJZ.jpg",
         "type": "movie",
         "year": "2009",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Juno",
@@ -3000,7 +3452,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/jNIn2tVhpvFD6P9IojldI3mNYcn.jpg",
         "type": "movie",
         "year": "2007",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.1
     },
     {
         "title": "The Double Life of Veronique",
@@ -3011,7 +3464,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/oqRyO9xrNBRaxqF9pCHHgLuaATx.jpg",
         "type": "movie",
         "year": "1991",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.5
     },
     {
         "title": "行動代號孫中山",
@@ -3022,7 +3476,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/h9RLTf25ZRURWCyXYBU0rsSYnFU.jpg",
         "type": "movie",
         "year": "2014",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 5.1
     },
     {
         "title": "咖啡時光",
@@ -3033,7 +3488,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/mvXQlk3mZnfJkzZg13Mt7qPstMF.jpg",
         "type": "movie",
         "year": "2004",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 6.7
     },
     {
         "title": "The Perks of Being a Wallflower",
@@ -3044,7 +3500,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/aKCvdFFF5n80P2VdS7d8YBwbCjh.jpg",
         "type": "movie",
         "year": "2012",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Like Father, Like Son",
@@ -3055,7 +3512,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/r0nejXOf6e4leWhnLuEQOmC5hrX.jpg",
         "type": "movie",
         "year": "2013",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.7
     },
     {
         "title": "阿飛正傳",
@@ -3066,29 +3524,20 @@
         "poster": "https://image.tmdb.org/t/p/w500/g0nbZt1eFlL8FqG8r524iXnpoQV.jpg",
         "type": "movie",
         "year": "1990",
-        "country": "HK"
-    },
-    {
-        "title": "ÃÂÃÂÃÂÃÂ¤ÃÂÃÂÃÂÃÂ¸ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¥ÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂ±ÃÂÃÂÃÂÃÂ¦ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¯ÃÂÃÂÃÂÃÂ¤ÃÂÃÂÃÂÃÂ¸ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ§ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¦ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ«ÃÂÃÂÃÂÃÂ¦ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¥",
-        "date_display": "January 1, 2017",
-        "date_sort": "2017-01-01",
-        "review": "",
-        "rating": "",
-        "poster": "https://image.tmdb.org/t/p/w500/riWa3WZrO3n8lLWuaEVMgaqAZGn.jpg",
-        "type": "movie",
-        "year": "2016",
-        "country": "FR"
+        "country": "HK",
+        "tmdb_rating": 7.2
     },
     {
         "title": "花與愛麗絲",
-        "date_display": "January 1, 2015",
-        "date_sort": "2015-01-01",
+        "date_display": "January 1, 2014",
+        "date_sort": "2014-01-01",
         "review": "",
         "rating": "",
         "poster": "https://image.tmdb.org/t/p/w500/oOH0Tm10Bq6ZdW6SdoEba1IS4Tx.jpg",
         "type": "movie",
         "year": "2004",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.0
     },
     {
         "title": "東邪西毒",
@@ -3099,7 +3548,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ciyEwAbvoMHPP3281cgSnfslu43.jpg",
         "type": "movie",
         "year": "1994",
-        "country": "HK"
+        "country": "HK",
+        "tmdb_rating": 7.0
     },
     {
         "title": "射鵰英雄傳之東成西就",
@@ -3110,7 +3560,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/lnlJkAlnw5AovZ0S5Zbp8m6YPjm.jpg",
         "type": "movie",
         "year": "1993",
-        "country": "HK"
+        "country": "HK",
+        "tmdb_rating": 7.0
     },
     {
         "title": "扶桑花女孩",
@@ -3121,18 +3572,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/4UjIm4cidAXwT17gKS8G7vbKySj.jpg",
         "type": "movie",
         "year": "2021",
-        "country": "JP"
-    },
-    {
-        "title": "情書",
-        "date_display": "January 1, 2015",
-        "date_sort": "2015-01-01",
-        "review": "",
-        "rating": "",
-        "poster": "https://image.tmdb.org/t/p/w500/3maCoQMBjYiuCwt18mzg9gCrUHd.jpg",
-        "type": "movie",
-        "year": "2022",
-        "country": "CN"
+        "country": "JP",
+        "tmdb_rating": 6.3
     },
     {
         "title": "Blue Gate Crossing",
@@ -3143,7 +3584,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/wGfHXN9IitbrRrqMAFLYtDUERtP.jpg",
         "type": "movie",
         "year": "2002",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 7.2
     },
     {
         "title": "Laurence Anyways",
@@ -3154,7 +3596,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/d8BpJ9qOQE7VFFqaV1XDdGfMsP7.jpg",
         "type": "movie",
         "year": "2012",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Where the Wild Things Are",
@@ -3165,7 +3608,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/sDFV9VEjwTUWF1s5sjOllsb70jk.jpg",
         "type": "movie",
         "year": "2009",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.5
     },
     {
         "title": "那年夏天，寧靜的海",
@@ -3176,18 +3620,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/uSwYQjd48iXVU8KHSSV9V6QYvBd.jpg",
         "type": "movie",
         "year": "1991",
-        "country": "JP"
-    },
-    {
-        "title": "A One and A Two",
-        "date_display": "January 1, 2015",
-        "date_sort": "2015-01-01",
-        "review": "",
-        "rating": "",
-        "poster": "https://image.tmdb.org/t/p/w500/vbln7gPAK2YGqnGO1cyw2Gf6ezT.jpg",
-        "type": "movie",
-        "year": "2025",
-        "country": "RU"
+        "country": "JP",
+        "tmdb_rating": 7.4
     },
     {
         "title": "TEACHING TO SEE",
@@ -3198,7 +3632,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/pAWcovikm0Epqg1sAURmsFE1k6y.jpg",
         "type": "movie",
         "year": "2012",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": null
     },
     {
         "title": "體能之巔",
@@ -3209,7 +3644,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/osa3I6CuabnCEpNgFOvFMLLS7yP.jpg",
         "type": "tv",
         "year": "2025",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Lolita",
@@ -3220,7 +3656,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/9INcC14WZjCMKGE360VXmklCLdZ.jpg",
         "type": "movie",
         "year": "1997",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.1
     },
     {
         "title": "My Big Fat Greek Wedding",
@@ -3231,7 +3668,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ztc05ym0T3stnBpRHdxEs3Zwsmp.jpg",
         "type": "movie",
         "year": "2002",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.5
     },
     {
         "title": "Romeo\r\n + Juliet",
@@ -3242,7 +3680,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/f3LZFWxdApe2PZWT7dxLwIYuJre.jpg",
         "type": "movie",
         "year": "1984",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.6
     },
     {
         "title": "The Last of Us",
@@ -3253,7 +3692,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
         "type": "tv",
         "year": "2023",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.4
     },
     {
         "title": "Euphoria",
@@ -3264,7 +3704,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/3Q0hd3heuWwDWpwcDkhQOA6TYWI.jpg",
         "type": "tv",
         "year": "2019",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.3
     },
     {
         "title": "Burn After Reading",
@@ -3275,7 +3716,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/jdwSkQu3XirmX18MNj8CqFWsCk.jpg",
         "type": "movie",
         "year": "2008",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.7
     },
     {
         "title": "Italianamerican",
@@ -3286,7 +3728,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/5mznNfhBuABFctEuw2p0NHlEaZ2.jpg",
         "type": "movie",
         "year": "1974",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.7
     },
     {
         "title": "007: Dr No",
@@ -3297,7 +3740,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/9zCOLJmLNst0sCPZlkW1IRoH65E.jpg",
         "type": "movie",
         "year": "1962",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.0
     },
     {
         "title": "Castle of the Sky",
@@ -3308,7 +3752,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/41XxSsJc5OrulP0m7TrrUeO2hoz.jpg",
         "type": "movie",
         "year": "1986",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.0
     },
     {
         "title": "Nausicaa",
@@ -3319,7 +3764,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/A3iktrA0d68WsebSDqqB7Cfg5RZ.jpg",
         "type": "movie",
         "year": "1971",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 6.2
     },
     {
         "title": "Amsterdam",
@@ -3330,7 +3776,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/6sJcVzGCwrDCBMV0DU6eRzA2UxM.jpg",
         "type": "movie",
         "year": "2022",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.1
     },
     {
         "title": "All Quiet On the Western Front",
@@ -3341,7 +3788,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/2IRjbi9cADuDMKmHdLK7LaqQDKA.jpg",
         "type": "movie",
         "year": "2022",
-        "country": "DE"
+        "country": "DE",
+        "tmdb_rating": 7.7
     },
     {
         "title": "Spider-Man: Across the Spider-Verse",
@@ -3352,7 +3800,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
         "type": "movie",
         "year": "2023",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.3
     },
     {
         "title": "Spider-Man: Into the Spider-Verse",
@@ -3363,7 +3812,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
         "type": "movie",
         "year": "2018",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.4
     },
     {
         "title": "The Social Dilemma",
@@ -3374,7 +3824,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/jdmagxKK7g2rPkdltC7Kga2MBbp.jpg",
         "type": "movie",
         "year": "2020",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "La La Land",
@@ -3385,7 +3836,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
         "type": "movie",
         "year": "2016",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.9
     },
     {
         "title": "Groundhog Day",
@@ -3396,7 +3848,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gCgt1WARPZaXnq523ySQEUKinCs.jpg",
         "type": "movie",
         "year": "1993",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Barbie",
@@ -3407,7 +3860,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
         "type": "movie",
         "year": "2023",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.9
     },
     {
         "title": "Elemental",
@@ -3418,7 +3872,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/4Y1WNkd88JXmGfhtWR7dmDAo1T2.jpg",
         "type": "movie",
         "year": "2023",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Inside Out",
@@ -3429,7 +3884,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg",
         "type": "movie",
         "year": "2015",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.9
     },
     {
         "title": "Pride and Prejudice",
@@ -3440,7 +3896,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/7od3Mob2qu5lL1l5RsdV6xuEquw.jpg",
         "type": "tv",
         "year": "1995",
-        "country": "GB"
+        "country": "GB",
+        "tmdb_rating": 8.2
     },
     {
         "title": "Shameless -",
@@ -3451,7 +3908,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ifo31fMWLmyOVpdak9K0kY4jldQ.jpg",
         "type": "tv",
         "year": "2011",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.2
     },
     {
         "title": "Persona 5 Animation",
@@ -3462,7 +3920,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/kGFHVTE0mYXH3cohjWRHkObkwFS.jpg",
         "type": "tv",
         "year": "2018",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.7
     },
     {
         "title": "Donnie Brasco",
@@ -3473,7 +3932,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/xtKLvpOfARi1XVm8u2FTdhY5Piq.jpg",
         "type": "movie",
         "year": "1997",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Infernal Affairs",
@@ -3484,7 +3944,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gix9thDBXfjJ8M7rYbihqbQGBcP.jpg",
         "type": "movie",
         "year": "2002",
-        "country": "HK"
+        "country": "HK",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Napoleon Dynamite",
@@ -3495,7 +3956,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/6Iv6Uwa2SBLN0dSGM00rdrwN4MJ.jpg",
         "type": "movie",
         "year": "2004",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.8
     },
     {
         "title": "Rosemary’s Baby",
@@ -3506,7 +3968,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/uYgvlHceRFjAFbsNeMInYcLZLUb.jpg",
         "type": "movie",
         "year": "1968",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Hot Fuzz",
@@ -3517,7 +3980,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/zPib4ukTSdXvHP9pxGkFCe34f3y.jpg",
         "type": "movie",
         "year": "2007",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Home",
@@ -3528,7 +3992,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/usFenYnk6mr8C62dB1MoAfSWMGR.jpg",
         "type": "movie",
         "year": "2015",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.0
     },
     {
         "title": "Fantastic Planet",
@@ -3539,7 +4004,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/prq0j1S0K07UjwLZLF6oMGflRUI.jpg",
         "type": "movie",
         "year": "1973",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Fargo",
@@ -3550,7 +4016,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/6U9CPeD8obHzweikFhiLhpc7YBT.jpg",
         "type": "tv",
         "year": "2014",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.3
     },
     {
         "title": "The Boy and the Heron",
@@ -3561,7 +4028,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/f4oZTcfGrVTXKTWg157AwikXqmP.jpg",
         "type": "movie",
         "year": "2023",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Beef",
@@ -3572,7 +4040,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/4b4v7RnPhNyPEaVGFarEuo74r8W.jpg",
         "type": "tv",
         "year": "2023",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.7
     },
     {
         "title": "Maestro",
@@ -3583,7 +4052,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/kxj7rMco6RNYsVcNwuGAIlfWu64.jpg",
         "type": "movie",
         "year": "2023",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.4
     },
     {
         "title": "Suits",
@@ -3594,7 +4064,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/vQiryp6LioFxQThywxbC6TuoDjy.jpg",
         "type": "tv",
         "year": "2011",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.2
     },
     {
         "title": "You are what you eat: Twin Experiment",
@@ -3605,7 +4076,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/uRy6fpVNrxtjt03YgO2YdY4yoje.jpg",
         "type": "tv",
         "year": "2024",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.6
     },
     {
         "title": "No Hard Feelings",
@@ -3616,7 +4088,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gD72DhJ7NbfxvtxGiAzLaa0xaoj.jpg",
         "type": "movie",
         "year": "2023",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.7
     },
     {
         "title": "Little Miss Sunshine",
@@ -3627,7 +4100,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/wKn7AJw730emlmzLSmJtzquwaeW.jpg",
         "type": "movie",
         "year": "2006",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.7
     },
     {
         "title": "Drive",
@@ -3638,7 +4112,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
         "type": "movie",
         "year": "2011",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Training Day",
@@ -3649,7 +4124,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/bUeiwBQdupBLQthMCHKV7zv56uv.jpg",
         "type": "movie",
         "year": "2001",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "The Bear",
@@ -3660,7 +4136,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
         "type": "tv",
         "year": "2022",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.2
     },
     {
         "title": "The Game Changer",
@@ -3671,7 +4148,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/uYRHCj0KsJkVKJkeWNt7qig7aPp.jpg",
         "type": "movie",
         "year": "2015",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Good Morning",
@@ -3682,7 +4160,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/jMpBQr2aNOFAI6wsC47zsOG6qOh.jpg",
         "type": "tv",
         "year": "2012",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.9
     },
     {
         "title": "Heat",
@@ -3693,7 +4172,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/umSVjVdbVwtx5ryCA2QXL44Durm.jpg",
         "type": "movie",
         "year": "1995",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.9
     },
     {
         "title": "Murder On the Orient Express",
@@ -3704,7 +4184,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/oJjKcuoH7SuiqZaEpHt2Nd5ZxNY.jpg",
         "type": "movie",
         "year": "1974",
-        "country": "GB"
+        "country": "GB",
+        "tmdb_rating": 6.7
     },
     {
         "title": "Love is Blind",
@@ -3715,7 +4196,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/8XhV6ke8ltRYoG4SYmibF2bGwrC.jpg",
         "type": "tv",
         "year": "2020",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.2
     },
     {
         "title": "Furiren",
@@ -3726,7 +4208,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/dqZENchTd7lp5zht7BdlqM7RBhD.jpg",
         "type": "tv",
         "year": "2023",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.8
     },
     {
         "title": "The Disaster Artist",
@@ -3737,7 +4220,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/2HuLGiyH0TPYxnCvYHAxc8K738o.jpg",
         "type": "movie",
         "year": "2017",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.1
     },
     {
         "title": "The Peanut Butter Falcon",
@@ -3748,7 +4232,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/qyQcRGvdW3VtxHR4fSDgPOePEip.jpg",
         "type": "movie",
         "year": "2019",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Turning Point: The Bomb and the Cold War::",
@@ -3759,7 +4244,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/5XBYN5Sb0yBvvodwr8fJa7iyuo2.jpg",
         "type": "tv",
         "year": "2024",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Hack Your Health: The Secrets of Your Gut",
@@ -3770,7 +4256,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/7D7qEdPHCKVHihtaJDAys2HAi0L.jpg",
         "type": "movie",
         "year": "2024",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.6
     },
     {
         "title": "Love Is Blind:",
@@ -3781,7 +4268,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/dwnREOnAaleZQd02zSLCWLGiV8P.jpg",
         "type": "tv",
         "year": "2024",
-        "country": "SE"
+        "country": "SE",
+        "tmdb_rating": 5.8
     },
     {
         "title": "Mad Max: Furiosa",
@@ -3792,7 +4280,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/iADOJ8Zymht2JPMoy3R7xceZprc.jpg",
         "type": "movie",
         "year": "2024",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Mad Max",
@@ -3803,7 +4292,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/5LrI4GiCSrChgkdskVZiwv643Kg.jpg",
         "type": "movie",
         "year": "1979",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.7
     },
     {
         "title": "Mad Max: Fury Road",
@@ -3814,7 +4304,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/hA2ple9q4qnwxp3hKVNhroipsir.jpg",
         "type": "movie",
         "year": "2015",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Ghost in the Shell",
@@ -3825,7 +4316,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/9gC88zYUBARRSThcG93MvW14sqx.jpg",
         "type": "movie",
         "year": "1995",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.9
     },
     {
         "title": "Ghost in the Shell: Innocence",
@@ -3836,7 +4328,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/1ZJRbLDVr90KLtKdmTT4WZhT26E.jpg",
         "type": "movie",
         "year": "2004",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.3
     },
     {
         "title": "Lord of the Rings",
@@ -3847,7 +4340,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/kf5Hz70tjNAHg4swGDzOr9BfoZ1.jpg",
         "type": "tv",
         "year": "2022",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.2
     },
     {
         "title": "Lord of the Rings: Two Towers",
@@ -3858,7 +4352,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
         "type": "movie",
         "year": "2002",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.4
     },
     {
         "title": "Lord of the Rings",
@@ -3869,7 +4364,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/kf5Hz70tjNAHg4swGDzOr9BfoZ1.jpg",
         "type": "tv",
         "year": "2022",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.2
     },
     {
         "title": "My Neighbors the Yamadas",
@@ -3880,7 +4376,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/nj0ijnOozQtu52r0ncut769G1FX.jpg",
         "type": "movie",
         "year": "1999",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 7.0
     },
     {
         "title": "Hit Man",
@@ -3891,7 +4388,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/oil3EZwKFp3CWxZnfGfGglesvm9.jpg",
         "type": "movie",
         "year": "2024",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.8
     },
     {
         "title": "Unlocked: A Jail Experiment",
@@ -3902,7 +4400,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/6P47LVW00M4ZazGdCvzV9t7FvQa.jpg",
         "type": "tv",
         "year": "2024",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.6
     },
     {
         "title": "Get Gotti:",
@@ -3913,7 +4412,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/sfhxVG05LeWqwyMPxPJnQRfDgL5.jpg",
         "type": "tv",
         "year": "2023",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.2
     },
     {
         "title": "Homicide: New York",
@@ -3924,7 +4424,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gTzKUulEaI62M3RZh48Ub5nCAsp.jpg",
         "type": "tv",
         "year": "2022",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.1
     },
     {
         "title": "The Minimalists: Less Is Now",
@@ -3935,7 +4436,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/1foXpKnMMAL1OzBrCS3CcwnHO7S.jpg",
         "type": "movie",
         "year": "2021",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.2
     },
     {
         "title": "Soul",
@@ -3946,7 +4448,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/pEz5aROvfy5FBW1OTlrDO3VryWO.jpg",
         "type": "movie",
         "year": "2020",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.1
     },
     {
         "title": "Moana",
@@ -3957,7 +4460,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/9tzN8sPbyod2dsa0lwuvrwBDWra.jpg",
         "type": "movie",
         "year": "2016",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": null
     },
     {
         "title": "Coco",
@@ -3968,7 +4472,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/6Ryitt95xrO8KXuqRGm1fUuNwqF.jpg",
         "type": "movie",
         "year": "2017",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.2
     },
     {
         "title": "Two can Play That Game",
@@ -3979,7 +4484,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/oDWVsSJMXvDeX9KohSOtfqCFD7e.jpg",
         "type": "movie",
         "year": "2001",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.4
     },
     {
         "title": "Friday the 13th",
@@ -3990,7 +4496,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/uGGpnWHOmWTARVN9wbC1nPxNgps.jpg",
         "type": "movie",
         "year": "1980",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.4
     },
     {
         "title": "影后",
@@ -4001,7 +4508,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/5p9NGYvs2PXyh8IiiAGEJ6omeQx.jpg",
         "type": "tv",
         "year": "2024",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 8.1
     },
     {
         "title": "Black Doves",
@@ -4012,7 +4520,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/uoXtkm2P4HPPL8T3IBJ02G3hCC4.jpg",
         "type": "tv",
         "year": "2024",
-        "country": "GB"
+        "country": "GB",
+        "tmdb_rating": 7.1
     },
     {
         "title": "The Fall Guy",
@@ -4023,7 +4532,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gV8CB9WbCclGCENBkxoKXYnwh28.jpg",
         "type": "tv",
         "year": "1981",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Carpet Cowboys",
@@ -4034,7 +4544,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/hIT80RREnoKDQSGOfvoZE0DsN90.jpg",
         "type": "movie",
         "year": "2023",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 4.0
     },
     {
         "title": "Culinary Class Wars",
@@ -4045,7 +4556,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/dXaSWfISSbivyNy9X6zkOnxD9Gp.jpg",
         "type": "tv",
         "year": "2024",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 8.4
     },
     {
         "title": "White Chicks",
@@ -4056,7 +4568,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/aHTUpo45qy9QYIOnVITGGqLoVcA.jpg",
         "type": "movie",
         "year": "2004",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.9
     },
     {
         "title": "The Super Mario Bros. Movie",
@@ -4067,7 +4580,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg",
         "type": "movie",
         "year": "2023",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Logan",
@@ -4078,7 +4592,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/fnbjcRDYn6YviCcePDnGdyAkYsB.jpg",
         "type": "movie",
         "year": "2017",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Squid Game",
@@ -4089,7 +4604,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg",
         "type": "tv",
         "year": "2021",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 7.9
     },
     {
         "title": "Violet Evergarden",
@@ -4100,7 +4616,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/61EwFPqc0r1uJo6la49J55F8bQ8.jpg",
         "type": "tv",
         "year": "2018",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.5
     },
     {
         "title": "The Florida Project",
@@ -4111,7 +4628,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/bnSTP1PY2fDyat0eUa4QouuGV7F.jpg",
         "type": "movie",
         "year": "2017",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Mad Max Furiosa",
@@ -4122,7 +4640,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/iADOJ8Zymht2JPMoy3R7xceZprc.jpg",
         "type": "movie",
         "year": "2024",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "American Primeval",
@@ -4133,7 +4652,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ff0s9OHGNSZL6cVteIb7LNvTnJD.jpg",
         "type": "tv",
         "year": "2025",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.7
     },
     {
         "title": "Mad Max Fury Road",
@@ -4144,7 +4664,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/hA2ple9q4qnwxp3hKVNhroipsir.jpg",
         "type": "movie",
         "year": "2015",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "One of Them Days",
@@ -4155,7 +4676,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ccn6bFUA5DECjA3Lo0CuJqGNQCv.jpg",
         "type": "movie",
         "year": "2025",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.6
     },
     {
         "title": "Mickey 17",
@@ -4166,7 +4688,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/edKpE9B5qN3e559OuMCLZdW1iBZ.jpg",
         "type": "movie",
         "year": "2025",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.8
     },
     {
         "title": "Il Gattopardo (The Leopard)",
@@ -4177,7 +4700,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/7mbS9n5d98ULdTZREUf8TlgNNoD.jpg",
         "type": "tv",
         "year": "2025",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 7.7
     },
     {
         "title": "Squid Game",
@@ -4188,7 +4712,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg",
         "type": "tv",
         "year": "2021",
-        "country": "KR"
+        "country": "KR",
+        "tmdb_rating": 7.9
     },
     {
         "title": "The Last of Us",
@@ -4199,7 +4724,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
         "type": "tv",
         "year": "2023",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.4
     },
     {
         "title": "Before Sunrise",
@@ -4210,7 +4736,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/kf1Jb1c2JAOqjuzA3H4oDM263uB.jpg",
         "type": "movie",
         "year": "1995",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 8.0
     },
     {
         "title": "Before Sunset",
@@ -4221,7 +4748,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gycdE1ARByGQcK4fYR2mgpU6OO.jpg",
         "type": "movie",
         "year": "2004",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Ju-on",
@@ -4232,7 +4760,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/6q1hlBC6rudc3mHwXsbMBR2xAT6.jpg",
         "type": "movie",
         "year": "2002",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 6.8
     },
     {
         "title": "Shrek 4",
@@ -4243,7 +4772,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/6HrfPZtKcGmX2tUWW3cnciZTaSD.jpg",
         "type": "movie",
         "year": "2010",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.4
     },
     {
         "title": "Ponyu",
@@ -4254,7 +4784,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/py6vpjoQ6IyvOvSlLiftmKozPBH.jpg",
         "type": "movie",
         "year": "2002",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": null
     },
     {
         "title": "He’s just not that into you",
@@ -4265,7 +4796,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/jip2ap24Y6JxEgzVRyNqyYssnyR.jpg",
         "type": "movie",
         "year": "2009",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.6
     },
     {
         "title": "Valentine’s Day",
@@ -4276,7 +4808,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/qq6m8OyvcZqHJicIPYmXEAe7PlY.jpg",
         "type": "movie",
         "year": "1959",
-        "country": "ES"
+        "country": "ES",
+        "tmdb_rating": null
     },
     {
         "title": "White Lotus",
@@ -4287,7 +4820,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gbSaK9v1CbcYH1ISgbM7XObD2dW.jpg",
         "type": "tv",
         "year": "2021",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "White Lotus",
@@ -4298,7 +4832,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gbSaK9v1CbcYH1ISgbM7XObD2dW.jpg",
         "type": "tv",
         "year": "2021",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "One Battle After Another",
@@ -4309,7 +4844,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/m1jFoahEbeQXtx4zArT2FKdbNIj.jpg",
         "type": "movie",
         "year": "2025",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Girl",
@@ -4320,7 +4856,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ntCbuPFFBO6rRcOktSPTmeX0iuf.jpg",
         "type": "movie",
         "year": "2025",
-        "country": "TW"
+        "country": "TW",
+        "tmdb_rating": 8.3
     },
     {
         "title": "Pity",
@@ -4331,7 +4868,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/8yEKXPCmcWLXlQ9ZNCcSzvntOku.jpg",
         "type": "movie",
         "year": "2014",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.5
     },
     {
         "title": "Sansho the Bailiff",
@@ -4342,7 +4880,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/cOBsWxFtEoqXIPx4JZP5E7g1WEo.jpg",
         "type": "movie",
         "year": "1954",
-        "country": "JP"
+        "country": "JP",
+        "tmdb_rating": 8.1
     },
     {
         "title": "Mirror Image",
@@ -4353,29 +4892,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/zkBPX5FIIVYr2Ycu4t9lkFnRHNM.jpg",
         "type": "movie",
         "year": "2001",
-        "country": "TW"
-    },
-    {
-        "title": "Shoplifters",
-        "date_display": "July 13, 2018",
-        "date_sort": "2018-07-13",
-        "review": "",
-        "rating": "",
-        "poster": "https://image.tmdb.org/t/p/w500/xRv3FbRpbaRm7xW4JGVZEXxmHTv.jpg",
-        "type": "movie",
-        "year": "2023",
-        "country": "US"
-    },
-    {
-        "title": "Burning",
-        "date_display": "July 10, 2018",
-        "date_sort": "2018-07-10",
-        "review": "",
-        "rating": "",
-        "poster": "https://image.tmdb.org/t/p/w500/pdEgV6PckeiVcnComUw8bOirrpC.jpg",
-        "type": "movie",
-        "year": "2021",
-        "country": "US"
+        "country": "TW",
+        "tmdb_rating": 6.8
     },
     {
         "title": "Ivan’s Childhood",
@@ -4386,7 +4904,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/vmRWSLP1DE9WTta0hfzIafJ0dID.jpg",
         "type": "movie",
         "year": "1962",
-        "country": "RU"
+        "country": "RU",
+        "tmdb_rating": 7.8
     },
     {
         "title": "Smiles of a Summer Night",
@@ -4397,7 +4916,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/wKeV8lKz8k9DDBCw6MJ9MkhvhqF.jpg",
         "type": "movie",
         "year": "1955",
-        "country": "SV"
+        "country": "SV",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Fanny and Alexander",
@@ -4408,7 +4928,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/nY28wruhp1GmfFCybsFIlGqNF0b.jpg",
         "type": "tv",
         "year": "1984",
-        "country": "SE"
+        "country": "SE",
+        "tmdb_rating": 8.3
     },
     {
         "title": "The Seventh Seal",
@@ -4419,7 +4940,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/wcZ21zrOsy0b52AfAF50XpTiv75.jpg",
         "type": "movie",
         "year": "1957",
-        "country": "SV"
+        "country": "SV",
+        "tmdb_rating": 8.2
     },
     {
         "title": "An Elephant Sitting",
@@ -4430,7 +4952,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/3qr9wpaa5dA7AGr5ndgYiioavIn.jpg",
         "type": "movie",
         "year": "2018",
-        "country": "CN"
+        "country": "CN",
+        "tmdb_rating": 7.7
     },
     {
         "title": "The Favourite",
@@ -4441,7 +4964,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/cwBq0onfmeilU5xgqNNjJAMPfpw.jpg",
         "type": "movie",
         "year": "2018",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "Halloween",
@@ -4452,7 +4976,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/wijlZ3HaYMvlDTPqJoTCWKFkCPU.jpg",
         "type": "movie",
         "year": "1978",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.6
     },
     {
         "title": "Election",
@@ -4463,7 +4988,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/5gPOFU6IPvDrx50XaPCK4twNw79.jpg",
         "type": "movie",
         "year": "1999",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.9
     },
     {
         "title": "Assault on Precinct",
@@ -4474,7 +5000,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/oBpsRvMN1ONl8oFHuWt1rasDYFJ.jpg",
         "type": "movie",
         "year": "2005",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.2
     },
     {
         "title": "Happy as Lazzaro",
@@ -4485,7 +5012,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/j4x1O6G0cbchHQwNsEZ0DntOJMJ.jpg",
         "type": "movie",
         "year": "2018",
-        "country": "IT"
+        "country": "IT",
+        "tmdb_rating": 7.4
     },
     {
         "title": "John Wick: Chapter 3 - Parabellum",
@@ -4496,7 +5024,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg",
         "type": "movie",
         "year": "2019",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.4
     },
     {
         "title": "Varda by Agnes",
@@ -4507,7 +5036,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/gKkSlbMJiH6qlEcKGQjcPpZnEyW.jpg",
         "type": "tv",
         "year": "2019",
-        "country": "FR"
+        "country": "FR",
+        "tmdb_rating": 9.0
     },
     {
         "title": "Man On Fire",
@@ -4518,7 +5048,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/grCGLCcTHv9TChibzOwzUpykcjB.jpg",
         "type": "movie",
         "year": "2004",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.5
     },
     {
         "title": "A Time To Kill",
@@ -4529,7 +5060,8 @@
         "poster": "https://image.tmdb.org/t/p/w500/w8UCke112E9jrhjKcwG32kyhTx5.jpg",
         "type": "movie",
         "year": "1996",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 7.4
     },
     {
         "title": "The Quick and The Dead",
@@ -4540,6 +5072,7 @@
         "poster": "https://image.tmdb.org/t/p/w500/9VAY6pSG6Tx1NCmFvg8VhGvlV33.jpg",
         "type": "movie",
         "year": "1987",
-        "country": "US"
+        "country": "US",
+        "tmdb_rating": 6.5
     }
 ]
