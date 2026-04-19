@@ -1,5 +1,16 @@
 [
     {
+        "title": "White Chicks",
+        "date_display": "April 18, 2026",
+        "date_sort": "2026-04-18",
+        "review": "classic satire made in the 2000s",
+        "rating": "7.5",
+        "poster": "https://image.tmdb.org/t/p/w500/aHTUpo45qy9QYIOnVITGGqLoVcA.jpg",
+        "type": "movie",
+        "year": "2004",
+        "country": "US"
+    },
+    {
         "title": "Yesterday, Today and Tomorrow",
         "date_display": "May 26, 2021",
         "date_sort": "2021-05-26",
@@ -33,7 +44,7 @@
         "type": "movie",
         "year": "1995",
         "country": "JP",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "A Scene at the Sea",
@@ -153,7 +164,7 @@
         "type": "movie",
         "year": "2017",
         "country": "JP",
-        "tmdb_rating": 7.0
+        "tmdb_rating": 7
     },
     {
         "title": "Burning",
@@ -189,7 +200,7 @@
         "type": "movie",
         "year": "2018",
         "country": "JP",
-        "tmdb_rating": 10.0
+        "tmdb_rating": 10
     },
     {
         "title": "Amy",
@@ -273,7 +284,7 @@
         "type": "movie",
         "year": "2005",
         "country": "GR",
-        "tmdb_rating": 5.0
+        "tmdb_rating": 5
     },
     {
         "title": "Maggie",
@@ -333,7 +344,7 @@
         "type": "movie",
         "year": "2009",
         "country": "US",
-        "tmdb_rating": 5.0
+        "tmdb_rating": 5
     },
     {
         "title": "Shoeshine",
@@ -345,7 +356,7 @@
         "type": "movie",
         "year": "1946",
         "country": "IT",
-        "tmdb_rating": 5.0
+        "tmdb_rating": 5
     },
     {
         "title": "Umberto D.",
@@ -477,7 +488,7 @@
         "type": "movie",
         "year": "2019",
         "country": "JP",
-        "tmdb_rating": 6.0
+        "tmdb_rating": 6
     },
     {
         "title": "Oldboy",
@@ -633,7 +644,7 @@
         "type": "movie",
         "year": "1993",
         "country": "US",
-        "tmdb_rating": 7.0
+        "tmdb_rating": 7
     },
     {
         "title": "Scenes from a Marriage",
@@ -669,7 +680,7 @@
         "type": "movie",
         "year": "2019",
         "country": "US",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "Knives Out",
@@ -789,7 +800,7 @@
         "type": "movie",
         "year": "2010",
         "country": "US",
-        "tmdb_rating": 7.0
+        "tmdb_rating": 7
     },
     {
         "title": "The Drama",
@@ -945,7 +956,7 @@
         "type": "movie",
         "year": "1993",
         "country": "US",
-        "tmdb_rating": 7.0
+        "tmdb_rating": 7
     },
     {
         "title": "The Addams Family",
@@ -957,7 +968,7 @@
         "type": "tv",
         "year": "1964",
         "country": "US",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "Alice in the Wonderland",
@@ -993,7 +1004,7 @@
         "type": "tv",
         "year": "2018",
         "country": "HK",
-        "tmdb_rating": 2.0
+        "tmdb_rating": 2
     },
     {
         "title": "Casablanca",
@@ -1113,7 +1124,7 @@
         "type": "tv",
         "year": "2022",
         "country": "KR",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "Swann in Love",
@@ -1977,7 +1988,7 @@
         "type": "tv",
         "year": "2016",
         "country": "US",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "Meet Joe Black",
@@ -2061,7 +2072,7 @@
         "type": "tv",
         "year": "2016",
         "country": "US",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "Nomadland",
@@ -2085,7 +2096,7 @@
         "type": "tv",
         "year": "1988",
         "country": "CN",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "滾滾紅塵",
@@ -2133,7 +2144,7 @@
         "type": "movie",
         "year": "2006",
         "country": "KR",
-        "tmdb_rating": 7.0
+        "tmdb_rating": 7
     },
     {
         "title": "Almost Famous",
@@ -2193,7 +2204,7 @@
         "type": "movie",
         "year": "1984",
         "country": "US",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "Sleepless in Seattle",
@@ -2325,7 +2336,7 @@
         "type": "movie",
         "year": "1960",
         "country": "IT",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "La Strada",
@@ -2349,7 +2360,7 @@
         "type": "movie",
         "year": "1957",
         "country": "IT",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "The Bullocks (I vitelloni)",
@@ -2385,7 +2396,7 @@
         "type": "movie",
         "year": "1941",
         "country": "US",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "Early Summer",
@@ -2493,7 +2504,7 @@
         "type": "movie",
         "year": "1991",
         "country": "US",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "Ocean’s Eleven",
@@ -2865,7 +2876,7 @@
         "type": "movie",
         "year": "2019",
         "country": "JP",
-        "tmdb_rating": 6.0
+        "tmdb_rating": 6
     },
     {
         "title": "The Heathers",
@@ -2877,7 +2888,7 @@
         "type": "movie",
         "year": "2023",
         "country": "US",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "Edward Scissorhands",
@@ -2949,7 +2960,7 @@
         "type": "movie",
         "year": "1945",
         "country": "IT",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "My Own Private Idaho",
@@ -3249,7 +3260,7 @@
         "type": "movie",
         "year": "1992",
         "country": "US",
-        "tmdb_rating": 7.0
+        "tmdb_rating": 7
     },
     {
         "title": "凶暴的男人",
@@ -3381,7 +3392,7 @@
         "type": "movie",
         "year": "2001",
         "country": "TW",
-        "tmdb_rating": 7.0
+        "tmdb_rating": 7
     },
     {
         "title": "花痕",
@@ -3405,7 +3416,7 @@
         "type": "movie",
         "year": "1999",
         "country": "US",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "海街日記",
@@ -3429,7 +3440,7 @@
         "type": "movie",
         "year": "2024",
         "country": "JP",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "(500) Days of Summer",
@@ -3537,7 +3548,7 @@
         "type": "movie",
         "year": "2004",
         "country": "JP",
-        "tmdb_rating": 7.0
+        "tmdb_rating": 7
     },
     {
         "title": "東邪西毒",
@@ -3549,7 +3560,7 @@
         "type": "movie",
         "year": "1994",
         "country": "HK",
-        "tmdb_rating": 7.0
+        "tmdb_rating": 7
     },
     {
         "title": "射鵰英雄傳之東成西就",
@@ -3561,7 +3572,7 @@
         "type": "movie",
         "year": "1993",
         "country": "HK",
-        "tmdb_rating": 7.0
+        "tmdb_rating": 7
     },
     {
         "title": "扶桑花女孩",
@@ -3741,7 +3752,7 @@
         "type": "movie",
         "year": "1962",
         "country": "US",
-        "tmdb_rating": 7.0
+        "tmdb_rating": 7
     },
     {
         "title": "Castle of the Sky",
@@ -3753,7 +3764,7 @@
         "type": "movie",
         "year": "1986",
         "country": "JP",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "Nausicaa",
@@ -3993,7 +4004,7 @@
         "type": "movie",
         "year": "2015",
         "country": "US",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "Fantastic Planet",
@@ -4377,7 +4388,7 @@
         "type": "movie",
         "year": "1999",
         "country": "JP",
-        "tmdb_rating": 7.0
+        "tmdb_rating": 7
     },
     {
         "title": "Hit Man",
@@ -4545,7 +4556,7 @@
         "type": "movie",
         "year": "2023",
         "country": "US",
-        "tmdb_rating": 4.0
+        "tmdb_rating": 4
     },
     {
         "title": "Culinary Class Wars",
@@ -4737,7 +4748,7 @@
         "type": "movie",
         "year": "1995",
         "country": "US",
-        "tmdb_rating": 8.0
+        "tmdb_rating": 8
     },
     {
         "title": "Before Sunset",
@@ -5037,7 +5048,7 @@
         "type": "tv",
         "year": "2019",
         "country": "FR",
-        "tmdb_rating": 9.0
+        "tmdb_rating": 9
     },
     {
         "title": "Man On Fire",
