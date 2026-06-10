@@ -1,5 +1,16 @@
 [
     {
+        "title": "Project Hail Mary",
+        "date_display": "May 13, 2026",
+        "date_sort": "2026-05-13",
+        "review": "likable take on extraterrestrial life and a suggestive way of interaction.",
+        "rating": "7.5",
+        "poster": "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+        "type": "movie",
+        "year": "2026",
+        "country": "US"
+    },
+    {
         "title": "Michael",
         "date_display": "May 13, 2026",
         "date_sort": "2026-05-13",
