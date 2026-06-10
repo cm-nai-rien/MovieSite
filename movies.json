@@ -1,5 +1,16 @@
 [
     {
+        "title": "Michael",
+        "date_display": "May 13, 2026",
+        "date_sort": "2026-05-13",
+        "review": "went for the music. mostly focuses on family upbringing.",
+        "rating": "7",
+        "poster": "https://image.tmdb.org/t/p/w500/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
+        "type": "movie",
+        "year": "2026",
+        "country": "US"
+    },
+    {
         "title": "Jimmy O. Yang Finally Home",
         "date_display": "May 3, 2026",
         "date_sort": "2026-05-03",
