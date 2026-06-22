@@ -1,5 +1,16 @@
 [
     {
+        "title": "Mamma Mia!",
+        "date_display": "June 21, 2026",
+        "date_sort": "2026-06-21",
+        "review": "tbh i discovered a lot of depth to the characters than the first time i watched it. also appreciated the embrace of female/sexual liberty in this film. ABBA do have a way with lyrics.",
+        "rating": "8",
+        "poster": "https://image.tmdb.org/t/p/w500/zdUA4FNHbXPadzVOJiU0Rgn6cHR.jpg",
+        "type": "movie",
+        "year": "2008",
+        "country": "US"
+    },
+    {
         "title": "Let the Bullets Fly",
         "date_display": "June 7, 2026",
         "date_sort": "2026-06-07",
