@@ -1,5 +1,16 @@
 [
     {
+        "title": "A Foggy Tale",
+        "date_display": "July 5, 2026",
+        "date_sort": "2026-07-05",
+        "review": "以大濛（濃霧）意象產生的預言：白色恐怖時期，由千千萬萬的受害者與是市井小民組成的不透明的時代氛圍。哪一珠水滴未曾想像自己不是一片彩霞？",
+        "rating": "9",
+        "poster": "https://image.tmdb.org/t/p/w500/nj1QyqHN48Wn66U9JYXIywNX8Nj.jpg",
+        "type": "movie",
+        "year": "2025",
+        "country": "TW"
+    },
+    {
         "title": "Gangs of New York",
         "date_display": "December 17, 2025",
         "date_sort": "2025-12-17",
