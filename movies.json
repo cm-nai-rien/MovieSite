@@ -1,5 +1,16 @@
 [
     {
+        "title": "The Odyssey",
+        "date_display": "July 19, 2026",
+        "date_sort": "2026-07-19",
+        "review": "I have not read the odyssey. but I also believe that it is not necessary to read the originals before appreciating the adaptation. Christpher Nolan's The Odyssey is an eye-opening epic of defying gods and going through the odds and fighting with human nature. You get a glimpse of the greek's mindset thousands years ago, but the lessons still felt new.",
+        "rating": "9",
+        "poster": "https://image.tmdb.org/t/p/w500/pe5cCoX5iIb5IWKPsbPkCwjLFHt.jpg",
+        "type": "movie",
+        "year": "2026",
+        "country": "GB"
+    },
+    {
         "title": "A Foggy Tale",
         "date_display": "July 5, 2026",
         "date_sort": "2026-07-05",
