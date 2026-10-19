@@ -1,5 +1,16 @@
 [
     {
+        "title": "Jiro Dreams of Sushi",
+        "date_display": "October 6, 2026",
+        "date_sort": "2026-10-06",
+        "review": "reminds me a lot of Wim Wender's 'Tokyo Ga'.",
+        "rating": "7.5",
+        "poster": "https://image.tmdb.org/t/p/w500/iVrkM4jSJw1IsOpW5jTtY5QxVqj.jpg",
+        "type": "movie",
+        "year": "2011",
+        "country": "US"
+    },
+    {
         "title": "The Odyssey",
         "date_display": "July 19, 2026",
         "date_sort": "2026-07-19",
